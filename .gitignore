@@ -2,9 +2,14 @@
 .DS_Store
 
 # === Project-specific ===
-projects/*/target/*-extracted-wars/
+**/*-war-extracted/
+
+# Ignore all .idea files
+.idea
 
 # === Logs and temp ===
+out
+logs
 *.log
 *.tmp
 *.swp
