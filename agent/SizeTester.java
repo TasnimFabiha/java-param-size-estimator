@@ -11,6 +11,7 @@ public class SizeTester {
         instrumentation = inst;
     }
 
+    // Resource: https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
     private static final Map<String, Long> PRIMITIVE_SIZES = Map.of(
             "boolean", 1L,
             "byte", 1L,
@@ -46,9 +47,14 @@ public class SizeTester {
         for (String typeName : typeNames) {
             try {
                 Class<?> clazz = resolveType(typeName);
-                Object instance = createDummyInstance(clazz);
-                long size = instrumentation.getObjectSize(instance);
-                sizeMap.put(typeName, size);
+                if (clazz.isPrimitive()){
+                    sizeMap.put(typeName, getFallbackSize(typeName));
+                }
+                else{
+                    Object instance = createDummyInstance(clazz);
+                    long size = instrumentation.getObjectSize(instance);
+                    sizeMap.put(typeName, size);
+                }
             } catch (Exception | Error e) {
                 // e.printStackTrace();
                 sizeMap.put(typeName, getFallbackSize(typeName)); // fallback size
@@ -101,7 +107,8 @@ public class SizeTester {
         if (clazz == byte.class || clazz == Byte.class) return (byte) 0;
         if (clazz == char.class || clazz == Character.class) return (char) 0;
         if (clazz == short.class || clazz == Short.class) return (short) 0;
-        if (clazz == int.class || clazz == Integer.class) return 0;
+        if (clazz == int.class || clazz == Integer.class) 
+            return 0;
         if (clazz == long.class || clazz == Long.class) return 0L;
         if (clazz == float.class || clazz == Float.class) return 0f;
         if (clazz == double.class || clazz == Double.class) return 0d;
