@@ -45,13 +45,18 @@ Manifest-Version: 1.0
 Main-Class: Agent
 ```
 
-### 2. Prepare Project Classes
+### 2. Prepare Input
 
-1. Place your `roller.xml` (Dependency Finder output) under `projects/roller/`.
-2. Extract the `roller.war` file into `projects/roller/target/roller-war-extracted/`. This is necessary to access **third-party dependency classes** used by your application.
-3. Add the `roller-classes.jar` to `projects/roller/target/`. This JAR is essential because it contains the **compiled application-specific classes** required to instantiate and estimate parameter sizes correctly.
+- Place your Dependency Finder output XML as: `projects/<project_name>/<project_name>.xml`
+- 
 
-> ⚠️ Without the extracted WAR and `roller-classes.jar`, the size estimator cannot resolve all classes used in method signatures, leading to fallbacks and reduced accuracy.
+1. Place your Dependency Finder output XML as: `projects/<project_name>/<project_name>.xml`
+
+2. Here, the example project `roller` has been used for example. Update the `project_name` variable in `estimate_param_sizes.py` accordingly.
+3. Extract the `<project_name>.war` file into `projects/<project_name>/target/<project_name>-war-extracted/`. This is necessary to access **third-party dependency classes** used by your application.
+4. Add the `<project_name>-classes.jar` to `projects/<project_name>/target/` if present. This JAR is essential because it contains the **compiled application-specific classes** required to instantiate and estimate parameter sizes correctly.
+
+> ⚠️ Without the extracted WAR and `<project_name>-classes.jar`, the size estimator cannot resolve all classes used in method signatures, leading to fallbacks and reduced accuracy.
 
 ### 3. Run the Estimation
 
@@ -61,7 +66,7 @@ python estimate_param_sizes.py
 
 The script will:
 
-1. Parse methods from `roller.xml`
+1. Parse methods from `<project_name>.xml`
 2. Extract parameter types
 3. Write unique types to `type_list.txt`
 4. Invoke the Java agent to compute size estimates
