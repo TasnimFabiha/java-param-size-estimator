@@ -47,11 +47,7 @@ Main-Class: Agent
 
 ### 2. Prepare Input
 
-- Place your Dependency Finder output XML as: `projects/<project_name>/<project_name>.xml`
-- 
-
 1. Place your Dependency Finder output XML as: `projects/<project_name>/<project_name>.xml`
-
 2. Here, the example project `roller` has been used for example. Update the `project_name` variable in `estimate_param_sizes.py` accordingly.
 3. Extract the `<project_name>.war` file into `projects/<project_name>/target/<project_name>-war-extracted/`. This is necessary to access **third-party dependency classes** used by your application.
 4. Add the `<project_name>-classes.jar` to `projects/<project_name>/target/` if present. This JAR is essential because it contains the **compiled application-specific classes** required to instantiate and estimate parameter sizes correctly.
