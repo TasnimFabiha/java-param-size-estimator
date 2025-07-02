@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 
 # === CONFIGURATION ===
-project_name = "roller"
+project_name = "jpetstore"
 PROJECT_DIR = Path(f"./projects/{project_name}")
 XML_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
 TYPE_INPUT_FILE = PROJECT_DIR / "type_list.txt"
@@ -14,20 +14,23 @@ TYPE_OUTPUT_FILE = PROJECT_DIR / "type_size_output.csv"
 METHOD_SIZE_OUTPUT_FILE = PROJECT_DIR / f"method_parameters_sizeOf.csv"
 
 # === Java Agent + Classpath Setup ===
-PROJECT_CLASSES = "agent"
-ROLLER_CLASSES = PROJECT_DIR / f"target/{project_name}-classes.jar"
-ROLLER_LIB_DIR = PROJECT_DIR / f"target/{project_name}-war-extracted/WEB-INF/lib"
+AGENT_CLASSES = "agent"
+PROJECT_CLASSES = PROJECT_DIR / f"target/{project_name}-classes.jar"
+PROJECT_LIB_DIR = PROJECT_DIR / f"target/{project_name}-war-extracted/WEB-INF/lib"
 AGENT_JAR_PATH = "agent/agent.jar"
 
 # Gather all JARs from WEB-INF/lib
 war_jars = [
-    str(Path(ROLLER_LIB_DIR) / jar)
-    for jar in os.listdir(ROLLER_LIB_DIR)
+    str(Path(PROJECT_LIB_DIR) / jar)
+    for jar in os.listdir(PROJECT_LIB_DIR)
     if jar.endswith(".jar")
 ]
 
 # Full classpath
-classpath = f"{PROJECT_CLASSES}:{ROLLER_CLASSES}:{':'.join(war_jars)}"
+if PROJECT_CLASSES.exists():
+    classpath = f"{AGENT_CLASSES}:{PROJECT_CLASSES}:{':'.join(war_jars)}"
+else:
+    classpath = f"{AGENT_CLASSES}:{':'.join(war_jars)}"
 
 JAVA_CMD = [
     "java",
