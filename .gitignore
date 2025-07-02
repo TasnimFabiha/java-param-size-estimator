@@ -1,0 +1,10 @@
+# === macOS ===
+.DS_Store
+
+# === Project-specific ===
+projects/*/target/*-extracted-wars/
+
+# === Logs and temp ===
+*.log
+*.tmp
+*.swp

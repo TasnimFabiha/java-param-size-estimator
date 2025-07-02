@@ -11,3 +11,6 @@
 .DS_Store
 # ignore all .idea files
 /.idea/
+# Ignore extracted WAR folders for all projects
+projects/*-extracted-wars/
+

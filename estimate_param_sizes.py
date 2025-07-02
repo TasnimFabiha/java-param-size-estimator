@@ -12,9 +12,29 @@ XML_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
 TYPE_INPUT_FILE = PROJECT_DIR / "type_list.txt"
 TYPE_OUTPUT_FILE = PROJECT_DIR / "type_size_output.csv"
 METHOD_SIZE_OUTPUT_FILE = PROJECT_DIR / f"method_parameters_sizeOf.csv"
-AGENT_JAR_PATH = Path("./agent/agent.jar")  # Adjust if your JAR is elsewhere
-JAVA_CMD = ["java", "-cp", str(AGENT_JAR_PATH), "Agent"]
 
+# === Java Agent + Classpath Setup ===
+PROJECT_CLASSES = "agent"
+ROLLER_CLASSES = PROJECT_DIR / f"target/{project_name}-classes.jar"
+ROLLER_LIB_DIR = PROJECT_DIR / f"target/{project_name}-war-extracted/WEB-INF/lib"
+AGENT_JAR_PATH = "agent/agent.jar"
+
+# Gather all JARs from WEB-INF/lib
+war_jars = [
+    str(Path(ROLLER_LIB_DIR) / jar)
+    for jar in os.listdir(ROLLER_LIB_DIR)
+    if jar.endswith(".jar")
+]
+
+# Full classpath
+classpath = f"{PROJECT_CLASSES}:{ROLLER_CLASSES}:{':'.join(war_jars)}"
+
+JAVA_CMD = [
+    "java",
+    f"-javaagent:{AGENT_JAR_PATH}",
+    "-cp", classpath,
+    "SizeTester"
+]
 
 DEFAULT_SIZE = 64  # Fallback size if type has no size entry
 
