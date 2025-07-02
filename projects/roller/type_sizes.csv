@@ -1,6 +1,6 @@
-boolean,16
+boolean,1
 byte[],24
-char,16
+char,2
 char[],24
 com.google.inject.Binder,16
 com.google.inject.Module[],24
@@ -16,9 +16,9 @@ com.rometools.rome.feed.atom.Entry,80
 com.rometools.rome.feed.module.Module,16
 com.rometools.rome.feed.rss.Item,72
 com.rometools.rome.feed.synd.SyndEntry,16
-double,24
-float,16
-int,16
+double,8
+float,4
+int,4
 int[],24
 jakarta.persistence.EntityManager,16
 jakarta.persistence.FlushModeType,16
@@ -113,7 +113,7 @@ javax.swing.text.html.HTML$Tag,24
 javax.swing.text.html.HTMLEditorKit$ParserCallback,16
 kieker.common.record.IMonitoringRecord,16
 kieker.common.record.io.IValueSerializer,16
-long,24
+long,8
 net.oauth.OAuthAccessor,16
 net.oauth.OAuthConsumer,16
 net.oauth.OAuthMessage,16
