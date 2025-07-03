@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 
 # === CONFIGURATION ===
-project_name = "jpetstore"
+project_name = "roller" 
 PROJECT_DIR = Path(f"./projects/{project_name}")
 XML_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
 TYPE_INPUT_FILE = PROJECT_DIR / "type_list.txt"
@@ -105,7 +105,7 @@ def compute_and_save_method_sizes(methods, type_size_map, output_csv):
         for row in rows:
             writer.writerow(row)
 
-    print(f"Method size table saved to: {output_csv}")
+    print(f"Method size table for {project_name} saved to: {output_csv}")
 
 # === Main ===
 def main():

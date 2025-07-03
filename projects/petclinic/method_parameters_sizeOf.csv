@@ -1,0 +1,330 @@
+Method,Parameter Types,Param Sizes,Total Param Size
+java.lang.Class.isAssignableFrom(java.lang.Class): boolean,['java.lang.Class'],[16],16
+java.lang.Class.isInstance(java.lang.Object): boolean,['java.lang.Object'],[16],16
+"java.lang.Enum.Enum(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
+"java.lang.Enum.valueOf(java.lang.Class, java.lang.String): java.lang.Enum","['java.lang.Class', 'java.lang.String']","[16, 24]",40
+java.lang.Integer.intValue(): int,[],[],0
+java.lang.Integer.valueOf(int): java.lang.Integer,['int'],[4],4
+java.lang.Number.intValue(): int,[],[],0
+java.lang.Object.Object(),[],[],0
+java.lang.Object.equals(java.lang.Object): boolean,['java.lang.Object'],[16],16
+java.lang.RuntimeException.RuntimeException(java.lang.String),['java.lang.String'],[24],24
+java.lang.String.equals(java.lang.Object): boolean,['java.lang.Object'],[16],16
+java.lang.String.isEmpty(): boolean,[],[],0
+java.lang.String.valueOf(java.lang.Object): java.lang.String,['java.lang.Object'],[16],16
+java.lang.StringBuilder.StringBuilder(java.lang.String),['java.lang.String'],[24],24
+java.lang.StringBuilder.append(java.lang.String): java.lang.StringBuilder,['java.lang.String'],[24],24
+java.lang.StringBuilder.toString(): java.lang.String,[],[],0
+"java.lang.System.arraycopy(java.lang.Object, int, java.lang.Object, int, int): void","['java.lang.Object', 'int', 'java.lang.Object', 'int', 'int']","[16, 4, 16, 4, 4]",44
+java.lang.UnsupportedOperationException.UnsupportedOperationException(java.lang.String),['java.lang.String'],[24],24
+java.sql.ResultSet.getInt(int): int,['int'],[4],4
+java.sql.ResultSet.getInt(java.lang.String): int,['java.lang.String'],[24],24
+java.sql.ResultSet.getObject(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
+"java.sql.ResultSet.getObject(java.lang.String, java.lang.Class): java.lang.Object","['java.lang.String', 'java.lang.Class']","[24, 16]",40
+java.sql.ResultSet.getString(java.lang.String): java.lang.String,['java.lang.String'],[24],24
+java.sql.ResultSet.next(): boolean,[],[],0
+"java.text.ParseException.ParseException(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
+java.util.ArrayList.ArrayList(),[],[],0
+java.util.ArrayList.ArrayList(java.util.Collection),['java.util.Collection'],[24],24
+java.util.Collection.iterator(): java.util.Iterator,[],[],0
+java.util.Collections.unmodifiableList(java.util.List): java.util.List,['java.util.List'],[24],24
+java.util.HashMap.HashMap(),[],[],0
+java.util.HashSet.HashSet(),[],[],0
+java.util.Iterator.hasNext(): boolean,[],[],0
+java.util.Iterator.next(): java.lang.Object,[],[],0
+java.util.List.add(java.lang.Object): boolean,['java.lang.Object'],[16],16
+java.util.List.addAll(java.util.Collection): boolean,['java.util.Collection'],[24],24
+java.util.List.iterator(): java.util.Iterator,[],[],0
+java.util.List.size(): int,[],[],0
+"java.util.Map.put(java.lang.Object, java.lang.Object): java.lang.Object","['java.lang.Object', 'java.lang.Object']","[16, 16]",32
+java.util.Set.add(java.lang.Object): boolean,['java.lang.Object'],[16],16
+java.util.Set.size(): int,[],[],0
+javax.persistence.CascadeType.ALL,[],[],0
+javax.persistence.EntityManager.createQuery(java.lang.String): javax.persistence.Query,['java.lang.String'],[24],24
+"javax.persistence.EntityManager.find(java.lang.Class, java.lang.Object): java.lang.Object","['java.lang.Class', 'java.lang.Object']","[16, 16]",32
+javax.persistence.EntityManager.merge(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
+javax.persistence.EntityManager.persist(java.lang.Object): void,['java.lang.Object'],[16],16
+javax.persistence.FetchType.EAGER,[],[],0
+javax.persistence.GenerationType.IDENTITY,[],[],0
+javax.persistence.Query.getResultList(): java.util.List,[],[],0
+javax.persistence.Query.getSingleResult(): java.lang.Object,[],[],0
+"javax.persistence.Query.setParameter(java.lang.String, java.lang.Object): javax.persistence.Query","['java.lang.String', 'java.lang.Object']","[24, 16]",40
+"javax.servlet.FilterChain.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse']","[64, 64]",128
+javax.servlet.http.HttpServletRequest.getHeader(java.lang.String): java.lang.String,['java.lang.String'],[24],24
+javax.servlet.http.HttpServletRequest.getParameter(java.lang.String): java.lang.String,['java.lang.String'],[24],24
+kieker.common.record.AbstractMonitoringRecord.AbstractMonitoringRecord(),[],[],0
+kieker.common.record.io.IValueSerializer.putString(java.lang.String): void,['java.lang.String'],[24],24
+kieker.monitoring.core.controller.IMonitoringController.newMonitoringRecord(kieker.common.record.IMonitoringRecord): boolean,['kieker.common.record.IMonitoringRecord'],[16],16
+kieker.monitoring.core.controller.MonitoringController.getInstance(): kieker.monitoring.core.controller.IMonitoringController,[],[],0
+org.aspectj.lang.ProceedingJoinPoint.proceed(): java.lang.Object,[],[],0
+org.aspectj.lang.ProceedingJoinPoint.toShortString(): java.lang.String,[],[],0
+"org.springframework.beans.support.MutableSortDefinition.MutableSortDefinition(java.lang.String, boolean, boolean)","['java.lang.String', 'boolean', 'boolean']","[24, 1, 1]",26
+"org.springframework.beans.support.PropertyComparator.sort(java.util.List, org.springframework.beans.support.SortDefinition): void","['java.util.List', 'org.springframework.beans.support.SortDefinition']","[24, 16]",40
+org.springframework.core.env.ConfigurableEnvironment.setDefaultProfiles(java.lang.String[]): void,['java.lang.String[]'],[24],24
+"org.springframework.dao.IncorrectResultSizeDataAccessException.IncorrectResultSizeDataAccessException(int, int)","['int', 'int']","[4, 4]",8
+org.springframework.jdbc.core.BeanPropertyRowMapper.BeanPropertyRowMapper(),[],[],0
+org.springframework.jdbc.core.BeanPropertyRowMapper.newInstance(java.lang.Class): org.springframework.jdbc.core.BeanPropertyRowMapper,['java.lang.Class'],[16],16
+"org.springframework.jdbc.core.JdbcTemplate.query(java.lang.String, org.springframework.jdbc.core.RowMapper): java.util.List","['java.lang.String', 'org.springframework.jdbc.core.RowMapper']","[24, 16]",40
+"org.springframework.jdbc.core.JdbcTemplate.query(java.lang.String, org.springframework.jdbc.core.RowMapper, java.lang.Object[]): java.util.List","['java.lang.String', 'org.springframework.jdbc.core.RowMapper', 'java.lang.Object[]']","[24, 16, 24]",64
+"org.springframework.jdbc.core.RowMapper.mapRow(java.sql.ResultSet, int): java.lang.Object","['java.sql.ResultSet', 'int']","[16, 4]",20
+org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource.BeanPropertySqlParameterSource(java.lang.Object),['java.lang.Object'],[16],16
+org.springframework.jdbc.core.namedparam.MapSqlParameterSource.MapSqlParameterSource(),[],[],0
+"org.springframework.jdbc.core.namedparam.MapSqlParameterSource.addValue(java.lang.String, java.lang.Object): org.springframework.jdbc.core.namedparam.MapSqlParameterSource","['java.lang.String', 'java.lang.Object']","[24, 16]",40
+org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.NamedParameterJdbcTemplate(javax.sql.DataSource),['javax.sql.DataSource'],[16],16
+"org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(java.lang.String, java.util.Map, org.springframework.jdbc.core.ResultSetExtractor): java.lang.Object","['java.lang.String', 'java.util.Map', 'org.springframework.jdbc.core.ResultSetExtractor']","[24, 48, 16]",88
+"org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(java.lang.String, java.util.Map, org.springframework.jdbc.core.RowMapper): java.util.List","['java.lang.String', 'java.util.Map', 'org.springframework.jdbc.core.RowMapper']","[24, 48, 16]",88
+"org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForObject(java.lang.String, java.util.Map, java.lang.Class): java.lang.Object","['java.lang.String', 'java.util.Map', 'java.lang.Class']","[24, 48, 16]",88
+"org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.queryForObject(java.lang.String, java.util.Map, org.springframework.jdbc.core.RowMapper): java.lang.Object","['java.lang.String', 'java.util.Map', 'org.springframework.jdbc.core.RowMapper']","[24, 48, 16]",88
+"org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(java.lang.String, org.springframework.jdbc.core.namedparam.SqlParameterSource): int","['java.lang.String', 'org.springframework.jdbc.core.namedparam.SqlParameterSource']","[24, 16]",40
+org.springframework.jdbc.core.simple.SimpleJdbcInsert.SimpleJdbcInsert(javax.sql.DataSource),['javax.sql.DataSource'],[16],16
+org.springframework.jdbc.core.simple.SimpleJdbcInsert.executeAndReturnKey(org.springframework.jdbc.core.namedparam.SqlParameterSource): java.lang.Number,['org.springframework.jdbc.core.namedparam.SqlParameterSource'],[16],16
+org.springframework.jdbc.core.simple.SimpleJdbcInsert.usingGeneratedKeyColumns(java.lang.String[]): org.springframework.jdbc.core.simple.SimpleJdbcInsert,['java.lang.String[]'],[24],24
+org.springframework.jdbc.core.simple.SimpleJdbcInsert.withTableName(java.lang.String): org.springframework.jdbc.core.simple.SimpleJdbcInsert,['java.lang.String'],[24],24
+"org.springframework.orm.ObjectRetrievalFailureException.ObjectRetrievalFailureException(java.lang.Class, java.lang.Object)","['java.lang.Class', 'java.lang.Object']","[16, 16]",32
+org.springframework.samples.petclinic.PetclinicInitializer.PetclinicInitializer(),[],[],0
+org.springframework.samples.petclinic.PetclinicInitializer.SPRING_PROFILE,[],[],0
+org.springframework.samples.petclinic.PetclinicInitializer.createRootApplicationContext(): org.springframework.web.context.WebApplicationContext,[],[],0
+org.springframework.samples.petclinic.PetclinicInitializer.createServletApplicationContext(): org.springframework.web.context.WebApplicationContext,[],[],0
+org.springframework.samples.petclinic.PetclinicInitializer.getServletFilters(): javax.servlet.Filter[],[],[],0
+org.springframework.samples.petclinic.PetclinicInitializer.getServletMappings(): java.lang.String[],[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter.TestTagLoggingFilter(),[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter.controller,[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter.destroy(): void,[],[],0
+"org.springframework.samples.petclinic.TestTagLoggingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
+org.springframework.samples.petclinic.TestTagLoggingFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.TestTagLoggingFilter$TestTagRecord(java.lang.String),['java.lang.String'],[24],24
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.getSize(): int,[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.getValueNames(): java.lang.String[],[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.getValueTypes(): java.lang.Class[],[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.serialVersionUID,[],[],0
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.serialize(kieker.common.record.io.IValueSerializer): void,['kieker.common.record.io.IValueSerializer'],[16],16
+org.springframework.samples.petclinic.TestTagLoggingFilter$TestTagRecord.tag,[],[],0
+org.springframework.samples.petclinic.model.BaseEntity.BaseEntity(),[],[],0
+org.springframework.samples.petclinic.model.BaseEntity.getId(): java.lang.Integer,[],[],0
+org.springframework.samples.petclinic.model.BaseEntity.id,[],[],0
+org.springframework.samples.petclinic.model.BaseEntity.isNew(): boolean,[],[],0
+org.springframework.samples.petclinic.model.BaseEntity.setId(java.lang.Integer): void,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.model.NamedEntity.NamedEntity(),[],[],0
+org.springframework.samples.petclinic.model.NamedEntity.getName(): java.lang.String,[],[],0
+org.springframework.samples.petclinic.model.NamedEntity.name,[],[],0
+org.springframework.samples.petclinic.model.NamedEntity.setName(java.lang.String): void,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.model.NamedEntity.toString(): java.lang.String,[],[],0
+org.springframework.samples.petclinic.model.Owner.addPet(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.model.Owner.getId(): java.lang.Integer,[],[],0
+org.springframework.samples.petclinic.model.Owner.getPets(): java.util.List,[],[],0
+org.springframework.samples.petclinic.model.Owner.isNew(): boolean,[],[],0
+org.springframework.samples.petclinic.model.Owner.setId(java.lang.Integer): void,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.model.Person.Person(),[],[],0
+org.springframework.samples.petclinic.model.Pet.Pet(),[],[],0
+org.springframework.samples.petclinic.model.Pet.addVisit(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.model.Pet.birthDate,[],[],0
+org.springframework.samples.petclinic.model.Pet.getBirthDate(): java.time.LocalDate,[],[],0
+org.springframework.samples.petclinic.model.Pet.getId(): java.lang.Integer,[],[],0
+org.springframework.samples.petclinic.model.Pet.getName(): java.lang.String,[],[],0
+org.springframework.samples.petclinic.model.Pet.getOwner(): org.springframework.samples.petclinic.model.Owner,[],[],0
+org.springframework.samples.petclinic.model.Pet.getType(): org.springframework.samples.petclinic.model.PetType,[],[],0
+org.springframework.samples.petclinic.model.Pet.getVisits(): java.util.List,[],[],0
+org.springframework.samples.petclinic.model.Pet.getVisitsInternal(): java.util.Set,[],[],0
+org.springframework.samples.petclinic.model.Pet.isNew(): boolean,[],[],0
+org.springframework.samples.petclinic.model.Pet.owner,[],[],0
+org.springframework.samples.petclinic.model.Pet.setBirthDate(java.time.LocalDate): void,['java.time.LocalDate'],[16],16
+org.springframework.samples.petclinic.model.Pet.setId(java.lang.Integer): void,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.model.Pet.setOwner(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.model.Pet.setType(org.springframework.samples.petclinic.model.PetType): void,['org.springframework.samples.petclinic.model.PetType'],[64],64
+org.springframework.samples.petclinic.model.Pet.setVisitsInternal(java.util.Set): void,['java.util.Set'],[16],16
+org.springframework.samples.petclinic.model.Pet.type,[],[],0
+org.springframework.samples.petclinic.model.Pet.visits,[],[],0
+org.springframework.samples.petclinic.model.PetType.PetType(),[],[],0
+org.springframework.samples.petclinic.model.PetType.getId(): java.lang.Integer,[],[],0
+org.springframework.samples.petclinic.model.PetType.getName(): java.lang.String,[],[],0
+org.springframework.samples.petclinic.model.Specialty.Specialty(),[],[],0
+org.springframework.samples.petclinic.model.Vet.Vet(),[],[],0
+org.springframework.samples.petclinic.model.Vet.addSpecialty(org.springframework.samples.petclinic.model.Specialty): void,['org.springframework.samples.petclinic.model.Specialty'],[64],64
+org.springframework.samples.petclinic.model.Vet.getId(): java.lang.Integer,[],[],0
+org.springframework.samples.petclinic.model.Vet.getNrOfSpecialties(): int,[],[],0
+org.springframework.samples.petclinic.model.Vet.getSpecialties(): java.util.List,[],[],0
+org.springframework.samples.petclinic.model.Vet.getSpecialtiesInternal(): java.util.Set,[],[],0
+org.springframework.samples.petclinic.model.Vet.setSpecialtiesInternal(java.util.Set): void,['java.util.Set'],[16],16
+org.springframework.samples.petclinic.model.Vet.specialties,[],[],0
+org.springframework.samples.petclinic.model.Vets.Vets(),[],[],0
+org.springframework.samples.petclinic.model.Vets.getVetList(): java.util.List,[],[],0
+org.springframework.samples.petclinic.model.Vets.vetList,[],[],0
+org.springframework.samples.petclinic.model.Visit.Visit(),[],[],0
+org.springframework.samples.petclinic.model.Visit.getDate(): java.time.LocalDate,[],[],0
+org.springframework.samples.petclinic.model.Visit.getDescription(): java.lang.String,[],[],0
+org.springframework.samples.petclinic.model.Visit.getId(): java.lang.Integer,[],[],0
+org.springframework.samples.petclinic.model.Visit.getPet(): org.springframework.samples.petclinic.model.Pet,[],[],0
+org.springframework.samples.petclinic.model.Visit.isNew(): boolean,[],[],0
+org.springframework.samples.petclinic.model.Visit.setDate(java.time.LocalDate): void,['java.time.LocalDate'],[16],16
+org.springframework.samples.petclinic.model.Visit.setDescription(java.lang.String): void,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.model.Visit.setId(java.lang.Integer): void,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.model.Visit.setPet(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.repository.OwnerRepository.findById(int): org.springframework.samples.petclinic.model.Owner,['int'],[4],4
+org.springframework.samples.petclinic.repository.OwnerRepository.findByLastName(java.lang.String): java.util.Collection,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.repository.OwnerRepository.save(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.repository.PetRepository.findById(int): org.springframework.samples.petclinic.model.Pet,['int'],[4],4
+org.springframework.samples.petclinic.repository.PetRepository.findPetTypes(): java.util.List,[],[],0
+org.springframework.samples.petclinic.repository.PetRepository.save(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.repository.VetRepository.findAll(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.repository.VisitRepository.findByPetId(java.lang.Integer): java.util.List,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.repository.VisitRepository.save(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.JdbcOwnerRepositoryImpl(javax.sql.DataSource),['javax.sql.DataSource'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.findById(int): org.springframework.samples.petclinic.model.Owner,['int'],[4],4
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.findByLastName(java.lang.String): java.util.Collection,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.getPetTypes(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.insertOwner,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.loadOwnersPetsAndVisits(java.util.List): void,['java.util.List'],[24],24
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.loadPetsAndVisits(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.namedParameterJdbcTemplate,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcOwnerRepositoryImpl.save(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.JdbcPet(),[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.addVisit(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.getOwnerId(): int,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.getTypeId(): int,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.ownerId,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.setBirthDate(java.time.LocalDate): void,['java.time.LocalDate'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.setId(java.lang.Integer): void,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.setName(java.lang.String): void,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.setOwnerId(int): void,['int'],[4],4
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.setType(org.springframework.samples.petclinic.model.PetType): void,['org.springframework.samples.petclinic.model.PetType'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.setTypeId(int): void,['int'],[4],4
+org.springframework.samples.petclinic.repository.jdbc.JdbcPet.typeId,[],[],0
+"org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.JdbcPetRepositoryImpl(javax.sql.DataSource, org.springframework.samples.petclinic.repository.OwnerRepository)","['javax.sql.DataSource', 'org.springframework.samples.petclinic.repository.OwnerRepository']","[16, 64]",80
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.createPetParameterSource(org.springframework.samples.petclinic.model.Pet): org.springframework.jdbc.core.namedparam.MapSqlParameterSource,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.findById(int): org.springframework.samples.petclinic.model.Pet,['int'],[4],4
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.findPetTypes(): java.util.List,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.insertPet,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.namedParameterJdbcTemplate,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.ownerRepository,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRepositoryImpl.save(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetRowMapper.JdbcPetRowMapper(),[],[],0
+"org.springframework.samples.petclinic.repository.jdbc.JdbcPetRowMapper.mapRow(java.sql.ResultSet, int): java.lang.Object","['java.sql.ResultSet', 'int']","[16, 4]",20
+"org.springframework.samples.petclinic.repository.jdbc.JdbcPetRowMapper.mapRow(java.sql.ResultSet, int): org.springframework.samples.petclinic.repository.jdbc.JdbcPet","['java.sql.ResultSet', 'int']","[16, 4]",20
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.JdbcPetVisitExtractor(),[],[],0
+"org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.addChild(java.lang.Object, java.lang.Object): void","['java.lang.Object', 'java.lang.Object']","[16, 16]",32
+"org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.addChild(org.springframework.samples.petclinic.repository.jdbc.JdbcPet, org.springframework.samples.petclinic.model.Visit): void","['org.springframework.samples.petclinic.repository.jdbc.JdbcPet', 'org.springframework.samples.petclinic.model.Visit']","[64, 64]",128
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.mapForeignKey(java.sql.ResultSet): java.lang.Integer,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.mapForeignKey(java.sql.ResultSet): java.lang.Object,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.mapPrimaryKey(java.sql.ResultSet): java.lang.Integer,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcPetVisitExtractor.mapPrimaryKey(java.sql.ResultSet): java.lang.Object,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl.JdbcVetRepositoryImpl(org.springframework.jdbc.core.JdbcTemplate),['org.springframework.jdbc.core.JdbcTemplate'],[48],48
+org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl.findAll(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl.jdbcTemplate,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl$1.JdbcVetRepositoryImpl$1(org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl),['org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl'],[64],64
+"org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl$1.mapRow(java.sql.ResultSet, int): java.lang.Integer","['java.sql.ResultSet', 'int']","[16, 4]",20
+"org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl$1.mapRow(java.sql.ResultSet, int): java.lang.Object","['java.sql.ResultSet', 'int']","[16, 4]",20
+org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl$1.this$0,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRepositoryImpl.JdbcVisitRepositoryImpl(javax.sql.DataSource),['javax.sql.DataSource'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRepositoryImpl.createVisitParameterSource(org.springframework.samples.petclinic.model.Visit): org.springframework.jdbc.core.namedparam.MapSqlParameterSource,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRepositoryImpl.findByPetId(java.lang.Integer): java.util.List,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRepositoryImpl.insertVisit,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRepositoryImpl.jdbcTemplate,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRepositoryImpl.save(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRowMapper.JdbcVisitRowMapper(),[],[],0
+"org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRowMapper.mapRow(java.sql.ResultSet, int): java.lang.Object","['java.sql.ResultSet', 'int']","[16, 4]",20
+"org.springframework.samples.petclinic.repository.jdbc.JdbcVisitRowMapper.mapRow(java.sql.ResultSet, int): org.springframework.samples.petclinic.model.Visit","['java.sql.ResultSet', 'int']","[16, 4]",20
+"org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.OneToManyResultSetExtractor(org.springframework.jdbc.core.RowMapper, org.springframework.jdbc.core.RowMapper)","['org.springframework.jdbc.core.RowMapper', 'org.springframework.jdbc.core.RowMapper']","[16, 16]",32
+"org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.OneToManyResultSetExtractor(org.springframework.jdbc.core.RowMapper, org.springframework.jdbc.core.RowMapper, org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults)","['org.springframework.jdbc.core.RowMapper', 'org.springframework.jdbc.core.RowMapper', 'org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults']","[16, 16, 64]",96
+"org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.addChild(java.lang.Object, java.lang.Object): void","['java.lang.Object', 'java.lang.Object']","[16, 16]",32
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.childMapper,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.expectedResults,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.extractData(java.sql.ResultSet): java.lang.Object,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.extractData(java.sql.ResultSet): java.util.List,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.mapForeignKey(java.sql.ResultSet): java.lang.Object,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.mapPrimaryKey(java.sql.ResultSet): java.lang.Object,['java.sql.ResultSet'],[16],16
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor.rootMapper,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.ANY,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.AT_LEAST_ONE,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.ENUM$VALUES,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.ONE_AND_ONLY_ONE,[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.ONE_OR_NONE,[],[],0
+"org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.OneToManyResultSetExtractor$ExpectedResults(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.static {},[],[],0
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.valueOf(java.lang.String): org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults.values(): org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults[],[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl.JpaOwnerRepositoryImpl(),[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl.em,[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl.findById(int): org.springframework.samples.petclinic.model.Owner,['int'],[4],4
+org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl.findByLastName(java.lang.String): java.util.Collection,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.repository.jpa.JpaOwnerRepositoryImpl.save(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl.JpaPetRepositoryImpl(),[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl.em,[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl.findById(int): org.springframework.samples.petclinic.model.Pet,['int'],[4],4
+org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl.findPetTypes(): java.util.List,[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaPetRepositoryImpl.save(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.repository.jpa.JpaVetRepositoryImpl.JpaVetRepositoryImpl(),[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaVetRepositoryImpl.em,[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaVetRepositoryImpl.findAll(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaVisitRepositoryImpl.JpaVisitRepositoryImpl(),[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaVisitRepositoryImpl.em,[],[],0
+org.springframework.samples.petclinic.repository.jpa.JpaVisitRepositoryImpl.findByPetId(java.lang.Integer): java.util.List,['java.lang.Integer'],[16],16
+org.springframework.samples.petclinic.repository.jpa.JpaVisitRepositoryImpl.save(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.repository.springdatajpa.SpringDataOwnerRepository.findById(int): org.springframework.samples.petclinic.model.Owner,['int'],[4],4
+org.springframework.samples.petclinic.repository.springdatajpa.SpringDataOwnerRepository.findByLastName(java.lang.String): java.util.Collection,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.repository.springdatajpa.SpringDataPetRepository.findPetTypes(): java.util.List,[],[],0
+org.springframework.samples.petclinic.service.ClinicService.findOwnerById(int): org.springframework.samples.petclinic.model.Owner,['int'],[4],4
+org.springframework.samples.petclinic.service.ClinicService.findOwnerByLastName(java.lang.String): java.util.Collection,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.service.ClinicService.findPetById(int): org.springframework.samples.petclinic.model.Pet,['int'],[4],4
+org.springframework.samples.petclinic.service.ClinicService.findPetTypes(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.service.ClinicService.findVets(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.service.ClinicService.findVisitsByPetId(int): java.util.Collection,['int'],[4],4
+org.springframework.samples.petclinic.service.ClinicService.saveOwner(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.service.ClinicService.savePet(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.service.ClinicService.saveVisit(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+"org.springframework.samples.petclinic.service.ClinicServiceImpl.ClinicServiceImpl(org.springframework.samples.petclinic.repository.PetRepository, org.springframework.samples.petclinic.repository.VetRepository, org.springframework.samples.petclinic.repository.OwnerRepository, org.springframework.samples.petclinic.repository.VisitRepository)","['org.springframework.samples.petclinic.repository.PetRepository', 'org.springframework.samples.petclinic.repository.VetRepository', 'org.springframework.samples.petclinic.repository.OwnerRepository', 'org.springframework.samples.petclinic.repository.VisitRepository']","[64, 64, 64, 64]",256
+org.springframework.samples.petclinic.service.ClinicServiceImpl.findOwnerById(int): org.springframework.samples.petclinic.model.Owner,['int'],[4],4
+org.springframework.samples.petclinic.service.ClinicServiceImpl.findOwnerByLastName(java.lang.String): java.util.Collection,['java.lang.String'],[24],24
+org.springframework.samples.petclinic.service.ClinicServiceImpl.findPetById(int): org.springframework.samples.petclinic.model.Pet,['int'],[4],4
+org.springframework.samples.petclinic.service.ClinicServiceImpl.findPetTypes(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.service.ClinicServiceImpl.findVets(): java.util.Collection,[],[],0
+org.springframework.samples.petclinic.service.ClinicServiceImpl.findVisitsByPetId(int): java.util.Collection,['int'],[4],4
+org.springframework.samples.petclinic.service.ClinicServiceImpl.ownerRepository,[],[],0
+org.springframework.samples.petclinic.service.ClinicServiceImpl.petRepository,[],[],0
+org.springframework.samples.petclinic.service.ClinicServiceImpl.saveOwner(org.springframework.samples.petclinic.model.Owner): void,['org.springframework.samples.petclinic.model.Owner'],[64],64
+org.springframework.samples.petclinic.service.ClinicServiceImpl.savePet(org.springframework.samples.petclinic.model.Pet): void,['org.springframework.samples.petclinic.model.Pet'],[64],64
+org.springframework.samples.petclinic.service.ClinicServiceImpl.saveVisit(org.springframework.samples.petclinic.model.Visit): void,['org.springframework.samples.petclinic.model.Visit'],[64],64
+org.springframework.samples.petclinic.service.ClinicServiceImpl.vetRepository,[],[],0
+org.springframework.samples.petclinic.service.ClinicServiceImpl.visitRepository,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.CallMonitoringAspect(),[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.accumulatedCallTime,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.callCount,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.enabled,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.getCallCount(): int,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.getCallTime(): long,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.invoke(org.aspectj.lang.ProceedingJoinPoint): java.lang.Object,['org.aspectj.lang.ProceedingJoinPoint'],[16],16
+org.springframework.samples.petclinic.util.CallMonitoringAspect.isEnabled(): boolean,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.reset(): void,[],[],0
+org.springframework.samples.petclinic.util.CallMonitoringAspect.setEnabled(boolean): void,['boolean'],[1],1
+org.springframework.samples.petclinic.util.EntityUtils.EntityUtils(),[],[],0
+"org.springframework.samples.petclinic.util.EntityUtils.getById(java.util.Collection, java.lang.Class, int): org.springframework.samples.petclinic.model.BaseEntity","['java.util.Collection', 'java.lang.Class', 'int']","[24, 16, 4]",44
+org.springframework.samples.petclinic.web.CrashController.CrashController(),[],[],0
+org.springframework.samples.petclinic.web.CrashController.triggerException(): java.lang.String,[],[],0
+org.springframework.samples.petclinic.web.PetTypeFormatter.PetTypeFormatter(org.springframework.samples.petclinic.service.ClinicService),['org.springframework.samples.petclinic.service.ClinicService'],[64],64
+org.springframework.samples.petclinic.web.PetTypeFormatter.clinicService,[],[],0
+"org.springframework.samples.petclinic.web.PetTypeFormatter.parse(java.lang.String, java.util.Locale): java.lang.Object","['java.lang.String', 'java.util.Locale']","[24, 16]",40
+"org.springframework.samples.petclinic.web.PetTypeFormatter.parse(java.lang.String, java.util.Locale): org.springframework.samples.petclinic.model.PetType","['java.lang.String', 'java.util.Locale']","[24, 16]",40
+"org.springframework.samples.petclinic.web.PetTypeFormatter.print(java.lang.Object, java.util.Locale): java.lang.String","['java.lang.Object', 'java.util.Locale']","[16, 16]",32
+"org.springframework.samples.petclinic.web.PetTypeFormatter.print(org.springframework.samples.petclinic.model.PetType, java.util.Locale): java.lang.String","['org.springframework.samples.petclinic.model.PetType', 'java.util.Locale']","[64, 16]",80
+org.springframework.samples.petclinic.web.PetValidator.PetValidator(),[],[],0
+org.springframework.samples.petclinic.web.PetValidator.REQUIRED,[],[],0
+org.springframework.samples.petclinic.web.PetValidator.supports(java.lang.Class): boolean,['java.lang.Class'],[16],16
+"org.springframework.samples.petclinic.web.PetValidator.validate(java.lang.Object, org.springframework.validation.Errors): void","['java.lang.Object', 'org.springframework.validation.Errors']","[16, 16]",32
+org.springframework.samples.petclinic.web.VetController.VetController(org.springframework.samples.petclinic.service.ClinicService),['org.springframework.samples.petclinic.service.ClinicService'],[64],64
+org.springframework.samples.petclinic.web.VetController.clinicService,[],[],0
+org.springframework.samples.petclinic.web.VetController.getVets(): org.springframework.samples.petclinic.model.Vets,[],[],0
+org.springframework.samples.petclinic.web.VetController.showJsonVetList(): org.springframework.samples.petclinic.model.Vets,[],[],0
+org.springframework.samples.petclinic.web.VetController.showVetList(java.util.Map): java.lang.String,['java.util.Map'],[48],48
+org.springframework.samples.petclinic.web.VetController.showXmlVetList(): org.springframework.samples.petclinic.model.Vets,[],[],0
+"org.springframework.util.Assert.notNull(java.lang.Object, java.lang.String): void","['java.lang.Object', 'java.lang.String']","[16, 24]",40
+org.springframework.util.StopWatch.StopWatch(java.lang.String),['java.lang.String'],[24],24
+org.springframework.util.StopWatch.getTotalTimeMillis(): long,[],[],0
+org.springframework.util.StopWatch.start(java.lang.String): void,['java.lang.String'],[24],24
+org.springframework.util.StopWatch.stop(): void,[],[],0
+org.springframework.util.StringUtils.hasLength(java.lang.String): boolean,['java.lang.String'],[24],24
+"org.springframework.validation.Errors.rejectValue(java.lang.String, java.lang.String, java.lang.String): void","['java.lang.String', 'java.lang.String', 'java.lang.String']","[24, 24, 24]",72
+org.springframework.web.context.support.XmlWebApplicationContext.XmlWebApplicationContext(),[],[],0
+org.springframework.web.context.support.XmlWebApplicationContext.getEnvironment(): org.springframework.core.env.ConfigurableEnvironment,[],[],0
+org.springframework.web.context.support.XmlWebApplicationContext.setConfigLocation(java.lang.String): void,['java.lang.String'],[24],24
+org.springframework.web.context.support.XmlWebApplicationContext.setConfigLocations(java.lang.String[]): void,['java.lang.String[]'],[24],24
+"org.springframework.web.filter.CharacterEncodingFilter.CharacterEncodingFilter(java.lang.String, boolean)","['java.lang.String', 'boolean']","[24, 1]",25
+org.springframework.web.servlet.support.AbstractDispatcherServletInitializer.AbstractDispatcherServletInitializer(),[],[],0
