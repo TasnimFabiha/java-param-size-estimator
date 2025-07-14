@@ -1,5 +1,8 @@
 import java.io.*;
 import java.lang.instrument.Instrumentation;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Proxy;
 import java.util.*;
 
 public class SizeTester {
@@ -29,7 +32,7 @@ public class SizeTester {
             // Default size for array (header + 1 element assumed)
             return 16 + 8; // array overhead + pointer
         }
-        return 64; // general object fallback
+        return -1; // general object fallback
     }
 
     public static void main(String[] args) {
@@ -56,7 +59,9 @@ public class SizeTester {
                     sizeMap.put(typeName, size);
                 }
             } catch (Exception | Error e) {
-                // e.printStackTrace();
+                System.err.println("[WARN] Could not load class: " + typeName);
+//                System.err.println("Current ClassLoader: " + Thread.currentThread().getContextClassLoader());
+                e.printStackTrace();
                 sizeMap.put(typeName, getFallbackSize(typeName)); // fallback size
             }
         }
@@ -115,16 +120,34 @@ public class SizeTester {
 
         if (clazz == String.class) return "";
 
-        // Abstract or interface fallback
-        if (clazz.isInterface() || java.lang.reflect.Modifier.isAbstract(clazz.getModifiers()))
+        if (clazz.isInterface()) {
+            return Proxy.newProxyInstance(
+                    clazz.getClassLoader(),
+                    new Class<?>[] { clazz },
+                    (proxy, method, args) -> null
+            );
+        }
+        if ( java.lang.reflect.Modifier.isAbstract(clazz.getModifiers()))
             return new Object();
 
         // Try to instantiate via no-arg constructor
+//        try {
+//            return clazz.getDeclaredConstructor().newInstance();
+//        } catch (NoSuchMethodException e) {
+//            return new Object();
+//        }
         try {
-            return clazz.getDeclaredConstructor().newInstance();
-        } catch (NoSuchMethodException e) {
+            Constructor<?> constructor = clazz.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            return constructor.newInstance();
+        } catch (InvocationTargetException e) {
+            System.err.println("[WARN] Constructor of " + clazz.getName() + " threw exception: " + e.getCause());
+            return new Object();
+        } catch (Exception e) {
+            // Fallback if no default constructor or other error
             return new Object();
         }
+
     }
 
     private static Class<?> resolveType(String typeName) throws ClassNotFoundException {
@@ -155,7 +178,9 @@ public class SizeTester {
                     Class<?> componentClass = resolveType(baseType);
                     yield java.lang.reflect.Array.newInstance(componentClass, 1).getClass();
                 }
-                yield Class.forName(typeName);
+//                yield Class.forName(typeName);
+                yield Class.forName(typeName, false, Thread.currentThread().getContextClassLoader());
+
             }
         };
     }

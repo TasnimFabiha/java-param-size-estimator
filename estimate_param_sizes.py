@@ -4,9 +4,12 @@ import re
 import csv
 import subprocess
 from pathlib import Path
+import subprocess
+import shutil
+
 
 # === CONFIGURATION ===
-project_name = "roller" 
+project_name = "jpetstore"  
 PROJECT_DIR = Path(f"./projects/{project_name}")
 XML_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
 TYPE_INPUT_FILE = PROJECT_DIR / "type_list.txt"
@@ -15,23 +18,56 @@ METHOD_SIZE_OUTPUT_FILE = PROJECT_DIR / f"method_parameters_sizeOf.csv"
 
 # === Java Agent + Classpath Setup ===
 AGENT_CLASSES = "agent"
-PROJECT_CLASSES = PROJECT_DIR / f"target/{project_name}-classes.jar"
+PROJECT_CLASSES = PROJECT_DIR / "target/classes"
 PROJECT_LIB_DIR = PROJECT_DIR / f"target/{project_name}-war-extracted/WEB-INF/lib"
 AGENT_JAR_PATH = "agent/agent.jar"
 
-# Gather all JARs from WEB-INF/lib
-war_jars = [
-    str(Path(PROJECT_LIB_DIR) / jar)
-    for jar in os.listdir(PROJECT_LIB_DIR)
-    if jar.endswith(".jar")
-]
+POM_PATH = PROJECT_DIR / "pom.xml"
+DEPENDENCY_DIR = PROJECT_DIR / "target/dependency"
 
-# Full classpath
-if PROJECT_CLASSES.exists():
-    classpath = f"{AGENT_CLASSES}:{PROJECT_CLASSES}:{':'.join(war_jars)}"
+if POM_PATH.exists():
+    print("[INFO] Detected pom.xml, running 'mvn dependency:copy-dependencies'...")
+    try:
+        subprocess.run(["mvn", "dependency:copy-dependencies"], cwd=PROJECT_DIR, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"[ERROR] Maven failed to copy dependencies: {e}")
 else:
-    classpath = f"{AGENT_CLASSES}:{':'.join(war_jars)}"
+    print("[INFO] No pom.xml found; skipping Maven dependency resolution.")
 
+# Gather JARs from WEB-INF/lib if it exists
+war_jars = []
+if PROJECT_LIB_DIR.exists():
+    war_jars = [
+        str(PROJECT_LIB_DIR / jar)
+        for jar in os.listdir(PROJECT_LIB_DIR)
+        if jar.endswith(".jar")
+    ]
+else:
+    print(f"[WARN] WAR lib directory does not exist: {PROJECT_LIB_DIR}")
+
+# Maven-resolved dependencies
+dependency_jars = []
+if DEPENDENCY_DIR.exists():
+    dependency_jars = [
+        str(DEPENDENCY_DIR / jar)
+        for jar in os.listdir(DEPENDENCY_DIR)
+        if jar.endswith(".jar")
+    ]
+
+
+
+# Build classpath
+classpath_elements = [AGENT_CLASSES]
+if PROJECT_CLASSES.exists():
+    classpath_elements.append(str(PROJECT_CLASSES))
+else:
+    print(f"[WARN] Classes JAR not found: {PROJECT_CLASSES}")
+
+classpath_elements.extend(war_jars)
+classpath_elements.extend(dependency_jars)
+classpath = ":".join(classpath_elements)
+
+# Final Java command
 JAVA_CMD = [
     "java",
     f"-javaagent:{AGENT_JAR_PATH}",
@@ -39,7 +75,7 @@ JAVA_CMD = [
     "SizeTester"
 ]
 
-DEFAULT_SIZE = 64  # Fallback size if type has no size entry
+DEFAULT_SIZE = -1  # Fallback size if type has no size entry
 
 # === Step 1: Parse method signatures from deps.xml ===
 def parse_methods_from_deps(xml_path):

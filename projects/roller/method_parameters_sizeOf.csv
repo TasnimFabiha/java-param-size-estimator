@@ -122,7 +122,7 @@ com.rometools.rome.io.XmlReader.XmlReader(java.io.InputStream),['java.io.InputSt
 com.rometools.rome.io.XmlReader.close(): void,[],[],0
 "com.rometools.rome.io.impl.DateParser.parseRFC822(java.lang.String, java.util.Locale): java.util.Date","['java.lang.String', 'java.util.Locale']","[24, 16]",40
 com.rometools.rome.io.impl.RSS091UserlandParser.RSS091UserlandParser(java.lang.String),['java.lang.String'],[24],24
-"com.rometools.rome.io.impl.RSS091UserlandParser.parseItem(org.jdom2.Element, org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.rss.Item","['org.jdom2.Element', 'org.jdom2.Element', 'java.util.Locale']","[64, 64, 16]",144
+"com.rometools.rome.io.impl.RSS091UserlandParser.parseItem(org.jdom2.Element, org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.rss.Item","['org.jdom2.Element', 'org.jdom2.Element', 'java.util.Locale']","[40, 40, 16]",96
 jakarta.persistence.EntityManager.close(): void,[],[],0
 jakarta.persistence.EntityManager.contains(java.lang.Object): boolean,['java.lang.Object'],[16],16
 jakarta.persistence.EntityManager.createNamedQuery(java.lang.String): jakarta.persistence.Query,['java.lang.String'],[24],24
@@ -446,7 +446,7 @@ java.net.http.HttpRequest$Builder.build(): java.net.http.HttpRequest,[],[],0
 java.net.http.HttpRequest$Builder.copy(): java.net.http.HttpRequest$Builder,[],[],0
 "java.net.http.HttpRequest$Builder.header(java.lang.String, java.lang.String): java.net.http.HttpRequest$Builder","['java.lang.String', 'java.lang.String']","[24, 24]",48
 java.net.http.HttpRequest$Builder.timeout(java.time.Duration): java.net.http.HttpRequest$Builder,['java.time.Duration'],[16],16
-java.net.http.HttpRequest$Builder.uri(java.net.URI): java.net.http.HttpRequest$Builder,['java.net.URI'],[64],64
+java.net.http.HttpRequest$Builder.uri(java.net.URI): java.net.http.HttpRequest$Builder,['java.net.URI'],[16],16
 java.net.http.HttpResponse.body(): java.lang.Object,[],[],0
 java.net.http.HttpResponse$BodyHandlers.ofInputStream(): java.net.http.HttpResponse$BodyHandler,[],[],0
 java.nio.charset.StandardCharsets.UTF_8,[],[],0
@@ -731,21 +731,21 @@ javax.mail.Message$RecipientType.TO,[],[],0
 javax.mail.SendFailedException.SendFailedException(java.lang.String),['java.lang.String'],[24],24
 javax.mail.SendFailedException.getValidUnsentAddresses(): javax.mail.Address[],[],[],0
 javax.mail.SendFailedException.setNextException(java.lang.Exception): boolean,['java.lang.Exception'],[40],40
-"javax.mail.Session.getDefaultInstance(java.util.Properties, javax.mail.Authenticator): javax.mail.Session","['java.util.Properties', 'javax.mail.Authenticator']","[56, 64]",120
+"javax.mail.Session.getDefaultInstance(java.util.Properties, javax.mail.Authenticator): javax.mail.Session","['java.util.Properties', 'javax.mail.Authenticator']","[56, 16]",72
 javax.mail.Session.getTransport(): javax.mail.Transport,[],[],0
 javax.mail.Session.getTransport(java.lang.String): javax.mail.Transport,['java.lang.String'],[24],24
 javax.mail.Transport.close(): void,[],[],0
 javax.mail.Transport.connect(): void,[],[],0
 "javax.mail.Transport.connect(java.lang.String, int, java.lang.String, java.lang.String): void","['java.lang.String', 'int', 'java.lang.String', 'java.lang.String']","[24, 4, 24, 24]",76
 "javax.mail.Transport.connect(java.lang.String, java.lang.String, java.lang.String): void","['java.lang.String', 'java.lang.String', 'java.lang.String']","[24, 24, 24]",72
-"javax.mail.Transport.send(javax.mail.Message, javax.mail.Address[]): void","['javax.mail.Message', 'javax.mail.Address[]']","[64, 24]",88
-"javax.mail.Transport.sendMessage(javax.mail.Message, javax.mail.Address[]): void","['javax.mail.Message', 'javax.mail.Address[]']","[64, 24]",88
+"javax.mail.Transport.send(javax.mail.Message, javax.mail.Address[]): void","['javax.mail.Message', 'javax.mail.Address[]']","[16, 24]",40
+"javax.mail.Transport.sendMessage(javax.mail.Message, javax.mail.Address[]): void","['javax.mail.Message', 'javax.mail.Address[]']","[16, 24]",40
 javax.mail.internet.InternetAddress.InternetAddress(java.lang.String),['java.lang.String'],[24],24
-javax.mail.internet.MimeMessage.MimeMessage(javax.mail.Session),['javax.mail.Session'],[64],64
+javax.mail.internet.MimeMessage.MimeMessage(javax.mail.Session),['javax.mail.Session'],[16],16
 javax.mail.internet.MimeMessage.getAllRecipients(): javax.mail.Address[],[],[],0
 "javax.mail.internet.MimeMessage.setContent(java.lang.Object, java.lang.String): void","['java.lang.Object', 'java.lang.String']","[16, 24]",40
-javax.mail.internet.MimeMessage.setFrom(javax.mail.Address): void,['javax.mail.Address'],[64],64
-"javax.mail.internet.MimeMessage.setRecipients(javax.mail.Message$RecipientType, javax.mail.Address[]): void","['javax.mail.Message$RecipientType', 'javax.mail.Address[]']","[64, 24]",88
+javax.mail.internet.MimeMessage.setFrom(javax.mail.Address): void,['javax.mail.Address'],[16],16
+"javax.mail.internet.MimeMessage.setRecipients(javax.mail.Message$RecipientType, javax.mail.Address[]): void","['javax.mail.Message$RecipientType', 'javax.mail.Address[]']","[16, 24]",40
 javax.mail.internet.MimeMessage.setSentDate(java.util.Date): void,['java.util.Date'],[24],24
 "javax.mail.internet.MimeMessage.setSubject(java.lang.String, java.lang.String): void","['java.lang.String', 'java.lang.String']","[24, 24]",48
 javax.naming.Context.lookup(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
@@ -755,9 +755,9 @@ javax.naming.directory.Attribute.get(): java.lang.Object,[],[],0
 javax.naming.directory.Attributes.get(java.lang.String): javax.naming.directory.Attribute,['java.lang.String'],[24],24
 "javax.naming.ldap.InitialLdapContext.InitialLdapContext(java.util.Hashtable, javax.naming.ldap.Control[])","['java.util.Hashtable', 'javax.naming.ldap.Control[]']","[48, 24]",72
 javax.naming.ldap.LdapContext.close(): void,[],[],0
-"javax.servlet.FilterChain.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse']","[64, 64]",128
+"javax.servlet.FilterChain.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse']","[16, 16]",32
 javax.servlet.FilterConfig.getServletContext(): javax.servlet.ServletContext,[],[],0
-"javax.servlet.RequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse']","[64, 64]",128
+"javax.servlet.RequestDispatcher.forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse']","[16, 16]",32
 javax.servlet.ServletConfig.getServletContext(): javax.servlet.ServletContext,[],[],0
 javax.servlet.ServletContext.getMimeType(java.lang.String): java.lang.String,['java.lang.String'],[24],24
 javax.servlet.ServletContext.getRealPath(java.lang.String): java.lang.String,['java.lang.String'],[24],24
@@ -773,7 +773,7 @@ javax.servlet.ServletRequest.setCharacterEncoding(java.lang.String): void,['java
 javax.servlet.http.Cookie.getName(): java.lang.String,[],[],0
 javax.servlet.http.Cookie.getValue(): java.lang.String,[],[],0
 javax.servlet.http.HttpServlet.HttpServlet(),[],[],0
-javax.servlet.http.HttpServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+javax.servlet.http.HttpServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 javax.servlet.http.HttpServletRequest.getAttribute(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
 javax.servlet.http.HttpServletRequest.getContextPath(): java.lang.String,[],[],0
 javax.servlet.http.HttpServletRequest.getCookies(): javax.servlet.http.Cookie[],[],[],0
@@ -800,7 +800,7 @@ javax.servlet.http.HttpServletRequest.getSession(boolean): javax.servlet.http.Ht
 javax.servlet.http.HttpServletRequest.getUserPrincipal(): java.security.Principal,[],[],0
 javax.servlet.http.HttpServletRequest.isSecure(): boolean,[],[],0
 "javax.servlet.http.HttpServletRequest.setAttribute(java.lang.String, java.lang.Object): void","['java.lang.String', 'java.lang.Object']","[24, 16]",40
-javax.servlet.http.HttpServletRequestWrapper.HttpServletRequestWrapper(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+javax.servlet.http.HttpServletRequestWrapper.HttpServletRequestWrapper(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 "javax.servlet.http.HttpServletResponse.addHeader(java.lang.String, java.lang.String): void","['java.lang.String', 'java.lang.String']","[24, 24]",48
 javax.servlet.http.HttpServletResponse.flushBuffer(): void,[],[],0
 javax.servlet.http.HttpServletResponse.getBufferSize(): int,[],[],0
@@ -823,7 +823,7 @@ javax.servlet.http.HttpSession.removeAttribute(java.lang.String): void,['java.la
 javax.servlet.http.HttpSessionEvent.getSession(): javax.servlet.http.HttpSession,[],[],0
 javax.servlet.jsp.JspException.JspException(java.lang.String),['java.lang.String'],[24],24
 javax.servlet.jsp.JspFactory.getDefaultFactory(): javax.servlet.jsp.JspFactory,[],[],0
-"javax.servlet.jsp.JspFactory.getPageContext(javax.servlet.Servlet, javax.servlet.ServletRequest, javax.servlet.ServletResponse, java.lang.String, boolean, int, boolean): javax.servlet.jsp.PageContext","['javax.servlet.Servlet', 'javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'java.lang.String', 'boolean', 'int', 'boolean']","[64, 64, 64, 24, 1, 4, 1]",222
+"javax.servlet.jsp.JspFactory.getPageContext(javax.servlet.Servlet, javax.servlet.ServletRequest, javax.servlet.ServletResponse, java.lang.String, boolean, int, boolean): javax.servlet.jsp.PageContext","['javax.servlet.Servlet', 'javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'java.lang.String', 'boolean', 'int', 'boolean']","[16, 16, 16, 24, 1, 4, 1]",78
 javax.servlet.jsp.JspWriter.print(java.lang.String): void,['java.lang.String'],[24],24
 javax.servlet.jsp.PageContext.findAttribute(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
 javax.servlet.jsp.PageContext.getOut(): javax.servlet.jsp.JspWriter,[],[],0
@@ -889,8 +889,8 @@ net.oauth.OAuthMessage.getToken(): java.lang.String,[],[],0
 net.oauth.OAuthProblemException.OAuthProblemException(java.lang.String),['java.lang.String'],[24],24
 "net.oauth.OAuthServiceProvider.OAuthServiceProvider(java.lang.String, java.lang.String, java.lang.String)","['java.lang.String', 'java.lang.String', 'java.lang.String']","[24, 24, 24]",72
 "net.oauth.OAuthValidator.validateMessage(net.oauth.OAuthMessage, net.oauth.OAuthAccessor): void","['net.oauth.OAuthMessage', 'net.oauth.OAuthAccessor']","[16, 16]",32
-"net.oauth.server.OAuthServlet.getMessage(javax.servlet.http.HttpServletRequest, java.lang.String): net.oauth.OAuthMessage","['javax.servlet.http.HttpServletRequest', 'java.lang.String']","[64, 24]",88
-"net.oauth.server.OAuthServlet.handleException(javax.servlet.http.HttpServletResponse, java.lang.Exception, java.lang.String, boolean): void","['javax.servlet.http.HttpServletResponse', 'java.lang.Exception', 'java.lang.String', 'boolean']","[64, 40, 24, 1]",129
+"net.oauth.server.OAuthServlet.getMessage(javax.servlet.http.HttpServletRequest, java.lang.String): net.oauth.OAuthMessage","['javax.servlet.http.HttpServletRequest', 'java.lang.String']","[16, 24]",40
+"net.oauth.server.OAuthServlet.handleException(javax.servlet.http.HttpServletResponse, java.lang.Exception, java.lang.String, boolean): void","['javax.servlet.http.HttpServletResponse', 'java.lang.Exception', 'java.lang.String', 'boolean']","[16, 40, 24, 1]",81
 "org.apache.commons.beanutils.ConstructorUtils.invokeConstructor(java.lang.Class, java.lang.Object[]): java.lang.Object","['java.lang.Class', 'java.lang.Object[]']","[16, 24]",40
 "org.apache.commons.beanutils.PropertyUtils.getProperty(java.lang.Object, java.lang.String): java.lang.Object","['java.lang.Object', 'java.lang.String']","[16, 24]",40
 org.apache.commons.codec.binary.Base64.decodeBase64(byte[]): byte[],['byte[]'],[24],24
@@ -1036,7 +1036,7 @@ org.apache.roller.TestTagLoggingFilter.ajc$preClinit(): void,[],[],0
 org.apache.roller.TestTagLoggingFilter.ajc$tjp_0,[],[],0
 org.apache.roller.TestTagLoggingFilter.ajc$tjp_1,[],[],0
 org.apache.roller.TestTagLoggingFilter.controller,[],[],0
-"org.apache.roller.TestTagLoggingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
+"org.apache.roller.TestTagLoggingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
 org.apache.roller.TestTagLoggingFilter.static {},[],[],0
 org.apache.roller.TestTagLoggingFilter$TestTagRecord.TestTagLoggingFilter$TestTagRecord(java.lang.String),['java.lang.String'],[24],24
 org.apache.roller.TestTagLoggingFilter$TestTagRecord.ajc$preClinit(): void,[],[],0
@@ -1691,13 +1691,13 @@ org.apache.roller.planet.util.MailUtil.ajc$tjp_5,[],[],0
 org.apache.roller.planet.util.MailUtil.ajc$tjp_6,[],[],0
 org.apache.roller.planet.util.MailUtil.ajc$tjp_7,[],[],0
 org.apache.roller.planet.util.MailUtil.mLogger,[],[],0
-"org.apache.roller.planet.util.MailUtil.sendHTMLMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24]",208
-"org.apache.roller.planet.util.MailUtil.sendHTMLMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24]",208
-"org.apache.roller.planet.util.MailUtil.sendHTMLMessage(javax.mail.Session, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24]",208
-"org.apache.roller.planet.util.MailUtil.sendMessage(javax.mail.Session, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24, 24]",232
-"org.apache.roller.planet.util.MailUtil.sendTextMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24]",208
-"org.apache.roller.planet.util.MailUtil.sendTextMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24]",208
-"org.apache.roller.planet.util.MailUtil.sendTextMessage(javax.mail.Session, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24, 24, 24]",208
+"org.apache.roller.planet.util.MailUtil.sendHTMLMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24]",160
+"org.apache.roller.planet.util.MailUtil.sendHTMLMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24]",160
+"org.apache.roller.planet.util.MailUtil.sendHTMLMessage(javax.mail.Session, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24]",160
+"org.apache.roller.planet.util.MailUtil.sendMessage(javax.mail.Session, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24, 24]",184
+"org.apache.roller.planet.util.MailUtil.sendTextMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24]",160
+"org.apache.roller.planet.util.MailUtil.sendTextMessage(javax.mail.Session, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24]",160
+"org.apache.roller.planet.util.MailUtil.sendTextMessage(javax.mail.Session, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.String): void","['javax.mail.Session', 'java.lang.String', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String[]', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24, 24, 24]",160
 org.apache.roller.planet.util.MailUtil.static {},[],[],0
 org.apache.roller.planet.util.rome.ContentModule.URI,[],[],0
 org.apache.roller.planet.util.rome.ContentModule.getEncoded(): java.lang.String,[],[],0
@@ -1711,7 +1711,7 @@ org.apache.roller.planet.util.rome.ContentModuleGenerator.ajc$tjp_1,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleGenerator.ajc$tjp_2,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleGenerator.ajc$tjp_3,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleGenerator.ajc$tjp_4,[],[],0
-"org.apache.roller.planet.util.rome.ContentModuleGenerator.generate(com.rometools.rome.feed.module.Module, org.jdom2.Element): void","['com.rometools.rome.feed.module.Module', 'org.jdom2.Element']","[16, 64]",80
+"org.apache.roller.planet.util.rome.ContentModuleGenerator.generate(com.rometools.rome.feed.module.Module, org.jdom2.Element): void","['com.rometools.rome.feed.module.Module', 'org.jdom2.Element']","[16, 40]",56
 "org.apache.roller.planet.util.rome.ContentModuleGenerator.generateSimpleElement(java.lang.String, java.lang.String): org.jdom2.Element","['java.lang.String', 'java.lang.String']","[24, 24]",48
 org.apache.roller.planet.util.rome.ContentModuleGenerator.getNamespaceUri(): java.lang.String,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleGenerator.getNamespaces(): java.util.Set,[],[],0
@@ -1737,7 +1737,7 @@ org.apache.roller.planet.util.rome.ContentModuleParser.ajc$tjp_2,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleParser.ajc$tjp_3,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleParser.getContentNamespace(): org.jdom2.Namespace,[],[],0
 org.apache.roller.planet.util.rome.ContentModuleParser.getNamespaceUri(): java.lang.String,[],[],0
-"org.apache.roller.planet.util.rome.ContentModuleParser.parse(org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.module.Module","['org.jdom2.Element', 'java.util.Locale']","[64, 16]",80
+"org.apache.roller.planet.util.rome.ContentModuleParser.parse(org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.module.Module","['org.jdom2.Element', 'java.util.Locale']","[40, 16]",56
 org.apache.roller.planet.util.rome.ContentModuleParser.static {},[],[],0
 org.apache.roller.planet.util.rome.PlanetConverterForRSS091N.PlanetConverterForRSS091N(),[],[],0
 org.apache.roller.planet.util.rome.PlanetConverterForRSS091N.PlanetConverterForRSS091N(java.lang.String),['java.lang.String'],[24],24
@@ -1770,7 +1770,7 @@ org.apache.roller.planet.util.rome.PlanetRSS091NParser.ajc$tjp_0,[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091NParser.ajc$tjp_1,[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091NParser.ajc$tjp_2,[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091NParser.getRSSNamespace(): org.jdom2.Namespace,[],[],0
-"org.apache.roller.planet.util.rome.PlanetRSS091NParser.parseItem(org.jdom2.Element, org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.rss.Item","['org.jdom2.Element', 'org.jdom2.Element', 'java.util.Locale']","[64, 64, 16]",144
+"org.apache.roller.planet.util.rome.PlanetRSS091NParser.parseItem(org.jdom2.Element, org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.rss.Item","['org.jdom2.Element', 'org.jdom2.Element', 'java.util.Locale']","[40, 40, 16]",96
 org.apache.roller.planet.util.rome.PlanetRSS091NParser.static {},[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091UParser.PlanetRSS091UParser(),[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091UParser.PlanetRSS091UParser(java.lang.String),['java.lang.String'],[24],24
@@ -1779,7 +1779,7 @@ org.apache.roller.planet.util.rome.PlanetRSS091UParser.ajc$tjp_0,[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091UParser.ajc$tjp_1,[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091UParser.ajc$tjp_2,[],[],0
 org.apache.roller.planet.util.rome.PlanetRSS091UParser.getRSSNamespace(): org.jdom2.Namespace,[],[],0
-"org.apache.roller.planet.util.rome.PlanetRSS091UParser.parseItem(org.jdom2.Element, org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.rss.Item","['org.jdom2.Element', 'org.jdom2.Element', 'java.util.Locale']","[64, 64, 16]",144
+"org.apache.roller.planet.util.rome.PlanetRSS091UParser.parseItem(org.jdom2.Element, org.jdom2.Element, java.util.Locale): com.rometools.rome.feed.rss.Item","['org.jdom2.Element', 'org.jdom2.Element', 'java.util.Locale']","[40, 40, 16]",96
 org.apache.roller.planet.util.rome.PlanetRSS091UParser.static {},[],[],0
 org.apache.roller.util.DateUtil.DateUtil(),[],[],0
 org.apache.roller.util.DateUtil.FORMAT_6CHARS,[],[],0
@@ -2602,7 +2602,7 @@ org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.getDefaultFolder
 org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.getFolder(java.lang.String): org.apache.roller.weblogger.pojos.WeblogBookmarkFolder,['java.lang.String'],[24],24
 "org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.getFolder(org.apache.roller.weblogger.pojos.Weblog, java.lang.String): org.apache.roller.weblogger.pojos.WeblogBookmarkFolder","['org.apache.roller.weblogger.pojos.Weblog', 'java.lang.String']","[144, 24]",168
 "org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.importBookmarks(org.apache.roller.weblogger.pojos.Weblog, java.lang.String, java.lang.String): void","['org.apache.roller.weblogger.pojos.Weblog', 'java.lang.String', 'java.lang.String']","[144, 24, 24]",192
-"org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.importOpmlElement(org.jdom2.Element, org.apache.roller.weblogger.pojos.WeblogBookmarkFolder): void","['org.jdom2.Element', 'org.apache.roller.weblogger.pojos.WeblogBookmarkFolder']","[64, 32]",96
+"org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.importOpmlElement(org.jdom2.Element, org.apache.roller.weblogger.pojos.WeblogBookmarkFolder): void","['org.jdom2.Element', 'org.apache.roller.weblogger.pojos.WeblogBookmarkFolder']","[40, 32]",72
 org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.isDuplicateFolderName(org.apache.roller.weblogger.pojos.WeblogBookmarkFolder): boolean,['org.apache.roller.weblogger.pojos.WeblogBookmarkFolder'],[32],32
 org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.log,[],[],0
 org.apache.roller.weblogger.business.jpa.JPABookmarkManagerImpl.release(): void,[],[],0
@@ -2732,7 +2732,7 @@ org.apache.roller.weblogger.business.jpa.JPAOAuthManagerImpl.roller,[],[],0
 org.apache.roller.weblogger.business.jpa.JPAOAuthManagerImpl.static {},[],[],0
 org.apache.roller.weblogger.business.jpa.JPAOAuthManagerImpl.strategy,[],[],0
 org.apache.roller.weblogger.business.jpa.JPAOAuthManagerImpl.validator,[],[],0
-org.apache.roller.weblogger.business.jpa.JPAPersistenceStrategy.JPAPersistenceStrategy(org.apache.roller.weblogger.business.DatabaseProvider),['org.apache.roller.weblogger.business.DatabaseProvider'],[64],64
+org.apache.roller.weblogger.business.jpa.JPAPersistenceStrategy.JPAPersistenceStrategy(org.apache.roller.weblogger.business.DatabaseProvider),['org.apache.roller.weblogger.business.DatabaseProvider'],[16],16
 org.apache.roller.weblogger.business.jpa.JPAPersistenceStrategy.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.business.jpa.JPAPersistenceStrategy.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.business.jpa.JPAPersistenceStrategy.ajc$tjp_1,[],[],0
@@ -3814,7 +3814,7 @@ org.apache.roller.weblogger.business.startup.ClasspathDatabaseScriptProvider.get
 org.apache.roller.weblogger.business.startup.ClasspathDatabaseScriptProvider.getScriptURL(java.lang.String): java.net.URL,['java.lang.String'],[24],24
 org.apache.roller.weblogger.business.startup.ClasspathDatabaseScriptProvider.static {},[],[],0
 org.apache.roller.weblogger.business.startup.DatabaseInstaller.DBVERSION_PROP,[],[],0
-"org.apache.roller.weblogger.business.startup.DatabaseInstaller.DatabaseInstaller(org.apache.roller.weblogger.business.DatabaseProvider, org.apache.roller.weblogger.business.startup.DatabaseScriptProvider)","['org.apache.roller.weblogger.business.DatabaseProvider', 'org.apache.roller.weblogger.business.startup.DatabaseScriptProvider']","[64, 16]",80
+"org.apache.roller.weblogger.business.startup.DatabaseInstaller.DatabaseInstaller(org.apache.roller.weblogger.business.DatabaseProvider, org.apache.roller.weblogger.business.startup.DatabaseScriptProvider)","['org.apache.roller.weblogger.business.DatabaseProvider', 'org.apache.roller.weblogger.business.startup.DatabaseScriptProvider']","[16, 16]",32
 org.apache.roller.weblogger.business.startup.DatabaseInstaller.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.business.startup.DatabaseInstaller.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.business.startup.DatabaseInstaller.ajc$tjp_1,[],[],0
@@ -4260,8 +4260,8 @@ org.apache.roller.weblogger.business.themes.ThemeMetadataParser.ajc$tjp_0,[],[],
 org.apache.roller.weblogger.business.themes.ThemeMetadataParser.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.business.themes.ThemeMetadataParser.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.business.themes.ThemeMetadataParser.ajc$tjp_3,[],[],0
-org.apache.roller.weblogger.business.themes.ThemeMetadataParser.elementToStylesheet(org.jdom2.Element): org.apache.roller.weblogger.business.themes.ThemeMetadataTemplate,['org.jdom2.Element'],[64],64
-org.apache.roller.weblogger.business.themes.ThemeMetadataParser.elementToTemplateMetadata(org.jdom2.Element): org.apache.roller.weblogger.business.themes.ThemeMetadataTemplate,['org.jdom2.Element'],[64],64
+org.apache.roller.weblogger.business.themes.ThemeMetadataParser.elementToStylesheet(org.jdom2.Element): org.apache.roller.weblogger.business.themes.ThemeMetadataTemplate,['org.jdom2.Element'],[40],40
+org.apache.roller.weblogger.business.themes.ThemeMetadataParser.elementToTemplateMetadata(org.jdom2.Element): org.apache.roller.weblogger.business.themes.ThemeMetadataTemplate,['org.jdom2.Element'],[40],40
 org.apache.roller.weblogger.business.themes.ThemeMetadataParser.static {},[],[],0
 org.apache.roller.weblogger.business.themes.ThemeMetadataParser.unmarshall(java.io.InputStream): org.apache.roller.weblogger.business.themes.ThemeMetadata,['java.io.InputStream'],[16],16
 org.apache.roller.weblogger.business.themes.ThemeMetadataTemplate.ThemeMetadataTemplate(),[],[],0
@@ -4662,9 +4662,9 @@ org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.ajc$tjp_1,[],
 org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.ajc$tjp_4,[],[],0
-org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.elementToConfigDef(org.jdom2.Element): org.apache.roller.weblogger.config.runtime.ConfigDef,['org.jdom2.Element'],[64],64
-org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.elementToDisplayGroup(org.jdom2.Element): org.apache.roller.weblogger.config.runtime.DisplayGroup,['org.jdom2.Element'],[64],64
-org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.elementToPropertyDef(org.jdom2.Element): org.apache.roller.weblogger.config.runtime.PropertyDef,['org.jdom2.Element'],[64],64
+org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.elementToConfigDef(org.jdom2.Element): org.apache.roller.weblogger.config.runtime.ConfigDef,['org.jdom2.Element'],[40],40
+org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.elementToDisplayGroup(org.jdom2.Element): org.apache.roller.weblogger.config.runtime.DisplayGroup,['org.jdom2.Element'],[40],40
+org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.elementToPropertyDef(org.jdom2.Element): org.apache.roller.weblogger.config.runtime.PropertyDef,['org.jdom2.Element'],[40],40
 org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.static {},[],[],0
 org.apache.roller.weblogger.config.runtime.RuntimeConfigDefsParser.unmarshall(java.io.InputStream): org.apache.roller.weblogger.config.runtime.RuntimeConfigDefs,['java.io.InputStream'],[16],16
 org.apache.roller.weblogger.planet.business.PlanetURLStrategy.PlanetURLStrategy(),[],[],0
@@ -4815,7 +4815,7 @@ org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.desiredMenu,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.execute(): java.lang.String,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getCreateNew(): boolean,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getGroup(): org.apache.roller.planet.pojos.PlanetGroup,[],[],0
-"org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getGroupFromRequest(javax.servlet.http.HttpServletRequest, org.apache.roller.planet.pojos.Planet): org.apache.roller.planet.pojos.PlanetGroup","['javax.servlet.http.HttpServletRequest', 'org.apache.roller.planet.pojos.Planet']","[64, 32]",96
+"org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getGroupFromRequest(javax.servlet.http.HttpServletRequest, org.apache.roller.planet.pojos.Planet): org.apache.roller.planet.pojos.PlanetGroup","['javax.servlet.http.HttpServletRequest', 'org.apache.roller.planet.pojos.Planet']","[16, 32]",48
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getGroupHandle(): java.lang.String,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getPageTitle(): java.lang.String,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.getPlanet(): org.apache.roller.planet.pojos.Planet,[],[],0
@@ -4833,7 +4833,7 @@ org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.saveGroup(): java.lang.Str
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.saveSubscription(): java.lang.String,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.setCreateNew(boolean): void,['boolean'],[1],1
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.setGroup(org.apache.roller.planet.pojos.PlanetGroup): void,['org.apache.roller.planet.pojos.PlanetGroup'],[56],56
-org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.setSubUrl(java.lang.String): void,['java.lang.String'],[24],24
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.static {},[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroupSubs.subUrl,[],[],0
@@ -4863,7 +4863,7 @@ org.apache.roller.weblogger.planet.ui.PlanetGroups.isWeblogRequired(): boolean,[
 org.apache.roller.weblogger.planet.ui.PlanetGroups.log,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroups.pageTitle,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetGroups.setGroup(org.apache.roller.planet.pojos.PlanetGroup): void,['org.apache.roller.planet.pojos.PlanetGroup'],[56],56
-org.apache.roller.weblogger.planet.ui.PlanetGroups.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.planet.ui.PlanetGroups.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.planet.ui.PlanetGroups.static {},[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetUIAction.DEFAULT_PLANET_HANDLE,[],[],0
 org.apache.roller.weblogger.planet.ui.PlanetUIAction.PlanetUIAction(),[],[],0
@@ -7568,7 +7568,7 @@ org.apache.roller.weblogger.ui.core.CmaRollerContext.CmaRollerContext(),[],[],0
 org.apache.roller.weblogger.ui.core.CmaRollerContext.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.CmaRollerContext.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.CmaRollerContext.ajc$tjp_1,[],[],0
-org.apache.roller.weblogger.ui.core.CmaRollerContext.initializeSecurityFeatures(javax.servlet.ServletContext): void,['javax.servlet.ServletContext'],[64],64
+org.apache.roller.weblogger.ui.core.CmaRollerContext.initializeSecurityFeatures(javax.servlet.ServletContext): void,['javax.servlet.ServletContext'],[16],16
 org.apache.roller.weblogger.ui.core.CmaRollerContext.static {},[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.RollerContext(),[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.ajc$preClinit(): void,[],[],0
@@ -7583,8 +7583,8 @@ org.apache.roller.weblogger.ui.core.RollerContext.ajc$tjp_6,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.ajc$tjp_7,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.ajc$tjp_8,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.ajc$tjp_9,[],[],0
-org.apache.roller.weblogger.ui.core.RollerContext.contextDestroyed(javax.servlet.ServletContextEvent): void,['javax.servlet.ServletContextEvent'],[64],64
-org.apache.roller.weblogger.ui.core.RollerContext.contextInitialized(javax.servlet.ServletContextEvent): void,['javax.servlet.ServletContextEvent'],[64],64
+org.apache.roller.weblogger.ui.core.RollerContext.contextDestroyed(javax.servlet.ServletContextEvent): void,['javax.servlet.ServletContextEvent'],[16],16
+org.apache.roller.weblogger.ui.core.RollerContext.contextInitialized(javax.servlet.ServletContextEvent): void,['javax.servlet.ServletContextEvent'],[16],16
 org.apache.roller.weblogger.ui.core.RollerContext.createPasswordEncoder(): org.springframework.security.crypto.password.DelegatingPasswordEncoder,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.encoder,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.flushAuthenticationUserCache(java.lang.String): void,['java.lang.String'],[24],24
@@ -7592,16 +7592,16 @@ org.apache.roller.weblogger.ui.core.RollerContext.getAutoProvision(): org.apache
 org.apache.roller.weblogger.ui.core.RollerContext.getPasswordEncoder(): org.springframework.security.crypto.password.PasswordEncoder,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.getServletContext(): javax.servlet.ServletContext,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.getUIPluginManager(): org.apache.roller.weblogger.ui.core.plugins.UIPluginManager,[],[],0
-org.apache.roller.weblogger.ui.core.RollerContext.initializeSecurityFeatures(javax.servlet.ServletContext): void,['javax.servlet.ServletContext'],[64],64
+org.apache.roller.weblogger.ui.core.RollerContext.initializeSecurityFeatures(javax.servlet.ServletContext): void,['javax.servlet.ServletContext'],[16],16
 org.apache.roller.weblogger.ui.core.RollerContext.log,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.servletContext,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.setupVelocity(): void,[],[],0
 org.apache.roller.weblogger.ui.core.RollerContext.static {},[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.CACHE_ID,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.RollerLoginSessionManager(),[],[],0
-org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.RollerLoginSessionManager(org.apache.roller.weblogger.ui.core.RollerLoginSessionManager),['org.apache.roller.weblogger.ui.core.RollerLoginSessionManager'],[64],64
+org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.RollerLoginSessionManager(org.apache.roller.weblogger.ui.core.RollerLoginSessionManager),['org.apache.roller.weblogger.ui.core.RollerLoginSessionManager'],[16],16
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.RollerLoginSessionManager(org.apache.roller.weblogger.util.cache.Cache),['org.apache.roller.weblogger.util.cache.Cache'],[16],16
-org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.access$1(org.apache.roller.weblogger.ui.core.RollerLoginSessionManager): org.apache.roller.weblogger.util.cache.Cache,['org.apache.roller.weblogger.ui.core.RollerLoginSessionManager'],[64],64
+org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.access$1(org.apache.roller.weblogger.ui.core.RollerLoginSessionManager): org.apache.roller.weblogger.util.cache.Cache,['org.apache.roller.weblogger.ui.core.RollerLoginSessionManager'],[16],16
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.ajc$tjp_1,[],[],0
@@ -7615,10 +7615,10 @@ org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.get(java.lang.Stri
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.getInstance(): org.apache.roller.weblogger.ui.core.RollerLoginSessionManager,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.invalidate(java.lang.String): void,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.log,[],[],0
-"org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.register(java.lang.String, org.apache.roller.weblogger.ui.core.RollerSession): void","['java.lang.String', 'org.apache.roller.weblogger.ui.core.RollerSession']","[24, 64]",88
+"org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.register(java.lang.String, org.apache.roller.weblogger.ui.core.RollerSession): void","['java.lang.String', 'org.apache.roller.weblogger.ui.core.RollerSession']","[24, 16]",40
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.sessionCache,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager.static {},[],[],0
-org.apache.roller.weblogger.ui.core.RollerLoginSessionManager$SessionCacheHandler.RollerLoginSessionManager$SessionCacheHandler(org.apache.roller.weblogger.ui.core.RollerLoginSessionManager),['org.apache.roller.weblogger.ui.core.RollerLoginSessionManager'],[64],64
+org.apache.roller.weblogger.ui.core.RollerLoginSessionManager$SessionCacheHandler.RollerLoginSessionManager$SessionCacheHandler(org.apache.roller.weblogger.ui.core.RollerLoginSessionManager),['org.apache.roller.weblogger.ui.core.RollerLoginSessionManager'],[16],16
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager$SessionCacheHandler.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager$SessionCacheHandler.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.RollerLoginSessionManager$SessionCacheHandler.ajc$tjp_1,[],[],0
@@ -7643,14 +7643,14 @@ org.apache.roller.weblogger.ui.core.RollerSession.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.core.RollerSession.ajc$tjp_5,[],[],0
 org.apache.roller.weblogger.ui.core.RollerSession.ajc$tjp_6,[],[],0
 org.apache.roller.weblogger.ui.core.RollerSession.ajc$tjp_7,[],[],0
-org.apache.roller.weblogger.ui.core.RollerSession.clearSession(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[64],64
+org.apache.roller.weblogger.ui.core.RollerSession.clearSession(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[16],16
 org.apache.roller.weblogger.ui.core.RollerSession.getAuthenticatedUser(): org.apache.roller.weblogger.pojos.User,[],[],0
-org.apache.roller.weblogger.ui.core.RollerSession.getRollerSession(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.core.RollerSession,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.core.RollerSession.getRollerSession(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.core.RollerSession,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.core.RollerSession.log,[],[],0
 org.apache.roller.weblogger.ui.core.RollerSession.serialVersionUID,[],[],0
-org.apache.roller.weblogger.ui.core.RollerSession.sessionCreated(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[64],64
-org.apache.roller.weblogger.ui.core.RollerSession.sessionDestroyed(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[64],64
-org.apache.roller.weblogger.ui.core.RollerSession.sessionWillPassivate(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[64],64
+org.apache.roller.weblogger.ui.core.RollerSession.sessionCreated(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[16],16
+org.apache.roller.weblogger.ui.core.RollerSession.sessionDestroyed(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[16],16
+org.apache.roller.weblogger.ui.core.RollerSession.sessionWillPassivate(javax.servlet.http.HttpSessionEvent): void,['javax.servlet.http.HttpSessionEvent'],[16],16
 org.apache.roller.weblogger.ui.core.RollerSession.setAuthenticatedUser(org.apache.roller.weblogger.pojos.User): void,['org.apache.roller.weblogger.pojos.User'],[64],64
 org.apache.roller.weblogger.ui.core.RollerSession.static {},[],[],0
 org.apache.roller.weblogger.ui.core.RollerSession.userName,[],[],0
@@ -7663,8 +7663,8 @@ org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.context,[],[],0
 org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.isInstallUrl(java.lang.String): boolean,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.BootstrapFilter.static {},[],[],0
@@ -7675,8 +7675,8 @@ org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.mLogger,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CharEncodingFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.CustomOpenIDAuthenticationProcessingFilter(),[],[],0
@@ -7684,7 +7684,7 @@ org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessing
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.attemptAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): org.springframework.security.core.Authentication","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.attemptAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): org.springframework.security.core.Authentication","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.lookupRealm(java.lang.String): java.lang.String,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.filters.CustomOpenIDAuthenticationProcessingFilter.static {},[],[],0
@@ -7695,8 +7695,8 @@ org.apache.roller.weblogger.ui.core.filters.DebugFilter.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.core.filters.DebugFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.DebugFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.DebugFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.DebugFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.DebugFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.DebugFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.DebugFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.DebugFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.DebugFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.core.filters.IPBanFilter.IPBanFilter(),[],[],0
@@ -7706,8 +7706,8 @@ org.apache.roller.weblogger.ui.core.filters.IPBanFilter.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.core.filters.IPBanFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.IPBanFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.IPBanFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.IPBanFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.IPBanFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.IPBanFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.IPBanFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.IPBanFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.IPBanFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.core.filters.InitFilter.InitFilter(),[],[],0
@@ -7720,10 +7720,10 @@ org.apache.roller.weblogger.ui.core.filters.InitFilter.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.core.filters.InitFilter.ajc$tjp_5,[],[],0
 org.apache.roller.weblogger.ui.core.filters.InitFilter.ajc$tjp_6,[],[],0
 org.apache.roller.weblogger.ui.core.filters.InitFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.InitFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
+"org.apache.roller.weblogger.ui.core.filters.InitFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
 "org.apache.roller.weblogger.ui.core.filters.InitFilter.getAbsoluteUrl(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String): java.lang.String","['boolean', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[1, 24, 24, 24, 24]",97
-org.apache.roller.weblogger.ui.core.filters.InitFilter.getAbsoluteUrl(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.core.filters.InitFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+org.apache.roller.weblogger.ui.core.filters.InitFilter.getAbsoluteUrl(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.core.filters.InitFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.InitFilter.initialized,[],[],0
 org.apache.roller.weblogger.ui.core.filters.InitFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.InitFilter.removeTrailingSlash(java.lang.String): java.lang.String,['java.lang.String'],[24],24
@@ -7735,8 +7735,8 @@ org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.LoadSaltFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.PersistenceSessionFilter(),[],[],0
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.ajc$preClinit(): void,[],[],0
@@ -7745,8 +7745,8 @@ org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.ajc$tjp_1,[
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.PersistenceSessionFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.RoleAssignmentFilter(),[],[],0
@@ -7756,11 +7756,11 @@ org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.ajc$tjp_1,[],[]
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentFilter.static {},[],[],0
-org.apache.roller.weblogger.ui.core.filters.RoleAssignmentRequestWrapper.RoleAssignmentRequestWrapper(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.core.filters.RoleAssignmentRequestWrapper.RoleAssignmentRequestWrapper(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentRequestWrapper.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentRequestWrapper.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.filters.RoleAssignmentRequestWrapper.ajc$tjp_1,[],[],0
@@ -7775,8 +7775,8 @@ org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.ajc$tj
 org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.SpringFirewallExceptionFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.ValidateSaltFilter(),[],[],0
@@ -7787,9 +7787,9 @@ org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
+"org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.ignored,[],[],0
-org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.isIgnoredURL(java.lang.String): boolean,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.log,[],[],0
 org.apache.roller.weblogger.ui.core.filters.ValidateSaltFilter.static {},[],[],0
@@ -7845,13 +7845,13 @@ org.apache.roller.weblogger.ui.core.security.AuthoritiesPopulator.defaultRole,[]
 "org.apache.roller.weblogger.ui.core.security.AuthoritiesPopulator.getGrantedAuthorities(org.springframework.ldap.core.DirContextOperations, java.lang.String): java.util.Collection","['org.springframework.ldap.core.DirContextOperations', 'java.lang.String']","[16, 24]",40
 org.apache.roller.weblogger.ui.core.security.AuthoritiesPopulator.setDefaultRole(java.lang.String): void,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.security.AuthoritiesPopulator.static {},[],[],0
-org.apache.roller.weblogger.ui.core.security.AutoProvision.execute(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.core.security.AutoProvision.execute(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.BasicUserAutoProvision(),[],[],0
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.ajc$tjp_2,[],[],0
-org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.execute(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.execute(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.hasNecessaryFields(org.apache.roller.weblogger.pojos.User): boolean,['org.apache.roller.weblogger.pojos.User'],[64],64
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.log,[],[],0
 org.apache.roller.weblogger.ui.core.security.BasicUserAutoProvision.static {},[],[],0
@@ -7875,8 +7875,8 @@ org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.ajc$tjp_1,[],[],
 org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.ajc$tjp_3,[],[],0
 "org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.getLdapAttribute(javax.naming.directory.Attributes, java.lang.String): java.lang.String","['javax.naming.directory.Attributes', 'java.lang.String']","[16, 24]",40
-"org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.getRequestAttribute(javax.servlet.http.HttpServletRequest, java.lang.String): java.lang.String","['javax.servlet.http.HttpServletRequest', 'java.lang.String']","[64, 24]",88
-org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.getUserDetailsFromAuthentication(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.pojos.User,['javax.servlet.http.HttpServletRequest'],[64],64
+"org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.getRequestAttribute(javax.servlet.http.HttpServletRequest, java.lang.String): java.lang.String","['javax.servlet.http.HttpServletRequest', 'java.lang.String']","[16, 24]",40
+org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.getUserDetailsFromAuthentication(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.pojos.User,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.core.security.CustomUserRegistry.static {},[],[],0
 org.apache.roller.weblogger.ui.core.security.RollerRememberMeAuthenticationProvider.RollerRememberMeAuthenticationProvider(),[],[],0
 org.apache.roller.weblogger.ui.core.security.RollerRememberMeAuthenticationProvider.ajc$preClinit(): void,[],[],0
@@ -7906,7 +7906,7 @@ org.apache.roller.weblogger.ui.core.security.RollerUserDetailsService.ajc$tjp_2,
 org.apache.roller.weblogger.ui.core.security.RollerUserDetailsService.loadUserByUsername(java.lang.String): org.springframework.security.core.userdetails.UserDetails,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.security.RollerUserDetailsService.log,[],[],0
 org.apache.roller.weblogger.ui.core.security.RollerUserDetailsService.static {},[],[],0
-"org.apache.roller.weblogger.ui.core.tags.calendar.BigWeblogCalendarModel.BigWeblogCalendarModel(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest, java.lang.String)","['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest', 'java.lang.String']","[64, 24]",88
+"org.apache.roller.weblogger.ui.core.tags.calendar.BigWeblogCalendarModel.BigWeblogCalendarModel(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest, java.lang.String)","['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest', 'java.lang.String']","[96, 24]",120
 org.apache.roller.weblogger.ui.core.tags.calendar.BigWeblogCalendarModel.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.tags.calendar.BigWeblogCalendarModel.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.tags.calendar.BigWeblogCalendarModel.ajc$tjp_1,[],[],0
@@ -7977,10 +7977,10 @@ org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.setClassSuffix(jav
 org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.setLocale(java.util.Locale): void,['java.util.Locale'],[16],16
 org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.setModel(java.lang.String): void,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.setName(java.lang.String): void,['java.lang.String'],[24],24
-org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.setPageContext(javax.servlet.jsp.PageContext): void,['javax.servlet.jsp.PageContext'],[64],64
+org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.setPageContext(javax.servlet.jsp.PageContext): void,['javax.servlet.jsp.PageContext'],[16],16
 org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.static {},[],[],0
 org.apache.roller.weblogger.ui.core.tags.calendar.CalendarTag.toString(): java.lang.String,[],[],0
-"org.apache.roller.weblogger.ui.core.tags.calendar.WeblogCalendarModel.WeblogCalendarModel(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest, java.lang.String)","['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest', 'java.lang.String']","[64, 24]",88
+"org.apache.roller.weblogger.ui.core.tags.calendar.WeblogCalendarModel.WeblogCalendarModel(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest, java.lang.String)","['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest', 'java.lang.String']","[96, 24]",120
 org.apache.roller.weblogger.ui.core.tags.calendar.WeblogCalendarModel.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.core.tags.calendar.WeblogCalendarModel.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.core.tags.calendar.WeblogCalendarModel.ajc$tjp_1,[],[],0
@@ -8049,8 +8049,8 @@ org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.ajc$tjp_5,[],[],0
 org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.ajc$tjp_6,[],[],0
 org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.ajc$tjp_7,[],[],0
 "org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.buildMenu(java.lang.String, org.apache.roller.weblogger.ui.core.util.menu.ParsedMenu, java.lang.String, org.apache.roller.weblogger.pojos.User, org.apache.roller.weblogger.pojos.Weblog): org.apache.roller.weblogger.ui.core.util.menu.Menu","['java.lang.String', 'org.apache.roller.weblogger.ui.core.util.menu.ParsedMenu', 'java.lang.String', 'org.apache.roller.weblogger.pojos.User', 'org.apache.roller.weblogger.pojos.Weblog']","[24, 16, 24, 64, 144]",272
-"org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.elementToParsedTab(java.lang.String, org.jdom2.Element): org.apache.roller.weblogger.ui.core.util.menu.ParsedTab","['java.lang.String', 'org.jdom2.Element']","[24, 64]",88
-org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.elementToParsedTabItem(org.jdom2.Element): org.apache.roller.weblogger.ui.core.util.menu.ParsedTabItem,['org.jdom2.Element'],[64],64
+"org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.elementToParsedTab(java.lang.String, org.jdom2.Element): org.apache.roller.weblogger.ui.core.util.menu.ParsedTab","['java.lang.String', 'org.jdom2.Element']","[24, 40]",64
+org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.elementToParsedTabItem(org.jdom2.Element): org.apache.roller.weblogger.ui.core.util.menu.ParsedTabItem,['org.jdom2.Element'],[40],40
 org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.getBooleanProperty(java.lang.String): boolean,['java.lang.String'],[24],24
 "org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.getMenu(java.lang.String, java.lang.String, org.apache.roller.weblogger.pojos.User, org.apache.roller.weblogger.pojos.Weblog): org.apache.roller.weblogger.ui.core.util.menu.Menu","['java.lang.String', 'java.lang.String', 'org.apache.roller.weblogger.pojos.User', 'org.apache.roller.weblogger.pojos.Weblog']","[24, 24, 64, 144]",256
 "org.apache.roller.weblogger.ui.core.util.menu.MenuHelper.isSelected(java.lang.String, org.apache.roller.weblogger.ui.core.util.menu.ParsedTabItem): boolean","['java.lang.String', 'org.apache.roller.weblogger.ui.core.util.menu.ParsedTabItem']","[24, 40]",64
@@ -8210,7 +8210,7 @@ org.apache.roller.weblogger.ui.rendering.RenderingException.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.RenderingException.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.RenderingException.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.RenderingException.static {},[],[],0
-"org.apache.roller.weblogger.ui.rendering.RequestMapper.handleRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): boolean","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.rendering.RequestMapper.handleRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): boolean","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.COMMENT_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.FEED_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.MEDIA_SERVLET,[],[],0
@@ -8226,8 +8226,8 @@ org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.ajc$tjp_4,[],[],0
-"org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.calculateForwardUrl(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String): java.lang.String","['javax.servlet.http.HttpServletRequest', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[64, 24, 24, 24, 24]",160
-"org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.handleRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): boolean","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.calculateForwardUrl(javax.servlet.http.HttpServletRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String): java.lang.String","['javax.servlet.http.HttpServletRequest', 'java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[16, 24, 24, 24, 24]",112
+"org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.handleRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): boolean","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.isLocale(java.lang.String): boolean,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.isWeblog(java.lang.String): boolean,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.rendering.WeblogRequestMapper.log,[],[],0
@@ -8240,7 +8240,7 @@ org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.ajc
 org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.deviceResolver,[],[],0
-"org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.doFilterInternal(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
+"org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.doFilterInternal(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, javax.servlet.FilterChain): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
 org.apache.roller.weblogger.ui.rendering.filters.DeviceResolverRequestFilter.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.RequestMappingFilter(),[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.ajc$preClinit(): void,[],[],0
@@ -8250,8 +8250,8 @@ org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.ajc$tjp_2,
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[64, 64, 64]",192
-org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain): void","['javax.servlet.ServletRequest', 'javax.servlet.ServletResponse', 'javax.servlet.FilterChain']","[16, 16, 16]",48
+org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.init(javax.servlet.FilterConfig): void,['javax.servlet.FilterConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.lambda$0(org.apache.roller.weblogger.ui.rendering.RequestMapper): java.lang.String,['org.apache.roller.weblogger.ui.rendering.RequestMapper'],[16],16
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.filters.RequestMappingFilter.requestMappers,[],[],0
@@ -8267,8 +8267,8 @@ org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.ajc$tjp_1
 org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.ajc$tjp_3,[],[],0
 "org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.getCookieValue(javax.servlet.http.Cookie[], java.lang.String, java.lang.String): java.lang.String","['javax.servlet.http.Cookie[]', 'java.lang.String', 'java.lang.String']","[24, 24, 24]",72
-org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.getRequestType(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.isMobileDevice(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.getRequestType(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.isMobileDevice(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType.ENUM$VALUES,[],[],0
 "org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType.MobileDeviceRepository$DeviceType(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
@@ -8386,7 +8386,7 @@ org.apache.roller.weblogger.ui.rendering.model.FeedModel.init(java.util.Map): vo
 org.apache.roller.weblogger.ui.rendering.model.FeedModel.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel.urlStrategy,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel.weblog,[],[],0
-"org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.FeedModel$FeedCommentsPager(org.apache.roller.weblogger.ui.rendering.model.FeedModel, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest)","['org.apache.roller.weblogger.ui.rendering.model.FeedModel', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest']","[24, 64]",88
+"org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.FeedModel$FeedCommentsPager(org.apache.roller.weblogger.ui.rendering.model.FeedModel, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest)","['org.apache.roller.weblogger.ui.rendering.model.FeedModel', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest']","[24, 80]",104
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.ajc$tjp_1,[],[],0
@@ -8396,7 +8396,7 @@ org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.feedR
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.getUrl(): java.lang.String,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedCommentsPager.this$0,[],[],0
-"org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.FeedModel$FeedEntriesPager(org.apache.roller.weblogger.ui.rendering.model.FeedModel, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest)","['org.apache.roller.weblogger.ui.rendering.model.FeedModel', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest']","[24, 64]",88
+"org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.FeedModel$FeedEntriesPager(org.apache.roller.weblogger.ui.rendering.model.FeedModel, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest)","['org.apache.roller.weblogger.ui.rendering.model.FeedModel', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest']","[24, 80]",104
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.ajc$tjp_1,[],[],0
@@ -8406,7 +8406,7 @@ org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.feedRe
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.getUrl(): java.lang.String,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedEntriesPager.this$0,[],[],0
-"org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedFilesPager.FeedModel$FeedFilesPager(org.apache.roller.weblogger.ui.rendering.model.FeedModel, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest)","['org.apache.roller.weblogger.ui.rendering.model.FeedModel', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest']","[24, 64]",88
+"org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedFilesPager.FeedModel$FeedFilesPager(org.apache.roller.weblogger.ui.rendering.model.FeedModel, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest)","['org.apache.roller.weblogger.ui.rendering.model.FeedModel', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest']","[24, 80]",104
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedFilesPager.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedFilesPager.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.model.FeedModel$FeedFilesPager.ajc$tjp_1,[],[],0
@@ -9084,7 +9084,7 @@ org.apache.roller.weblogger.ui.rendering.pagers.PlanetEntriesPager.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.pagers.PlanetEntriesPager.more,[],[],0
 org.apache.roller.weblogger.ui.rendering.pagers.PlanetEntriesPager.sinceDays,[],[],0
 org.apache.roller.weblogger.ui.rendering.pagers.PlanetEntriesPager.static {},[],[],0
-"org.apache.roller.weblogger.ui.rendering.pagers.SearchResultsFeedPager.SearchResultsFeedPager(org.apache.roller.weblogger.business.URLStrategy, java.lang.String, int, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest, java.util.List, boolean)","['org.apache.roller.weblogger.business.URLStrategy', 'java.lang.String', 'int', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest', 'java.util.List', 'boolean']","[16, 24, 4, 64, 24, 1]",133
+"org.apache.roller.weblogger.ui.rendering.pagers.SearchResultsFeedPager.SearchResultsFeedPager(org.apache.roller.weblogger.business.URLStrategy, java.lang.String, int, org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest, java.util.List, boolean)","['org.apache.roller.weblogger.business.URLStrategy', 'java.lang.String', 'int', 'org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest', 'java.util.List', 'boolean']","[16, 24, 4, 80, 24, 1]",149
 org.apache.roller.weblogger.ui.rendering.pagers.SearchResultsFeedPager.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.pagers.SearchResultsFeedPager.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.pagers.SearchResultsFeedPager.ajc$tjp_1,[],[],0
@@ -9405,13 +9405,13 @@ org.apache.roller.weblogger.ui.rendering.plugins.comments.BannedwordslistComment
 org.apache.roller.weblogger.ui.rendering.plugins.comments.BannedwordslistCommentValidator.getName(): java.lang.String,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.BannedwordslistCommentValidator.static {},[],[],0
 "org.apache.roller.weblogger.ui.rendering.plugins.comments.BannedwordslistCommentValidator.validate(org.apache.roller.weblogger.pojos.WeblogEntryComment, org.apache.roller.weblogger.util.RollerMessages): int","['org.apache.roller.weblogger.pojos.WeblogEntryComment', 'org.apache.roller.weblogger.util.RollerMessages']","[72, 24]",96
-org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.CommentAuthenticatorUtils(),[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.ajc$tjp_1,[],[],0
-org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.getLocale(javax.servlet.http.HttpServletRequest): java.util.Locale,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.getLocale(javax.servlet.http.HttpServletRequest): java.util.Locale,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentAuthenticatorUtils.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.CommentValidationManager.CommentValidationManager(),[],[],0
@@ -9433,8 +9433,8 @@ org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenti
 org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.ajc$tjp_2,[],[],0
-org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.plugins.comments.DefaultCommentAuthenticator.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.ExcessLinksCommentValidator.ExcessLinksCommentValidator(),[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.ExcessLinksCommentValidator.ajc$preClinit(): void,[],[],0
@@ -9466,8 +9466,8 @@ org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticat
 org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.ajc$tjp_5,[],[],0
-org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
 "org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.getQualifedDc(java.lang.String, java.lang.String, java.lang.String): java.lang.String","['java.lang.String', 'java.lang.String', 'java.lang.String']","[24, 24, 24]",72
 org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.static {},[],[],0
 "org.apache.roller.weblogger.ui.rendering.plugins.comments.LdapCommentAuthenticator.validateRollerProperties(java.lang.String, java.lang.String, java.lang.String, java.lang.String): boolean","['java.lang.String', 'java.lang.String', 'java.lang.String', 'java.lang.String']","[24, 24, 24, 24]",96
@@ -9477,8 +9477,8 @@ org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticat
 org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.ajc$tjp_2,[],[],0
-org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.authenticate(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.getHtml(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.mLogger,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.ran,[],[],0
 org.apache.roller.weblogger.ui.rendering.plugins.comments.MathCommentAuthenticator.static {},[],[],0
@@ -9499,8 +9499,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.aj
 org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.authenticator,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.destroy(): void,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.mLogger,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentAuthenticatorServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.CommentServlet(),[],[],0
@@ -9512,9 +9512,9 @@ org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.ajc$tjp_3,[],[]
 org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.authenticator,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.commentThrottle,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.commentValidationManager,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.CommentServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.FeedServlet(),[],[],0
@@ -9522,8 +9522,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.ajc$preClinit(): v
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.siteWideCache,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.FeedServlet.static {},[],[],0
@@ -9533,8 +9533,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.ajc$preCl
 org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.MediaResourceServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.PageServlet(),[],[],0
@@ -9545,13 +9545,13 @@ org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.ajc$tjp_5,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.excludeOwnerPages,[],[],0
-org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.processHit(org.apache.roller.weblogger.pojos.Weblog): void,['org.apache.roller.weblogger.pojos.Weblog'],[144],144
-org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.processReferrer(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.processReferrer(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.processReferrers,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.robotPattern,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PageServlet.siteWideCache,[],[],0
@@ -9564,9 +9564,9 @@ org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.ajc$tjp_0,[]
 org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.ajc$tjp_3,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.generateKey(org.apache.roller.weblogger.ui.rendering.util.PlanetRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.PlanetRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.generateKey(org.apache.roller.weblogger.ui.rendering.util.PlanetRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.PlanetRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.planetCache,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PlanetFeedServlet.static {},[],[],0
@@ -9576,8 +9576,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.ajc$tjp
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.context,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewResourceServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.PreviewServlet(),[],[],0
@@ -9585,8 +9585,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.ajc$preClinit()
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.PreviewServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.RSDServlet(),[],[],0
@@ -9594,8 +9594,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.ajc$preClinit(): vo
 org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.RSDServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.ResourceServlet(),[],[],0
@@ -9604,8 +9604,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.ajc$tjp_0,[],[
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.context,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.serialVersionUID,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.ResourceServlet.static {},[],[],0
@@ -9614,8 +9614,8 @@ org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.ajc$preClinit():
 org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+"org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.log,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.serialVersionUID,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.SearchServlet.static {},[],[],0
@@ -9629,11 +9629,11 @@ org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.ajc$tjp_3,[],
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.ajc$tjp_5,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.commentValidationManager,[],[],0
-"org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.getErrorResponse(java.lang.String): java.lang.String,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.getSuccessResponse(java.lang.String): java.lang.String,['java.lang.String'],[24],24
-org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[64],64
+org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.init(javax.servlet.ServletConfig): void,['javax.servlet.ServletConfig'],[16],16
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.logger,[],[],0
 org.apache.roller.weblogger.ui.rendering.servlets.TrackbackServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.InvalidRequestException.InvalidRequestException(java.lang.String),['java.lang.String'],[24],24
@@ -9648,11 +9648,11 @@ org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.ajc$tjp_0,[],[],
 org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.log,[],[],0
-"org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.respondIfNotModified(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, long, org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType): boolean","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'long', 'org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType']","[64, 64, 8, 16]",152
-"org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.setLastModifiedHeader(javax.servlet.http.HttpServletResponse, long, org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType): void","['javax.servlet.http.HttpServletResponse', 'long', 'org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType']","[64, 8, 16]",88
+"org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.respondIfNotModified(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, long, org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType): boolean","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'long', 'org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType']","[16, 16, 8, 16]",56
+"org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.setLastModifiedHeader(javax.servlet.http.HttpServletResponse, long, org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType): void","['javax.servlet.http.HttpServletResponse', 'long', 'org.apache.roller.weblogger.ui.rendering.mobile.MobileDeviceRepository$DeviceType']","[16, 8, 16]",40
 org.apache.roller.weblogger.ui.rendering.util.ModDateHeaderUtil.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.ParsedRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.ParsedRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.ParsedRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.ajc$tjp_1,[],[],0
@@ -9676,7 +9676,7 @@ org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.setDeviceType(org.ap
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.setUser(org.apache.roller.weblogger.pojos.User): void,['org.apache.roller.weblogger.pojos.User'],[64],64
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.ParsedRequest.user,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.PlanetRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.PlanetRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.ajc$tjp_1,[],[],0
@@ -9705,7 +9705,7 @@ org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.PlanetRequest.type,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.COMMENT_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.WeblogCommentRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.WeblogCommentRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.WeblogCommentRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogCommentRequest.ajc$tjp_1,[],[],0
@@ -9803,7 +9803,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogEntryCommentForm.static {},[
 org.apache.roller.weblogger.ui.rendering.util.WeblogEntryCommentForm.url,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.FEED_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.WeblogFeedRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.WeblogFeedRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.WeblogFeedRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.ajc$tjp_1,[],[],0
@@ -9857,7 +9857,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.type,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.weblogCategory,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest.weblogCategoryName,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.WeblogMediaResourceRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.WeblogMediaResourceRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.WeblogMediaResourceRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.ajc$tjp_1,[],[],0
@@ -9881,7 +9881,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.static 
 org.apache.roller.weblogger.ui.rendering.util.WeblogMediaResourceRequest.thumbnail,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.PAGE_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.WeblogPageRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.WeblogPageRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.WeblogPageRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.ajc$tjp_1,[],[],0
@@ -9969,7 +9969,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.weblogPage,[],[]
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.weblogPageName,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest.websitePageHit,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.PREVIEW_SERVLET,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.WeblogPreviewRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.WeblogPreviewRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.ajc$tjp_1,[],[],0
@@ -10019,7 +10019,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.themeName,[],
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.type,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewRequest.weblogEntry,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.WeblogPreviewResourceRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.WeblogPreviewResourceRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.WeblogPreviewResourceRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.ajc$tjp_1,[],[],0
@@ -10044,7 +10044,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.stati
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.theme,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogPreviewResourceRequest.themeName,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.WeblogRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.WeblogRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.WeblogRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.ajc$tjp_1,[],[],0
@@ -10080,7 +10080,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.weblog,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogRequest.weblogHandle,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.WeblogResourceRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.WeblogResourceRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.WeblogResourceRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.ajc$tjp_1,[],[],0
@@ -10099,7 +10099,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.setResourceP
 org.apache.roller.weblogger.ui.rendering.util.WeblogResourceRequest.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.SEARCH_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.WeblogSearchRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.WeblogSearchRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.WeblogSearchRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.ajc$tjp_1,[],[],0
@@ -10134,7 +10134,7 @@ org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.weblogCategory
 org.apache.roller.weblogger.ui.rendering.util.WeblogSearchRequest.weblogCategoryName,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.TRACKBACK_SERVLET,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.WeblogTrackbackRequest(),[],[],0
-org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.WeblogTrackbackRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.WeblogTrackbackRequest(javax.servlet.http.HttpServletRequest),['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.WeblogTrackbackRequest.ajc$tjp_1,[],[],0
@@ -10188,7 +10188,7 @@ org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.ajc$tjp_7,[],[],
 org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.cacheEnabled,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.clear(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.contentCache,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.PlanetRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.PlanetRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.PlanetRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.PlanetRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.get(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.getInstance(): org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.PlanetCache.getLastModified(): java.util.Date,[],[],0
@@ -10241,8 +10241,8 @@ org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.ajc$tjp_9,[],[
 org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.cacheEnabled,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.clear(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.contentCache,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest'],[80],80
+org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest'],[96],96
 org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.get(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.getInstance(): org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.SiteWideCache.getLastModified(): java.util.Date,[],[],0
@@ -10288,7 +10288,7 @@ org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.ajc$tjp_6,[]
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.cacheEnabled,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.clear(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.contentCache,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogFeedRequest'],[80],80
 "org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.get(java.lang.String, long): java.lang.Object","['java.lang.String', 'long']","[24, 8]",32
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.getInstance(): org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogFeedCache.log,[],[],0
@@ -10310,7 +10310,7 @@ org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.ajc$tjp_7,[]
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.cacheEnabled,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.clear(): void,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.contentCache,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.generateKey(org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest): java.lang.String,['org.apache.roller.weblogger.ui.rendering.util.WeblogPageRequest'],[96],96
 "org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.get(java.lang.String, long): java.lang.Object","['java.lang.String', 'long']","[24, 8]",32
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.getInstance(): org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.log,[],[],0
@@ -10322,7 +10322,7 @@ org.apache.roller.weblogger.ui.rendering.util.cache.WeblogPageCache.static {},[]
 org.apache.roller.weblogger.ui.rendering.util.mobile.Device.isMobile(): boolean,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.Device.isNormal(): boolean,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.Device.isTablet(): boolean,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceResolver.resolveDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceResolver.resolveDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[16],16
 "org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceType.DeviceType(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceType.ENUM$VALUES,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceType.MOBILE,[],[],0
@@ -10342,9 +10342,9 @@ org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.ajc$tjp_0,[],[]
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.ajc$tjp_3,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.getCurrentDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.getCurrentDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.getCurrentDevice(org.springframework.web.context.request.RequestAttributes): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['org.springframework.web.context.request.RequestAttributes'],[16],16
-org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.getRequiredCurrentDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.getRequiredCurrentDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceUtils.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDevice.LiteDevice(org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceType),['org.apache.roller.weblogger.ui.rendering.util.mobile.DeviceType'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDevice.MOBILE_INSTANCE,[],[],0
@@ -10387,8 +10387,8 @@ org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.init(): 
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.mobileUserAgentKeywords,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.mobileUserAgentPrefixes,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.normalUserAgentKeywords,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.resolveDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.resolveFallback(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.resolveDevice(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.resolveFallback(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.Device,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.LiteDeviceResolver.tabletUserAgentKeywords,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.MobileDeviceRepository(),[],[],0
@@ -10396,8 +10396,8 @@ org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.ajc$
 org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.ajc$tjp_2,[],[],0
-org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.getRequestType(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository$DeviceType,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.isMobileDevice(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.getRequestType(javax.servlet.http.HttpServletRequest): org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository$DeviceType,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.isMobileDevice(javax.servlet.http.HttpServletRequest): boolean,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository.static {},[],[],0
 org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository$DeviceType.ENUM$VALUES,[],[],0
 "org.apache.roller.weblogger.ui.rendering.util.mobile.MobileDeviceRepository$DeviceType.MobileDeviceRepository$DeviceType(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
@@ -10650,7 +10650,7 @@ org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.setBulkDele
 org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.setFirstComment(org.apache.roller.weblogger.pojos.WeblogEntryComment): void,['org.apache.roller.weblogger.pojos.WeblogEntryComment'],[72],72
 org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.setLastComment(org.apache.roller.weblogger.pojos.WeblogEntryComment): void,['org.apache.roller.weblogger.pojos.WeblogEntryComment'],[72],72
 org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.setPager(org.apache.roller.weblogger.ui.struts2.pagers.CommentsPager): void,['org.apache.roller.weblogger.ui.struts2.pagers.CommentsPager'],[16],16
-org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagement.update(): java.lang.String,[],[],0
 org.apache.roller.weblogger.ui.struts2.admin.GlobalCommentManagementBean.GlobalCommentManagementBean(),[],[],0
@@ -10764,7 +10764,7 @@ org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setGlobalConfigDef(org
 org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setParameters(org.apache.struts2.dispatcher.HttpParameters): void,['org.apache.struts2.dispatcher.HttpParameters'],[16],16
 org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setPluginsList(java.util.List): void,['java.util.List'],[24],24
 org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setProperties(java.util.Map): void,['java.util.Map'],[48],48
-org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.setWeblogs(java.util.Collection): void,['java.util.Collection'],[24],24
 org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.admin.GlobalConfig.weblogs,[],[],0
@@ -10938,25 +10938,25 @@ org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.ajc$tjp_4,[],[],0
-"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.checkAuth(javax.servlet.http.HttpServletRequest, org.apache.roller.weblogger.pojos.Weblog): void","['javax.servlet.http.HttpServletRequest', 'org.apache.roller.weblogger.pojos.Weblog']","[64, 144]",208
-"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.doPut(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.checkAuth(javax.servlet.http.HttpServletRequest, org.apache.roller.weblogger.pojos.Weblog): void","['javax.servlet.http.HttpServletRequest', 'org.apache.roller.weblogger.pojos.Weblog']","[16, 144]",160
+"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.doPut(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.struts2.ajax.CommentDataServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.ThemeDataServlet(),[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.struts2.ajax.ThemeDataServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.MAX_LENGTH,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.UserDataServlet(),[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.ajc$tjp_1,[],[],0
-"org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.serialVersionUID,[],[],0
 org.apache.roller.weblogger.ui.struts2.ajax.UserDataServlet.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.core.CreateWeblog.CreateWeblog(),[],[],0
@@ -11141,7 +11141,7 @@ org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.getUserName(): java.l
 org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.isWeblogRequired(): boolean,[],[],0
 org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.log,[],[],0
 org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.pageTitle,[],[],0
-org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.core.OAuthAuthorize.token,[],[],0
 org.apache.roller.weblogger.ui.struts2.core.OAuthKeys.OAuthKeys(),[],[],0
@@ -11316,7 +11316,7 @@ org.apache.roller.weblogger.ui.struts2.core.Register.setActivationCode(java.lang
 org.apache.roller.weblogger.ui.struts2.core.Register.setActivationStatus(java.lang.String): void,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.struts2.core.Register.setBean(org.apache.roller.weblogger.ui.struts2.core.ProfileBean): void,['org.apache.roller.weblogger.ui.struts2.core.ProfileBean'],[56],56
 org.apache.roller.weblogger.ui.struts2.core.Register.setPageTitle(java.lang.String): void,['java.lang.String'],[24],24
-org.apache.roller.weblogger.ui.struts2.core.Register.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[64],64
+org.apache.roller.weblogger.ui.struts2.core.Register.setServletRequest(javax.servlet.http.HttpServletRequest): void,['javax.servlet.http.HttpServletRequest'],[16],16
 org.apache.roller.weblogger.ui.struts2.core.Register.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.core.Setup.LOG,[],[],0
 org.apache.roller.weblogger.ui.struts2.core.Setup.Setup(),[],[],0
@@ -12184,7 +12184,7 @@ org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.save(): java.lang.Strin
 org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.setBean(org.apache.roller.weblogger.ui.struts2.editor.FolderBean): void,['org.apache.roller.weblogger.ui.struts2.editor.FolderBean'],[24],24
 org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.setFolderId(java.lang.String): void,['java.lang.String'],[24],24
 org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.setPageTitle(java.lang.String): void,['java.lang.String'],[24],24
-org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.setServletResponse(javax.servlet.http.HttpServletResponse): void,['javax.servlet.http.HttpServletResponse'],[64],64
+org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.setServletResponse(javax.servlet.http.HttpServletResponse): void,['javax.servlet.http.HttpServletResponse'],[16],16
 org.apache.roller.weblogger.ui.struts2.editor.FolderEdit.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.editor.Maintenance.Maintenance(),[],[],0
 org.apache.roller.weblogger.ui.struts2.editor.Maintenance.actionName,[],[],0
@@ -13491,7 +13491,7 @@ org.apache.roller.weblogger.ui.struts2.util.UIUtils.getTimeZone(java.lang.String
 org.apache.roller.weblogger.ui.struts2.util.UIUtils.getTimeZones(): java.util.List,[],[],0
 org.apache.roller.weblogger.ui.struts2.util.UIUtils.static {},[],[],0
 org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator.UIUtils$LocaleComparator(),[],[],0
-org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator.UIUtils$LocaleComparator(org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator),['org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator'],[64],64
+org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator.UIUtils$LocaleComparator(org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator),['org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator'],[16],16
 org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.ui.struts2.util.UIUtils$LocaleComparator.ajc$tjp_1,[],[],0
@@ -13925,7 +13925,7 @@ org.apache.roller.weblogger.util.MailUtil.sendPendingEntryNotice(org.apache.roll
 org.apache.roller.weblogger.util.MailUtil.sendUserActivationEmail(org.apache.roller.weblogger.pojos.User): void,['org.apache.roller.weblogger.pojos.User'],[64],64
 "org.apache.roller.weblogger.util.MailUtil.sendWeblogInvitation(org.apache.roller.weblogger.pojos.Weblog, org.apache.roller.weblogger.pojos.User): void","['org.apache.roller.weblogger.pojos.Weblog', 'org.apache.roller.weblogger.pojos.User']","[144, 64]",208
 org.apache.roller.weblogger.util.MailUtil.static {},[],[],0
-"org.apache.roller.weblogger.util.MailUtil$MailingException.MailUtil$MailingException(org.apache.roller.weblogger.util.MailUtil, java.lang.Throwable)","['org.apache.roller.weblogger.util.MailUtil', 'java.lang.Throwable']","[64, 40]",104
+"org.apache.roller.weblogger.util.MailUtil$MailingException.MailUtil$MailingException(org.apache.roller.weblogger.util.MailUtil, java.lang.Throwable)","['org.apache.roller.weblogger.util.MailUtil', 'java.lang.Throwable']","[16, 40]",56
 org.apache.roller.weblogger.util.MailUtil$MailingException.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.util.MailUtil$MailingException.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.util.MailUtil$MailingException.static {},[],[],0
@@ -14455,7 +14455,7 @@ org.apache.roller.weblogger.webservices.atomprotocol.MediaCollection$1.ajc$tjp_1
 "org.apache.roller.weblogger.webservices.atomprotocol.MediaCollection$1.compare(java.lang.Object, java.lang.Object): int","['java.lang.Object', 'java.lang.Object']","[16, 16]",32
 org.apache.roller.weblogger.webservices.atomprotocol.MediaCollection$1.static {},[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.MediaCollection$1.this$0,[],[],0
-"org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.RollerAtomHandler(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.RollerAtomHandler(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.THROTTLE,[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.ajc$tjp_0,[],[],0
@@ -14484,9 +14484,9 @@ org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.ajc$tjp_7
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.ajc$tjp_8,[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.ajc$tjp_9,[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.atomURL,[],[],0
-org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.authenticateBASIC(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
-org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.authenticateWSSE(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[64],64
-"org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.authenticationOAUTH(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): java.lang.String","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.authenticateBASIC(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
+org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.authenticateWSSE(javax.servlet.http.HttpServletRequest): java.lang.String,['javax.servlet.http.HttpServletRequest'],[16],16
+"org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.authenticationOAUTH(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): java.lang.String","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 "org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.canEdit(org.apache.roller.weblogger.pojos.User, org.apache.roller.weblogger.pojos.Weblog): boolean","['org.apache.roller.weblogger.pojos.User', 'org.apache.roller.weblogger.pojos.Weblog']","[64, 144]",208
 "org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.canEdit(org.apache.roller.weblogger.pojos.User, org.apache.roller.weblogger.pojos.WeblogEntry): boolean","['org.apache.roller.weblogger.pojos.User', 'org.apache.roller.weblogger.pojos.WeblogEntry']","[64, 120]",184
 "org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandler.canView(org.apache.roller.weblogger.pojos.User, org.apache.roller.weblogger.pojos.Weblog): boolean","['org.apache.roller.weblogger.pojos.User', 'org.apache.roller.weblogger.pojos.Weblog']","[64, 144]",208
@@ -14517,7 +14517,7 @@ org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.Ro
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.ajc$tjp_1,[],[],0
-"org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.newAtomHandler(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): com.rometools.propono.atom.server.AtomHandler","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.newAtomHandler(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): com.rometools.propono.atom.server.AtomHandler","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomHandlerFactory.static {},[],[],0
 "org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomService.RollerAtomService(org.apache.roller.weblogger.pojos.User, java.lang.String)","['org.apache.roller.weblogger.pojos.User', 'java.lang.String']","[64, 24]",88
 org.apache.roller.weblogger.webservices.atomprotocol.RollerAtomService.addWorkspace(com.rometools.propono.atom.common.Workspace): void,['com.rometools.propono.atom.common.Workspace'],[16],16
@@ -14535,11 +14535,11 @@ org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.ajc$tjp_1,[],[]
 org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.ajc$tjp_4,[],[],0
-"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.handleException(java.lang.Exception, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, boolean): void","['java.lang.Exception', 'javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'boolean']","[40, 64, 64, 1]",169
+"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.handleException(java.lang.Exception, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, boolean): void","['java.lang.Exception', 'javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'boolean']","[40, 16, 16, 1]",73
 org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.log,[],[],0
-"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.webservices.oauth.AccessTokenServlet.static {},[],[],0
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.AuthorizationServlet(),[],[],0
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.ajc$preClinit(): void,[],[],0
@@ -14549,12 +14549,12 @@ org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.ajc$tjp_2,[],
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.ajc$tjp_4,[],[],0
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.ajc$tjp_5,[],[],0
-"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.handleException(java.lang.Exception, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, boolean): void","['java.lang.Exception', 'javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'boolean']","[40, 64, 64, 1]",169
+"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.handleException(java.lang.Exception, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, boolean): void","['java.lang.Exception', 'javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'boolean']","[40, 16, 16, 1]",73
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.log,[],[],0
-"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.returnToConsumer(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, net.oauth.OAuthAccessor): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'net.oauth.OAuthAccessor']","[64, 64, 16]",144
-"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.sendToAuthorizePage(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, net.oauth.OAuthAccessor): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'net.oauth.OAuthAccessor']","[64, 64, 16]",144
+"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.returnToConsumer(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, net.oauth.OAuthAccessor): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'net.oauth.OAuthAccessor']","[16, 16, 16]",48
+"org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.sendToAuthorizePage(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, net.oauth.OAuthAccessor): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'net.oauth.OAuthAccessor']","[16, 16, 16]",48
 org.apache.roller.weblogger.webservices.oauth.AuthorizationServlet.static {},[],[],0
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.RequestTokenServlet(),[],[],0
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.ajc$preClinit(): void,[],[],0
@@ -14563,17 +14563,17 @@ org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.ajc$tjp_1,[],[
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.ajc$tjp_2,[],[],0
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.ajc$tjp_3,[],[],0
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.ajc$tjp_4,[],[],0
-"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.handleException(java.lang.Exception, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, boolean): void","['java.lang.Exception', 'javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'boolean']","[40, 64, 64, 1]",169
+"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.handleException(java.lang.Exception, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, boolean): void","['java.lang.Exception', 'javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse', 'boolean']","[40, 16, 16, 1]",73
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.log,[],[],0
-"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.processRequest(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.webservices.oauth.RequestTokenServlet.static {},[],[],0
 org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.OpenSearchServlet(),[],[],0
 org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.ajc$preClinit(): void,[],[],0
 org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.ajc$tjp_1,[],[],0
-"org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.webservices.opensearch.OpenSearchServlet.static {},[],[],0
 org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.MAX,[],[],0
 org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.TagDataServlet(),[],[],0
@@ -14581,8 +14581,8 @@ org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.ajc$preClinit(): 
 org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.ajc$tjp_0,[],[],0
 org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.ajc$tjp_1,[],[],0
 org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.ajc$tjp_2,[],[],0
-"org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
-"org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
+"org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.doPost(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): void","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.apache.roller.weblogger.webservices.tagdata.TagDataServlet.static {},[],[],0
 org.apache.roller.weblogger.webservices.xmlrpc.BaseAPIHandler.AUTHORIZATION_EXCEPTION,[],[],0
 org.apache.roller.weblogger.webservices.xmlrpc.BaseAPIHandler.AUTHORIZATION_EXCEPTION_MSG,[],[],0
@@ -14763,7 +14763,7 @@ org.springframework.security.crypto.password.PasswordEncoder.encode(java.lang.Ch
 org.springframework.security.crypto.password.Pbkdf2PasswordEncoder.Pbkdf2PasswordEncoder(),[],[],0
 org.springframework.security.crypto.scrypt.SCryptPasswordEncoder.SCryptPasswordEncoder(),[],[],0
 org.springframework.security.openid.OpenIDAuthenticationFilter.OpenIDAuthenticationFilter(),[],[],0
-"org.springframework.security.openid.OpenIDAuthenticationFilter.attemptAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): org.springframework.security.core.Authentication","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[64, 64]",128
+"org.springframework.security.openid.OpenIDAuthenticationFilter.attemptAuthentication(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse): org.springframework.security.core.Authentication","['javax.servlet.http.HttpServletRequest', 'javax.servlet.http.HttpServletResponse']","[16, 16]",32
 org.springframework.security.openid.OpenIDAuthenticationFilter.lookupRealm(java.lang.String): java.lang.String,['java.lang.String'],[24],24
 org.springframework.security.openid.OpenIDAuthenticationToken.getAuthorities(): java.util.Collection,[],[],0
 org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint.setForceHttps(boolean): void,['boolean'],[1],1
@@ -14772,7 +14772,7 @@ org.springframework.security.web.firewall.RequestRejectedException.getMessage():
 "org.springframework.util.Assert.notNull(java.lang.Object, java.lang.String): void","['java.lang.Object', 'java.lang.String']","[16, 24]",40
 "org.springframework.util.StringUtils.delimitedListToStringArray(java.lang.String, java.lang.String): java.lang.String[]","['java.lang.String', 'java.lang.String']","[24, 24]",48
 org.springframework.web.context.ContextLoaderListener.ContextLoaderListener(),[],[],0
-org.springframework.web.context.ContextLoaderListener.contextInitialized(javax.servlet.ServletContextEvent): void,['javax.servlet.ServletContextEvent'],[64],64
+org.springframework.web.context.ContextLoaderListener.contextInitialized(javax.servlet.ServletContextEvent): void,['javax.servlet.ServletContextEvent'],[16],16
 "org.springframework.web.context.request.RequestAttributes.getAttribute(java.lang.String, int): java.lang.Object","['java.lang.String', 'int']","[24, 4]",28
-org.springframework.web.context.support.WebApplicationContextUtils.getRequiredWebApplicationContext(javax.servlet.ServletContext): org.springframework.web.context.WebApplicationContext,['javax.servlet.ServletContext'],[64],64
+org.springframework.web.context.support.WebApplicationContextUtils.getRequiredWebApplicationContext(javax.servlet.ServletContext): org.springframework.web.context.WebApplicationContext,['javax.servlet.ServletContext'],[16],16
 org.springframework.web.filter.OncePerRequestFilter.OncePerRequestFilter(),[],[],0

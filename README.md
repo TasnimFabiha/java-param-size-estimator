@@ -50,9 +50,10 @@ Main-Class: Agent
 1. Place your Dependency Finder output XML as: `projects/<project_name>/<project_name>.xml`
 2. Update the `project_name` variable in `estimate_param_sizes.py` accordingly.
 3. Extract the `<project_name>.war` file into `projects/<project_name>/target/<project_name>-war-extracted/`. This is necessary to access **third-party dependency classes** used by your application.
-4. Add the `<project_name>-classes.jar` to `projects/<project_name>/target/` if present. This JAR is essential because it contains the **compiled application-specific classes** required to instantiate and estimate parameter sizes correctly.
+4. Add the compiled `classes` to `projects/<project_name>/target/classes`. This is essential because it contains the **compiled application-specific classes** required to instantiate and estimate parameter sizes correctly.
+5. Add the `pom.xml` to `projects/<project_name>` This will help include all run time dependency (dependencies that are not compiled or packaged with the project) in the `projects/<project_name>/target/dependency` folder.
 
-> ⚠️ Without the extracted WAR and `<project_name>-classes.jar`, the size estimator cannot resolve all classes used in method signatures, leading to fallbacks and reduced accuracy.
+> ⚠️ Without the extracted WAR, or the `<project_name>/target/classes` or the `pom.xml`, the size estimator cannot resolve all classes used in method signatures, leading to fallbacks and reduced accuracy.
 
 ### 3. Run the Estimation
 
