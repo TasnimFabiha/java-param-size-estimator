@@ -3,6 +3,9 @@
 
 # === Project-specific ===
 **/*-war-extracted/
+**/*-war-extracted/
+**/target/classes/
+**/target/dependency/
 
 # Ignore all .idea files
 .idea
