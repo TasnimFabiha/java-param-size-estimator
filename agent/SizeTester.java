@@ -28,10 +28,10 @@ public class SizeTester {
 
     private static long getFallbackSize(String typeName) {
         if (PRIMITIVE_SIZES.containsKey(typeName)) return PRIMITIVE_SIZES.get(typeName);
-        if (typeName.endsWith("[]")) {
-            // Default size for array (header + 1 element assumed)
-            return 16 + 8; // array overhead + pointer
-        }
+//        if (typeName.endsWith("[]")) {
+//            // Default size for array (header + 1 element assumed)
+//            return 16 + 8; // array overhead + pointer
+//        }
         return -1; // general object fallback
     }
 

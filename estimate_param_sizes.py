@@ -9,7 +9,7 @@ import shutil
 
 
 # === CONFIGURATION ===
-project_name = "jpetstore"  
+project_name = "roller" 
 PROJECT_DIR = Path(f"./projects/{project_name}")
 XML_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
 TYPE_INPUT_FILE = PROJECT_DIR / "type_list.txt"
