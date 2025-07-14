@@ -20,9 +20,11 @@ This project estimates the sizes of parameters passed to Java methods, using inf
 │       ├── type_list.txt        # Generated list of parameter types
 │       ├── type_size_output.csv # Output from Java agent with sizes
 │       ├── method_parameters_sizeOf.csv # Final mapping of method to param sizes
+│       ├── pom.xml # Required to include runtime maven dependencies
 │       └── target/
-│           ├── roller-classes.jar       # Required for loading project-specific classes
-            ├── roller.war               # Required for extracting dependencies
+│           ├── classes/                 # Required for loading project-specific classes
+│           ├── dependency/              # Required for saving mvn runtime dependency
+│           ├── roller.war               # Required for extracting dependencies
 │           └── roller-war-extracted/    # Extracted classes and dependencies from roller.war
 ├── estimate_param_sizes.py      # Python script to run the estimation process
 └── README.md                    # This file
