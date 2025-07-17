@@ -39,4 +39,8 @@ org.springframework.samples.petclinic.repository.jdbc.JdbcPet,48
 org.springframework.samples.petclinic.repository.jdbc.JdbcVetRepositoryImpl,16
 org.springframework.samples.petclinic.repository.jdbc.OneToManyResultSetExtractor$ExpectedResults,16
 org.springframework.samples.petclinic.service.ClinicService,16
+org.springframework.ui.Model,16
+org.springframework.ui.ModelMap,56
+org.springframework.validation.BindingResult,16
 org.springframework.validation.Errors,16
+org.springframework.web.bind.WebDataBinder,16

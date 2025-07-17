@@ -9,9 +9,10 @@ import shutil
 
 
 # === CONFIGURATION ===
-project_name = "roller" 
+project_name = "roller"  
 PROJECT_DIR = Path(f"./projects/{project_name}")
-XML_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
+DEPFINDER_INPUT_PATH = PROJECT_DIR / f"{project_name}.xml"
+METHOD_SCANNER_INPUT_PATH = PROJECT_DIR / "fully-qualified-methods.txt"
 TYPE_INPUT_FILE = PROJECT_DIR / "type_list.txt"
 TYPE_OUTPUT_FILE = PROJECT_DIR / "type_size_output.csv"
 METHOD_SIZE_OUTPUT_FILE = PROJECT_DIR / f"method_parameters_sizeOf.csv"
@@ -77,16 +78,32 @@ JAVA_CMD = [
 
 DEFAULT_SIZE = -1  # Fallback size if type has no size entry
 
-# === Step 1: Parse method signatures from deps.xml ===
+# === Step 1 a: Parse method signatures from deps.xml ===
 def parse_methods_from_deps(xml_path):
-    tree = ET.parse(xml_path)
-    root = tree.getroot()
     methods = []
-    for feature in root.findall(".//feature"):
-        name_elem = feature.find("name")
-        if name_elem is not None and name_elem.text:
-            method_sig = name_elem.text.strip()
-            methods.append(method_sig)
+    if xml_path.exists():
+        try:
+            tree = ET.parse(xml_path)
+            root = tree.getroot()
+            methods = []
+            for feature in root.findall(".//feature"):
+                name_elem = feature.find("name")
+                if name_elem is not None and name_elem.text:
+                    method_sig = name_elem.text.strip()
+                    methods.append(method_sig)
+        except ET.ParseError as e:
+            print(f"[ERROR] Failed to parse XML: {e}")
+    return methods
+
+# === Step 1 b: Parse method signatures from fully-qualified-methods.txt ===
+def parse_methods_from_txt(txt_path):
+    methods = []
+    if txt_path.exists():
+        with open(txt_path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    methods.append(line)
     return methods
 
 # === Step 2: Extract parameter types ===
@@ -145,15 +162,24 @@ def compute_and_save_method_sizes(methods, type_size_map, output_csv):
 
 # === Main ===
 def main():
-    methods = parse_methods_from_deps(XML_INPUT_PATH)
-    all_types = set()
-    for m in methods:
-        all_types.update(extract_param_types(m))
+    # methods = parse_methods_from_deps(DEPFINDER_INPUT_PATH)
+    depfinder_methods = parse_methods_from_deps(DEPFINDER_INPUT_PATH)
+    method_scanner_methods = parse_methods_from_txt(METHOD_SCANNER_INPUT_PATH)
+    all_methods = list(set(depfinder_methods + method_scanner_methods))
 
+    # write the method signatures to a file
+    # with open(PROJECT_DIR / "method_signatures.txt", "w") as f:
+    #     for method in all_methods:
+    #         f.write(method + "\n")
+    
+    all_types = set()
+    for m in all_methods:
+        all_types.update(extract_param_types(m))
     write_type_file(all_types, TYPE_INPUT_FILE)
+    
     run_agent_and_get_sizes(TYPE_INPUT_FILE, TYPE_OUTPUT_FILE)
     type_size_map = read_type_sizes(TYPE_OUTPUT_FILE)
-    compute_and_save_method_sizes(methods, type_size_map, METHOD_SIZE_OUTPUT_FILE)
+    compute_and_save_method_sizes(all_methods, type_size_map, METHOD_SIZE_OUTPUT_FILE)
 
 if __name__ == "__main__":
     main()

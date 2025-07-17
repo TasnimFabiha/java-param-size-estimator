@@ -1,518 +1,798 @@
 Method,Parameter Types,Param Sizes,Total Param Size
-java.lang.Integer.parseInt(java.lang.String): int,['java.lang.String'],[24],24
-java.lang.Integer.valueOf(int): java.lang.Integer,['int'],[4],4
-java.lang.Object.Object(),[],[],0
-java.lang.RuntimeException.RuntimeException(java.lang.String),['java.lang.String'],[24],24
-java.lang.String.equals(java.lang.Object): boolean,['java.lang.Object'],[16],16
-java.lang.String.length(): int,[],[],0
-java.lang.String.split(java.lang.String): java.lang.String[],['java.lang.String'],[24],24
-java.lang.String.toLowerCase(): java.lang.String,[],[],0
-java.lang.String.trim(): java.lang.String,[],[],0
-java.math.BigDecimal.BigDecimal(int),['int'],[4],4
-java.math.BigDecimal.ZERO,[],[],0
-java.math.BigDecimal.add(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
-java.math.BigDecimal.multiply(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
-java.util.ArrayList.ArrayList(),[],[],0
-java.util.Arrays.asList(java.lang.Object[]): java.util.List,['java.lang.Object[]'],[24],24
-java.util.Collections.synchronizedMap(java.util.Map): java.util.Map,['java.util.Map'],[48],48
-java.util.Collections.unmodifiableList(java.util.List): java.util.List,['java.util.List'],[24],24
-java.util.Date.Date(),[],[],0
-java.util.HashMap.HashMap(),[],[],0
-java.util.HashMap.HashMap(int),['int'],[4],4
-java.util.Iterator.hasNext(): boolean,[],[],0
-java.util.Iterator.next(): java.lang.Object,[],[],0
-java.util.Iterator.remove(): void,[],[],0
-java.util.List.add(java.lang.Object): boolean,['java.lang.Object'],[16],16
-java.util.List.addAll(java.util.Collection): boolean,['java.util.Collection'],[24],24
-java.util.List.forEach(java.util.function.Consumer): void,['java.util.function.Consumer'],[16],16
-java.util.List.iterator(): java.util.Iterator,[],[],0
-java.util.List.remove(java.lang.Object): boolean,['java.lang.Object'],[16],16
-java.util.List.size(): int,[],[],0
-java.util.List.stream(): java.util.stream.Stream,[],[],0
-java.util.Map.containsKey(java.lang.Object): boolean,['java.lang.Object'],[16],16
-java.util.Map.get(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
-"java.util.Map.put(java.lang.Object, java.lang.Object): java.lang.Object","['java.lang.Object', 'java.lang.Object']","[16, 16]",32
-java.util.Map.remove(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
-java.util.Optional.filter(java.util.function.Predicate): java.util.Optional,['java.util.function.Predicate'],[16],16
-java.util.Optional.ifPresent(java.util.function.Consumer): void,['java.util.function.Consumer'],[16],16
-java.util.Optional.map(java.util.function.Function): java.util.Optional,['java.util.function.Function'],[16],16
-java.util.Optional.ofNullable(java.lang.Object): java.util.Optional,['java.lang.Object'],[16],16
-java.util.Optional.orElse(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
-java.util.stream.Stream.map(java.util.function.Function): java.util.stream.Stream,['java.util.function.Function'],[16],16
-"java.util.stream.Stream.reduce(java.lang.Object, java.util.function.BinaryOperator): java.lang.Object","['java.lang.Object', 'java.util.function.BinaryOperator']","[16, 16]",32
-javax.servlet.http.HttpServletRequest.getParameter(java.lang.String): java.lang.String,['java.lang.String'],[24],24
-javax.servlet.http.HttpServletRequest.getSession(): javax.servlet.http.HttpSession,[],[],0
-javax.servlet.http.HttpSession.getAttribute(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
-javax.servlet.http.HttpSession.invalidate(): void,[],[],0
-"javax.servlet.http.HttpSession.setAttribute(java.lang.String, java.lang.Object): void","['java.lang.String', 'java.lang.Object']","[24, 16]",40
-net.sourceforge.stripes.action.ActionBeanContext.getMessages(): java.util.List,[],[],0
-net.sourceforge.stripes.action.ActionBeanContext.getRequest(): javax.servlet.http.HttpServletRequest,[],[],0
-net.sourceforge.stripes.action.ForwardResolution.ForwardResolution(java.lang.Class),['java.lang.Class'],[16],16
-net.sourceforge.stripes.action.ForwardResolution.ForwardResolution(java.lang.String),['java.lang.String'],[24],24
-net.sourceforge.stripes.action.RedirectResolution.RedirectResolution(java.lang.Class),['java.lang.Class'],[16],16
-"net.sourceforge.stripes.action.SimpleMessage.SimpleMessage(java.lang.String, java.lang.Object[])","['java.lang.String', 'java.lang.Object[]']","[24, 24]",48
-org.mybatis.jpetstore.domain.Account.Account(),[],[],0
-org.mybatis.jpetstore.domain.Account.address1,[],[],0
-org.mybatis.jpetstore.domain.Account.address2,[],[],0
-org.mybatis.jpetstore.domain.Account.bannerName,[],[],0
-org.mybatis.jpetstore.domain.Account.bannerOption,[],[],0
-org.mybatis.jpetstore.domain.Account.city,[],[],0
-org.mybatis.jpetstore.domain.Account.country,[],[],0
-org.mybatis.jpetstore.domain.Account.email,[],[],0
-org.mybatis.jpetstore.domain.Account.favouriteCategoryId,[],[],0
-org.mybatis.jpetstore.domain.Account.firstName,[],[],0
-org.mybatis.jpetstore.domain.Account.getAddress1(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getAddress2(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getBannerName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getCity(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getCountry(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getEmail(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getFirstName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getLanguagePreference(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getLastName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getPassword(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getPhone(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getState(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getStatus(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getUsername(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.getZip(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Account.isBannerOption(): boolean,[],[],0
-org.mybatis.jpetstore.domain.Account.isListOption(): boolean,[],[],0
-org.mybatis.jpetstore.domain.Account.languagePreference,[],[],0
-org.mybatis.jpetstore.domain.Account.lastName,[],[],0
-org.mybatis.jpetstore.domain.Account.listOption,[],[],0
-org.mybatis.jpetstore.domain.Account.password,[],[],0
-org.mybatis.jpetstore.domain.Account.phone,[],[],0
-org.mybatis.jpetstore.domain.Account.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.Account.setAddress1(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setAddress2(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setBannerName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setBannerOption(boolean): void,['boolean'],[1],1
-org.mybatis.jpetstore.domain.Account.setCity(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setCountry(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setEmail(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setFirstName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setLanguagePreference(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setLastName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setListOption(boolean): void,['boolean'],[1],1
-org.mybatis.jpetstore.domain.Account.setPassword(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setPhone(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setState(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setStatus(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setUsername(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.setZip(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Account.state,[],[],0
-org.mybatis.jpetstore.domain.Account.status,[],[],0
-org.mybatis.jpetstore.domain.Account.username,[],[],0
-org.mybatis.jpetstore.domain.Account.zip,[],[],0
-org.mybatis.jpetstore.domain.Cart.Cart(),[],[],0
-"org.mybatis.jpetstore.domain.Cart.addItem(org.mybatis.jpetstore.domain.Item, boolean): void","['org.mybatis.jpetstore.domain.Item', 'boolean']","[64, 1]",65
-org.mybatis.jpetstore.domain.Cart.containsItemId(java.lang.String): boolean,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Cart.getAllCartItems(): java.util.Iterator,[],[],0
-org.mybatis.jpetstore.domain.Cart.getCartItemList(): java.util.List,[],[],0
-org.mybatis.jpetstore.domain.Cart.getCartItems(): java.util.Iterator,[],[],0
-org.mybatis.jpetstore.domain.Cart.getNumberOfItems(): int,[],[],0
-org.mybatis.jpetstore.domain.Cart.getSubTotal(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.Cart.incrementQuantityByItemId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Cart.itemList,[],[],0
-org.mybatis.jpetstore.domain.Cart.itemMap,[],[],0
-org.mybatis.jpetstore.domain.Cart.lambda$0(org.mybatis.jpetstore.domain.CartItem): java.math.BigDecimal,['org.mybatis.jpetstore.domain.CartItem'],[32],32
-org.mybatis.jpetstore.domain.Cart.removeItemById(java.lang.String): org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Cart.serialVersionUID,[],[],0
-"org.mybatis.jpetstore.domain.Cart.setQuantityByItemId(java.lang.String, int): void","['java.lang.String', 'int']","[24, 4]",28
-org.mybatis.jpetstore.domain.CartItem.CartItem(),[],[],0
-org.mybatis.jpetstore.domain.CartItem.calculateTotal(): void,[],[],0
-org.mybatis.jpetstore.domain.CartItem.getItem(): org.mybatis.jpetstore.domain.Item,[],[],0
-org.mybatis.jpetstore.domain.CartItem.getQuantity(): int,[],[],0
-org.mybatis.jpetstore.domain.CartItem.getTotal(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.CartItem.inStock,[],[],0
-org.mybatis.jpetstore.domain.CartItem.incrementQuantity(): void,[],[],0
-org.mybatis.jpetstore.domain.CartItem.isInStock(): boolean,[],[],0
-org.mybatis.jpetstore.domain.CartItem.item,[],[],0
-org.mybatis.jpetstore.domain.CartItem.lambda$1(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
-org.mybatis.jpetstore.domain.CartItem.quantity,[],[],0
-org.mybatis.jpetstore.domain.CartItem.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.CartItem.setInStock(boolean): void,['boolean'],[1],1
-org.mybatis.jpetstore.domain.CartItem.setItem(org.mybatis.jpetstore.domain.Item): void,['org.mybatis.jpetstore.domain.Item'],[64],64
-org.mybatis.jpetstore.domain.CartItem.setQuantity(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.CartItem.total,[],[],0
-org.mybatis.jpetstore.domain.Category.Category(),[],[],0
-org.mybatis.jpetstore.domain.Category.categoryId,[],[],0
-org.mybatis.jpetstore.domain.Category.description,[],[],0
-org.mybatis.jpetstore.domain.Category.getCategoryId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Category.getDescription(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Category.getName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Category.name,[],[],0
-org.mybatis.jpetstore.domain.Category.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.Category.setCategoryId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Category.setDescription(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Category.setName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Category.toString(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.Item(),[],[],0
-org.mybatis.jpetstore.domain.Item.attribute1,[],[],0
-org.mybatis.jpetstore.domain.Item.attribute2,[],[],0
-org.mybatis.jpetstore.domain.Item.attribute3,[],[],0
-org.mybatis.jpetstore.domain.Item.attribute4,[],[],0
-org.mybatis.jpetstore.domain.Item.attribute5,[],[],0
-org.mybatis.jpetstore.domain.Item.getAttribute1(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getAttribute2(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getAttribute3(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getAttribute4(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getAttribute5(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getItemId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getListPrice(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.Item.getProduct(): org.mybatis.jpetstore.domain.Product,[],[],0
-org.mybatis.jpetstore.domain.Item.getQuantity(): int,[],[],0
-org.mybatis.jpetstore.domain.Item.getStatus(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.getSupplierId(): int,[],[],0
-org.mybatis.jpetstore.domain.Item.getUnitCost(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.Item.itemId,[],[],0
-org.mybatis.jpetstore.domain.Item.listPrice,[],[],0
-org.mybatis.jpetstore.domain.Item.product,[],[],0
-org.mybatis.jpetstore.domain.Item.productId,[],[],0
-org.mybatis.jpetstore.domain.Item.quantity,[],[],0
-org.mybatis.jpetstore.domain.Item.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.Item.setAttribute1(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setAttribute2(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setAttribute3(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setAttribute4(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setAttribute5(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setItemId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setListPrice(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
-org.mybatis.jpetstore.domain.Item.setProduct(org.mybatis.jpetstore.domain.Product): void,['org.mybatis.jpetstore.domain.Product'],[32],32
-org.mybatis.jpetstore.domain.Item.setQuantity(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.Item.setStatus(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Item.setSupplierId(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.Item.setUnitCost(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
-org.mybatis.jpetstore.domain.Item.status,[],[],0
-org.mybatis.jpetstore.domain.Item.supplierId,[],[],0
-org.mybatis.jpetstore.domain.Item.toString(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Item.unitCost,[],[],0
-org.mybatis.jpetstore.domain.LineItem.LineItem(),[],[],0
-"org.mybatis.jpetstore.domain.LineItem.LineItem(int, org.mybatis.jpetstore.domain.CartItem)","['int', 'org.mybatis.jpetstore.domain.CartItem']","[4, 32]",36
-org.mybatis.jpetstore.domain.LineItem.calculateTotal(): void,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getItem(): org.mybatis.jpetstore.domain.Item,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getItemId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getLineNumber(): int,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getOrderId(): int,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getQuantity(): int,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getTotal(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.LineItem.getUnitPrice(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.LineItem.item,[],[],0
-org.mybatis.jpetstore.domain.LineItem.itemId,[],[],0
-org.mybatis.jpetstore.domain.LineItem.lambda$1(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
-org.mybatis.jpetstore.domain.LineItem.lineNumber,[],[],0
-org.mybatis.jpetstore.domain.LineItem.orderId,[],[],0
-org.mybatis.jpetstore.domain.LineItem.quantity,[],[],0
-org.mybatis.jpetstore.domain.LineItem.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.LineItem.setItem(org.mybatis.jpetstore.domain.Item): void,['org.mybatis.jpetstore.domain.Item'],[64],64
-org.mybatis.jpetstore.domain.LineItem.setItemId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.LineItem.setLineNumber(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.LineItem.setOrderId(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.LineItem.setQuantity(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.LineItem.setUnitPrice(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
-org.mybatis.jpetstore.domain.LineItem.total,[],[],0
-org.mybatis.jpetstore.domain.LineItem.unitPrice,[],[],0
-org.mybatis.jpetstore.domain.Order.Order(),[],[],0
-org.mybatis.jpetstore.domain.Order.addLineItem(org.mybatis.jpetstore.domain.CartItem): void,['org.mybatis.jpetstore.domain.CartItem'],[32],32
-org.mybatis.jpetstore.domain.Order.addLineItem(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
-org.mybatis.jpetstore.domain.Order.billAddress1,[],[],0
-org.mybatis.jpetstore.domain.Order.billAddress2,[],[],0
-org.mybatis.jpetstore.domain.Order.billCity,[],[],0
-org.mybatis.jpetstore.domain.Order.billCountry,[],[],0
-org.mybatis.jpetstore.domain.Order.billState,[],[],0
-org.mybatis.jpetstore.domain.Order.billToFirstName,[],[],0
-org.mybatis.jpetstore.domain.Order.billToLastName,[],[],0
-org.mybatis.jpetstore.domain.Order.billZip,[],[],0
-org.mybatis.jpetstore.domain.Order.cardType,[],[],0
-org.mybatis.jpetstore.domain.Order.courier,[],[],0
-org.mybatis.jpetstore.domain.Order.creditCard,[],[],0
-org.mybatis.jpetstore.domain.Order.expiryDate,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillAddress1(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillAddress2(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillCity(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillCountry(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillState(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillToFirstName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillToLastName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getBillZip(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getCardType(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getCourier(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getCreditCard(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getExpiryDate(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getLineItems(): java.util.List,[],[],0
-org.mybatis.jpetstore.domain.Order.getLocale(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getOrderDate(): java.util.Date,[],[],0
-org.mybatis.jpetstore.domain.Order.getOrderId(): int,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipAddress1(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipAddress2(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipCity(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipCountry(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipState(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipToFirstName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipToLastName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getShipZip(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getStatus(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Order.getTotalPrice(): java.math.BigDecimal,[],[],0
-org.mybatis.jpetstore.domain.Order.getUsername(): java.lang.String,[],[],0
-"org.mybatis.jpetstore.domain.Order.initOrder(org.mybatis.jpetstore.domain.Account, org.mybatis.jpetstore.domain.Cart): void","['org.mybatis.jpetstore.domain.Account', 'org.mybatis.jpetstore.domain.Cart']","[80, 24]",104
-org.mybatis.jpetstore.domain.Order.lineItems,[],[],0
-org.mybatis.jpetstore.domain.Order.locale,[],[],0
-org.mybatis.jpetstore.domain.Order.orderDate,[],[],0
-org.mybatis.jpetstore.domain.Order.orderId,[],[],0
-org.mybatis.jpetstore.domain.Order.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.Order.setBillAddress1(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillAddress2(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillCity(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillCountry(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillState(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillToFirstName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillToLastName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setBillZip(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setCardType(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setCourier(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setCreditCard(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setExpiryDate(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setLineItems(java.util.List): void,['java.util.List'],[24],24
-org.mybatis.jpetstore.domain.Order.setLocale(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setOrderDate(java.util.Date): void,['java.util.Date'],[24],24
-org.mybatis.jpetstore.domain.Order.setOrderId(int): void,['int'],[4],4
-org.mybatis.jpetstore.domain.Order.setShipAddress1(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipAddress2(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipCity(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipCountry(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipState(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipToFirstName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipToLastName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setShipZip(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setStatus(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.setTotalPrice(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
-org.mybatis.jpetstore.domain.Order.setUsername(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Order.shipAddress1,[],[],0
-org.mybatis.jpetstore.domain.Order.shipAddress2,[],[],0
-org.mybatis.jpetstore.domain.Order.shipCity,[],[],0
-org.mybatis.jpetstore.domain.Order.shipCountry,[],[],0
-org.mybatis.jpetstore.domain.Order.shipState,[],[],0
-org.mybatis.jpetstore.domain.Order.shipToFirstName,[],[],0
-org.mybatis.jpetstore.domain.Order.shipToLastName,[],[],0
-org.mybatis.jpetstore.domain.Order.shipZip,[],[],0
-org.mybatis.jpetstore.domain.Order.status,[],[],0
-org.mybatis.jpetstore.domain.Order.totalPrice,[],[],0
-org.mybatis.jpetstore.domain.Order.username,[],[],0
-org.mybatis.jpetstore.domain.Product.Product(),[],[],0
-org.mybatis.jpetstore.domain.Product.categoryId,[],[],0
-org.mybatis.jpetstore.domain.Product.description,[],[],0
-org.mybatis.jpetstore.domain.Product.getCategoryId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Product.getDescription(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Product.getName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Product.getProductId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Product.name,[],[],0
-org.mybatis.jpetstore.domain.Product.productId,[],[],0
-org.mybatis.jpetstore.domain.Product.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.Product.setCategoryId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Product.setDescription(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Product.setName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Product.setProductId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Product.toString(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Sequence.Sequence(),[],[],0
-"org.mybatis.jpetstore.domain.Sequence.Sequence(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
-org.mybatis.jpetstore.domain.Sequence.getName(): java.lang.String,[],[],0
-org.mybatis.jpetstore.domain.Sequence.getNextId(): int,[],[],0
-org.mybatis.jpetstore.domain.Sequence.name,[],[],0
-org.mybatis.jpetstore.domain.Sequence.nextId,[],[],0
-org.mybatis.jpetstore.domain.Sequence.serialVersionUID,[],[],0
-org.mybatis.jpetstore.domain.Sequence.setName(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.domain.Sequence.setNextId(int): void,['int'],[4],4
-org.mybatis.jpetstore.mapper.AccountMapper.getAccountByUsername(java.lang.String): org.mybatis.jpetstore.domain.Account,['java.lang.String'],[24],24
-"org.mybatis.jpetstore.mapper.AccountMapper.getAccountByUsernameAndPassword(java.lang.String, java.lang.String): org.mybatis.jpetstore.domain.Account","['java.lang.String', 'java.lang.String']","[24, 24]",48
-org.mybatis.jpetstore.mapper.AccountMapper.insertAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.mapper.AccountMapper.insertProfile(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.mapper.AccountMapper.insertSignon(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.mapper.AccountMapper.updateAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.mapper.AccountMapper.updateProfile(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.mapper.AccountMapper.updateSignon(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.mapper.CategoryMapper.getCategory(java.lang.String): org.mybatis.jpetstore.domain.Category,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.CategoryMapper.getCategoryList(): java.util.List,[],[],0
-org.mybatis.jpetstore.mapper.ItemMapper.getInventoryQuantity(java.lang.String): int,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct() : org.mybatis.jpetstore.domain.Product,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillState() : java.lang.String,[],[],0
 org.mybatis.jpetstore.mapper.ItemMapper.getItem(java.lang.String): org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.ItemMapper.getItemListByProduct(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.ItemMapper.updateInventoryQuantity(java.util.Map): void,['java.util.Map'],[48],48
-org.mybatis.jpetstore.mapper.LineItemMapper.getLineItemsByOrderId(int): java.util.List,['int'],[4],4
-org.mybatis.jpetstore.mapper.LineItemMapper.insertLineItem(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
-org.mybatis.jpetstore.mapper.OrderMapper.getOrder(int): org.mybatis.jpetstore.domain.Order,['int'],[4],4
-org.mybatis.jpetstore.mapper.OrderMapper.getOrdersByUsername(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.OrderMapper.insertOrder(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
-org.mybatis.jpetstore.mapper.OrderMapper.insertOrderStatus(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
-org.mybatis.jpetstore.mapper.ProductMapper.getProduct(java.lang.String): org.mybatis.jpetstore.domain.Product,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.ProductMapper.getProductListByCategory(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.ProductMapper.searchProductList(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.mapper.SequenceMapper.getSequence(org.mybatis.jpetstore.domain.Sequence): org.mybatis.jpetstore.domain.Sequence,['org.mybatis.jpetstore.domain.Sequence'],[24],24
-org.mybatis.jpetstore.mapper.SequenceMapper.updateSequence(org.mybatis.jpetstore.domain.Sequence): void,['org.mybatis.jpetstore.domain.Sequence'],[24],24
-org.mybatis.jpetstore.service.AccountService.AccountService(org.mybatis.jpetstore.mapper.AccountMapper),['org.mybatis.jpetstore.mapper.AccountMapper'],[16],16
-org.mybatis.jpetstore.service.AccountService.accountMapper,[],[],0
-org.mybatis.jpetstore.service.AccountService.getAccount(java.lang.String): org.mybatis.jpetstore.domain.Account,['java.lang.String'],[24],24
-"org.mybatis.jpetstore.service.AccountService.getAccount(java.lang.String, java.lang.String): org.mybatis.jpetstore.domain.Account","['java.lang.String', 'java.lang.String']","[24, 24]",48
-org.mybatis.jpetstore.service.AccountService.insertAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-org.mybatis.jpetstore.service.AccountService.lambda$0(java.lang.String): boolean,['java.lang.String'],[24],24
-"org.mybatis.jpetstore.service.AccountService.lambda$1(org.mybatis.jpetstore.domain.Account, java.lang.String): void","['org.mybatis.jpetstore.domain.Account', 'java.lang.String']","[80, 24]",104
-org.mybatis.jpetstore.service.AccountService.updateAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
-"org.mybatis.jpetstore.service.CatalogService.CatalogService(org.mybatis.jpetstore.mapper.CategoryMapper, org.mybatis.jpetstore.mapper.ItemMapper, org.mybatis.jpetstore.mapper.ProductMapper)","['org.mybatis.jpetstore.mapper.CategoryMapper', 'org.mybatis.jpetstore.mapper.ItemMapper', 'org.mybatis.jpetstore.mapper.ProductMapper']","[16, 16, 16]",48
-org.mybatis.jpetstore.service.CatalogService.categoryMapper,[],[],0
-org.mybatis.jpetstore.service.CatalogService.getCategory(java.lang.String): org.mybatis.jpetstore.domain.Category,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setAttribute5(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setBillToLastName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.lambda$1(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Order.getTotalPrice() : java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getOrderId(): int,[],[],0
+java.util.Iterator.next(): java.lang.Object,[],[],0
 org.mybatis.jpetstore.service.CatalogService.getCategoryList(): java.util.List,[],[],0
-org.mybatis.jpetstore.service.CatalogService.getItem(java.lang.String): org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.CatalogService.getItemListByProduct(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.CatalogService.getProduct(java.lang.String): org.mybatis.jpetstore.domain.Product,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.CatalogService.getProductListByCategory(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.CatalogService.isItemInStock(java.lang.String): boolean,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.CatalogService.itemMapper,[],[],0
-org.mybatis.jpetstore.service.CatalogService.productMapper,[],[],0
-org.mybatis.jpetstore.service.CatalogService.searchProductList(java.lang.String): java.util.List,['java.lang.String'],[24],24
-"org.mybatis.jpetstore.service.OrderService.OrderService(org.mybatis.jpetstore.mapper.ItemMapper, org.mybatis.jpetstore.mapper.OrderMapper, org.mybatis.jpetstore.mapper.SequenceMapper, org.mybatis.jpetstore.mapper.LineItemMapper)","['org.mybatis.jpetstore.mapper.ItemMapper', 'org.mybatis.jpetstore.mapper.OrderMapper', 'org.mybatis.jpetstore.mapper.SequenceMapper', 'org.mybatis.jpetstore.mapper.LineItemMapper']","[16, 16, 16, 16]",64
-org.mybatis.jpetstore.service.OrderService.getNextId(java.lang.String): int,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.OrderService.getOrder(int): org.mybatis.jpetstore.domain.Order,['int'],[4],4
-org.mybatis.jpetstore.service.OrderService.getOrdersByUsername(java.lang.String): java.util.List,['java.lang.String'],[24],24
-org.mybatis.jpetstore.service.OrderService.insertOrder(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
-org.mybatis.jpetstore.service.OrderService.itemMapper,[],[],0
-org.mybatis.jpetstore.service.OrderService.lambda$0(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
-"org.mybatis.jpetstore.service.OrderService.lambda$1(org.mybatis.jpetstore.domain.Order, org.mybatis.jpetstore.domain.LineItem): void","['org.mybatis.jpetstore.domain.Order', 'org.mybatis.jpetstore.domain.LineItem']","[120, 40]",160
-org.mybatis.jpetstore.service.OrderService.lambda$2(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
-org.mybatis.jpetstore.service.OrderService.lineItemMapper,[],[],0
-org.mybatis.jpetstore.service.OrderService.orderMapper,[],[],0
-org.mybatis.jpetstore.service.OrderService.sequenceMapper,[],[],0
-org.mybatis.jpetstore.web.actions.AbstractActionBean.AbstractActionBean(),[],[],0
-org.mybatis.jpetstore.web.actions.AbstractActionBean.ERROR,[],[],0
-org.mybatis.jpetstore.web.actions.AbstractActionBean.context,[],[],0
-org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext(): net.sourceforge.stripes.action.ActionBeanContext,[],[],0
-org.mybatis.jpetstore.web.actions.AbstractActionBean.serialVersionUID,[],[],0
-org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext(net.sourceforge.stripes.action.ActionBeanContext): void,['net.sourceforge.stripes.action.ActionBeanContext'],[32],32
-org.mybatis.jpetstore.web.actions.AbstractActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.AccountActionBean.AccountActionBean(),[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.CATEGORY_LIST,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.EDIT_ACCOUNT,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.LANGUAGE_LIST,[],[],0
+org.mybatis.jpetstore.domain.Item.getListPrice(): java.math.BigDecimal,[],[],0
 org.mybatis.jpetstore.web.actions.AccountActionBean.NEW_ACCOUNT,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.SIGNON,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.account,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.accountService,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.authenticated,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.catalogService,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.clear(): void,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.context,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.editAccount(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount(): org.mybatis.jpetstore.domain.Account,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.getMyList(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword(): java.lang.String,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername(): java.lang.String,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated(): boolean,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.myList,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.serialVersionUID,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.AccountActionBean.setMyList(java.util.List): void,['java.util.List'],[24],24
-org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.AccountActionBean.signoff(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.signon(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.AccountActionBean.static {},[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.CHECK_OUT,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.CartActionBean(),[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.VIEW_CART,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.addItemToCart(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.cart,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.catalogService,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.checkOut(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.clear(): void,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.context,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.getCart(): org.mybatis.jpetstore.domain.Cart,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.removeItemFromCart(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.serialVersionUID,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.setCart(org.mybatis.jpetstore.domain.Cart): void,['org.mybatis.jpetstore.domain.Cart'],[24],24
-org.mybatis.jpetstore.web.actions.CartActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.CartActionBean.setWorkingItemId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.CartActionBean.updateCartQuantities(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.viewCart(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.CartActionBean.workingItemId,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.CatalogActionBean(),[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.MAIN,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.SEARCH_PRODUCTS,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.VIEW_CATEGORY,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.VIEW_ITEM,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.VIEW_PRODUCT,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.catalogService,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.category,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.categoryId,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.categoryList,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.clear(): void,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory(): org.mybatis.jpetstore.domain.Category,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryList(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem(): org.mybatis.jpetstore.domain.Item,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword(): java.lang.String,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct(): org.mybatis.jpetstore.domain.Product,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductId(): java.lang.String,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.item,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.itemId,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.itemList,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.keyword,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.product,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.productId,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.productList,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.searchProducts(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.serialVersionUID,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategory(org.mybatis.jpetstore.domain.Category): void,['org.mybatis.jpetstore.domain.Category'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryList(java.util.List): void,['java.util.List'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setItem(org.mybatis.jpetstore.domain.Item): void,['org.mybatis.jpetstore.domain.Item'],[64],64
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemList(java.util.List): void,['java.util.List'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setKeyword(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setProduct(org.mybatis.jpetstore.domain.Product): void,['org.mybatis.jpetstore.domain.Product'],[32],32
-org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getEmail(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Cart.getSubTotal(): java.math.BigDecimal,[],[],0
 org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductList(java.util.List): void,['java.util.List'],[24],24
-org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.CARD_TYPE_LIST,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.CONFIRM_ORDER,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.LIST_ORDERS,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.NEW_ORDER,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.OrderActionBean(),[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.SHIPPING,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.VIEW_ORDER,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.clear(): void,[],[],0
+org.mybatis.jpetstore.domain.Order.getLineItems(): java.util.List,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Category.description,[],[],0
 org.mybatis.jpetstore.web.actions.OrderActionBean.confirmed,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.context,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.getCreditCardTypes(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.getOrder(): org.mybatis.jpetstore.domain.Order,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderId(): int,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderList(): java.util.List,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.isConfirmed(): boolean,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.isShippingAddressRequired(): boolean,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.listOrders(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.newOrder(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.newOrderForm(): net.sourceforge.stripes.action.Resolution,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.order,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.orderList,[],[],0
+org.mybatis.jpetstore.domain.LineItem.lineNumber,[],[],0
+org.mybatis.jpetstore.domain.Order.shipCity,[],[],0
+org.mybatis.jpetstore.domain.Order.shipZip,[],[],0
+org.mybatis.jpetstore.domain.Cart.incrementQuantityByItemId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.getProduct(java.lang.String): org.mybatis.jpetstore.domain.Product,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.setOrderId(int): void,['int'],[4],4
+org.mybatis.jpetstore.web.actions.AccountActionBean.CATEGORY_LIST,[],[],0
 org.mybatis.jpetstore.web.actions.OrderActionBean.orderService,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.serialVersionUID,[],[],0
-org.mybatis.jpetstore.web.actions.OrderActionBean.setConfirmed(boolean): void,['boolean'],[1],1
-org.mybatis.jpetstore.web.actions.OrderActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
-org.mybatis.jpetstore.web.actions.OrderActionBean.setOrder(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
-org.mybatis.jpetstore.web.actions.OrderActionBean.setOrderId(int): void,['int'],[4],4
-org.mybatis.jpetstore.web.actions.OrderActionBean.setShippingAddressRequired(boolean): void,['boolean'],[1],1
-org.mybatis.jpetstore.web.actions.OrderActionBean.shippingAddressRequired,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipAddress2(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.getEmail() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Category.getCategoryId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.OrderService.getOrder(int): org.mybatis.jpetstore.domain.Order,['int'],[4],4
+"org.mybatis.jpetstore.domain.LineItem.LineItem(int, org.mybatis.jpetstore.domain.CartItem)","['int', 'org.mybatis.jpetstore.domain.CartItem']","[4, 32]",36
+org.mybatis.jpetstore.domain.Item.getStatus(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.orderList,[],[],0
+org.mybatis.jpetstore.domain.Account.getUsername(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.getItemId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext(net.sourceforge.stripes.action.ActionBeanContext) : void,['net.sourceforge.stripes.action.ActionBeanContext'],[32],32
+org.mybatis.jpetstore.mapper.AccountMapper.insertSignon(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.mapper.OrderMapper.getOrdersByUsername(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getLanguagePreference(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.listOrders(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.mapper.SequenceMapper.updateSequence(org.mybatis.jpetstore.domain.Sequence) : void,['org.mybatis.jpetstore.domain.Sequence'],[24],24
+org.mybatis.jpetstore.domain.Cart.getCartItemList() : java.util.List,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.catalogService,[],[],0
+org.mybatis.jpetstore.domain.Cart.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.Order.setLineItems(java.util.List) : void,['java.util.List'],[24],24
+org.mybatis.jpetstore.domain.Item.setProduct(org.mybatis.jpetstore.domain.Product) : void,['org.mybatis.jpetstore.domain.Product'],[32],32
+org.mybatis.jpetstore.domain.LineItem.getItem(): org.mybatis.jpetstore.domain.Item,[],[],0
+org.mybatis.jpetstore.domain.Order.getUsername() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Sequence.Sequence(),[],[],0
+org.mybatis.jpetstore.service.AccountService.accountMapper,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.LIST_ORDERS,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.insertProfile(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+java.lang.String.trim(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.setState(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getShipState() : java.lang.String,[],[],0
+"org.mybatis.jpetstore.service.OrderService.lambda$1(org.mybatis.jpetstore.domain.Order, org.mybatis.jpetstore.domain.LineItem): void","['org.mybatis.jpetstore.domain.Order', 'org.mybatis.jpetstore.domain.LineItem']","[120, 40]",160
+org.mybatis.jpetstore.mapper.ProductMapper.searchProductList(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount(): org.mybatis.jpetstore.domain.Account,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getOrderId() : int,[],[],0
+org.mybatis.jpetstore.domain.Product.setCategoryId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setShipAddress1(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderId() : int,[],[],0
+java.lang.Object.Object(),[],[],0
+org.mybatis.jpetstore.domain.Category.toString() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.setLineItems(java.util.List): void,['java.util.List'],[24],24
+org.mybatis.jpetstore.domain.Order.getShipToFirstName() : java.lang.String,[],[],0
+"org.mybatis.jpetstore.domain.Cart.addItem(org.mybatis.jpetstore.domain.Item, boolean) : void","['org.mybatis.jpetstore.domain.Item', 'boolean']","[64, 1]",65
+java.math.BigDecimal.add(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.web.actions.AbstractActionBean.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.Product.toString(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.attribute3,[],[],0
+org.mybatis.jpetstore.domain.Item.getProduct() : org.mybatis.jpetstore.domain.Product,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipState(): java.lang.String,[],[],0
+org.mybatis.jpetstore.service.OrderService.lineItemMapper,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.keyword,[],[],0
+"org.mybatis.jpetstore.service.OrderService.OrderService(org.mybatis.jpetstore.mapper.ItemMapper, org.mybatis.jpetstore.mapper.OrderMapper, org.mybatis.jpetstore.mapper.SequenceMapper, org.mybatis.jpetstore.mapper.LineItemMapper)","['org.mybatis.jpetstore.mapper.ItemMapper', 'org.mybatis.jpetstore.mapper.OrderMapper', 'org.mybatis.jpetstore.mapper.SequenceMapper', 'org.mybatis.jpetstore.mapper.LineItemMapper']","[16, 16, 16, 16]",64
+org.mybatis.jpetstore.mapper.AccountMapper.updateProfile(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Account.isListOption(): boolean,[],[],0
+org.mybatis.jpetstore.domain.Account.setCity(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.NEW_ORDER,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillZip(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setAttribute4(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.mapper.CategoryMapper.getCategoryList(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Order.addLineItem(org.mybatis.jpetstore.domain.LineItem) : void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
+"org.mybatis.jpetstore.domain.Order.initOrder(org.mybatis.jpetstore.domain.Account, org.mybatis.jpetstore.domain.Cart) : void","['org.mybatis.jpetstore.domain.Account', 'org.mybatis.jpetstore.domain.Cart']","[80, 24]",104
+org.mybatis.jpetstore.service.CatalogService.getProduct(java.lang.String) : org.mybatis.jpetstore.domain.Product,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setLocale(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Sequence.getName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.email,[],[],0
+org.mybatis.jpetstore.domain.Account.getCity() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.getAttribute1() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.CatalogService.getItemListByProduct(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.AccountService.insertAccount(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.web.actions.AccountActionBean.getMyList() : java.util.List,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategory(org.mybatis.jpetstore.domain.Category): void,['org.mybatis.jpetstore.domain.Category'],[24],24
+org.mybatis.jpetstore.domain.Sequence.nextId,[],[],0
+org.mybatis.jpetstore.domain.CartItem.setInStock(boolean): void,['boolean'],[1],1
+org.mybatis.jpetstore.service.OrderService.getNextId(java.lang.String) : int,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.setOrder(org.mybatis.jpetstore.domain.Order) : void,['org.mybatis.jpetstore.domain.Order'],[120],120
+"org.mybatis.jpetstore.service.AccountService.getAccount(java.lang.String, java.lang.String) : org.mybatis.jpetstore.domain.Account","['java.lang.String', 'java.lang.String']","[24, 24]",48
+org.mybatis.jpetstore.web.actions.CartActionBean.CHECK_OUT,[],[],0
+org.mybatis.jpetstore.domain.Item.listPrice,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.domain.Account.setPhone(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.CartItem.setItem(org.mybatis.jpetstore.domain.Item) : void,['org.mybatis.jpetstore.domain.Item'],[64],64
+org.mybatis.jpetstore.domain.Item.setAttribute2(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setCreditCard(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setListPrice(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Order.getCourier() : java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.CategoryMapper.getCategoryList() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Account.getFirstName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.getAttribute2(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Sequence.getName(): java.lang.String,[],[],0
+javax.servlet.http.HttpSession.getAttribute(java.lang.String): java.lang.Object,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getBillZip(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipZip() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.shipAddress2,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setKeyword(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setLanguagePreference(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.isItemInStock(java.lang.String) : boolean,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.signon(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.Item.setAttribute2(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.categoryId,[],[],0
+org.mybatis.jpetstore.domain.Category.getName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.shipState,[],[],0
+org.mybatis.jpetstore.mapper.ProductMapper.getProductListByCategory(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getTotal() : java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.web.actions.AbstractActionBean.AbstractActionBean(),[],[],0
+org.mybatis.jpetstore.domain.Account.getFirstName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.isListOption() : boolean,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrder() : org.mybatis.jpetstore.domain.Order,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.MAIN,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillToFirstName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.username,[],[],0
+org.mybatis.jpetstore.domain.Product.setProductId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.serialVersionUID,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories(): java.util.List,[],[],0
+org.mybatis.jpetstore.mapper.ItemMapper.updateInventoryQuantity(java.util.Map): void,['java.util.Map'],[48],48
+org.mybatis.jpetstore.service.OrderService.insertOrder(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
+"org.mybatis.jpetstore.service.AccountService.getAccount(java.lang.String, java.lang.String): org.mybatis.jpetstore.domain.Account","['java.lang.String', 'java.lang.String']","[24, 24]",48
+org.mybatis.jpetstore.domain.Product.setDescription(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setKeyword(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.getItemListByProduct(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.getListPrice() : java.math.BigDecimal,[],[],0
+"java.util.Map.put(java.lang.Object, java.lang.Object): java.lang.Object","['java.lang.Object', 'java.lang.Object']","[16, 16]",32
+org.mybatis.jpetstore.domain.Item.getAttribute4(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.isShippingAddressRequired() : boolean,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipCity(): java.lang.String,[],[],0
+java.math.BigDecimal.BigDecimal(int),['int'],[4],4
+org.mybatis.jpetstore.web.actions.AccountActionBean.getMyList(): java.util.List,[],[],0
+org.mybatis.jpetstore.mapper.ItemMapper.getItemListByProduct(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Category.getCategoryId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.catalogService,[],[],0
+org.mybatis.jpetstore.domain.Account.setUsername(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getLastName() : java.lang.String,[],[],0
+java.util.List.add(java.lang.Object): boolean,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.domain.Order.addLineItem(org.mybatis.jpetstore.domain.CartItem) : void,['org.mybatis.jpetstore.domain.CartItem'],[32],32
+org.mybatis.jpetstore.domain.LineItem.getTotal(): java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.domain.Item.attribute1,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getQuantity(): int,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.insertProfile(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Order.setBillCountry(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.workingItemId,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipToFirstName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.isConfirmed() : boolean,[],[],0
+java.math.BigDecimal.multiply(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId(java.lang.String): void,['java.lang.String'],[24],24
+net.sourceforge.stripes.action.RedirectResolution.RedirectResolution(java.lang.Class),['java.lang.Class'],[16],16
+org.mybatis.jpetstore.domain.Account.state,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.myList,[],[],0
+org.mybatis.jpetstore.domain.CartItem.incrementQuantity() : void,[],[],0
+org.mybatis.jpetstore.domain.Item.setAttribute3(java.lang.String): void,['java.lang.String'],[24],24
 org.mybatis.jpetstore.web.actions.OrderActionBean.static {},[],[],0
+org.mybatis.jpetstore.domain.Order.setCourier(java.lang.String) : void,['java.lang.String'],[24],24
+"java.util.stream.Stream.reduce(java.lang.Object, java.util.function.BinaryOperator): java.lang.Object","['java.lang.Object', 'java.util.function.BinaryOperator']","[16, 16]",32
+org.mybatis.jpetstore.domain.Product.getDescription() : java.lang.String,[],[],0
+java.util.Optional.orElse(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.domain.Account.setFirstName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.getQuantity(): int,[],[],0
+org.mybatis.jpetstore.mapper.CategoryMapper.getCategory(java.lang.String): org.mybatis.jpetstore.domain.Category,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Product.setName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.phone,[],[],0
+org.mybatis.jpetstore.domain.Sequence.setName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setProduct(org.mybatis.jpetstore.domain.Product): void,['org.mybatis.jpetstore.domain.Product'],[32],32
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryList() : java.util.List,[],[],0
+"org.mybatis.jpetstore.domain.Order.initOrder(org.mybatis.jpetstore.domain.Account, org.mybatis.jpetstore.domain.Cart): void","['org.mybatis.jpetstore.domain.Account', 'org.mybatis.jpetstore.domain.Cart']","[80, 24]",104
+org.mybatis.jpetstore.domain.Order.getOrderDate() : java.util.Date,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Product.getDescription(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.clear() : void,[],[],0
+org.mybatis.jpetstore.domain.Account.isBannerOption() : boolean,[],[],0
+org.mybatis.jpetstore.domain.Category.getDescription() : java.lang.String,[],[],0
+java.util.Map.containsKey(java.lang.Object): boolean,['java.lang.Object'],[16],16
+net.sourceforge.stripes.action.ActionBeanContext.getMessages(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Item.toString(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Product.categoryId,[],[],0
+org.mybatis.jpetstore.domain.CartItem.incrementQuantity(): void,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.listOrders() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.mapper.OrderMapper.getOrdersByUsername(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.mapper.SequenceMapper.updateSequence(org.mybatis.jpetstore.domain.Sequence): void,['org.mybatis.jpetstore.domain.Sequence'],[24],24
+org.mybatis.jpetstore.domain.Order.setShipAddress1(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.getCategory(java.lang.String) : org.mybatis.jpetstore.domain.Category,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setBillToFirstName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.getItemId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipState(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.getSupplierId(): int,[],[],0
+org.mybatis.jpetstore.domain.Account.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillState(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillAddress2() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Product.getName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.service.AccountService.AccountService(org.mybatis.jpetstore.mapper.AccountMapper),['org.mybatis.jpetstore.mapper.AccountMapper'],[16],16
+org.mybatis.jpetstore.domain.CartItem.calculateTotal(): void,[],[],0
+org.mybatis.jpetstore.domain.Order.billZip,[],[],0
+org.mybatis.jpetstore.domain.Order.orderDate,[],[],0
+net.sourceforge.stripes.action.ForwardResolution.ForwardResolution(java.lang.String),['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getStatus(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.getUnitCost() : java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.VIEW_PRODUCT,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillToFirstName() : java.lang.String,[],[],0
+java.util.Date.Date(),[],[],0
+org.mybatis.jpetstore.domain.Account.getPassword(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.setCity(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setShipCountry(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId() : java.lang.String,[],[],0
+java.lang.String.toLowerCase(): java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.SequenceMapper.getSequence(org.mybatis.jpetstore.domain.Sequence) : org.mybatis.jpetstore.domain.Sequence,['org.mybatis.jpetstore.domain.Sequence'],[24],24
+org.mybatis.jpetstore.domain.Cart.removeItemById(java.lang.String): org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setQuantity(int): void,['int'],[4],4
+org.mybatis.jpetstore.web.actions.OrderActionBean.newOrder() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillToLastName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.getAttribute5(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.VIEW_ORDER,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillCity(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getCreditCard() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.item,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.static {},[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryList(): java.util.List,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.updateAccount(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Cart.getCartItems() : java.util.Iterator,[],[],0
+org.mybatis.jpetstore.domain.CartItem.getQuantity(): int,[],[],0
+org.mybatis.jpetstore.domain.Category.toString(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.CartItem.getQuantity() : int,[],[],0
+org.mybatis.jpetstore.domain.Order.billToLastName,[],[],0
+org.mybatis.jpetstore.domain.Account.setBannerName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.setOrderId(int) : void,['int'],[4],4
+org.mybatis.jpetstore.service.AccountService.getAccount(java.lang.String): org.mybatis.jpetstore.domain.Account,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getCountry(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Account.setPassword(java.lang.String): void,['java.lang.String'],[24],24
+net.sourceforge.stripes.action.ActionBeanContext.getRequest(): javax.servlet.http.HttpServletRequest,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.getAccountByUsername(java.lang.String): org.mybatis.jpetstore.domain.Account,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductList(java.util.List) : void,['java.util.List'],[24],24
+java.util.Arrays.asList(java.lang.Object[]): java.util.List,['java.lang.Object[]'],[24],24
+org.mybatis.jpetstore.domain.Account.getBannerName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages() : java.util.List,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemList(java.util.List): void,['java.util.List'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.shippingAddressRequired,[],[],0
+org.mybatis.jpetstore.domain.Account.setZip(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setCountry(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getAddress1(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillCity(): java.lang.String,[],[],0
+org.mybatis.jpetstore.service.OrderService.getOrdersByUsername(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+"org.mybatis.jpetstore.domain.Cart.setQuantityByItemId(java.lang.String, int) : void","['java.lang.String', 'int']","[24, 4]",28
+org.mybatis.jpetstore.mapper.ItemMapper.getItemListByProduct(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Product.setDescription(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Product.serialVersionUID,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.itemId,[],[],0
+org.mybatis.jpetstore.domain.Order.billCountry,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillAddress2(): java.lang.String,[],[],0
+java.util.List.addAll(java.util.Collection): boolean,['java.util.Collection'],[24],24
+org.mybatis.jpetstore.domain.Order.setOrderId(int): void,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.setShipToFirstName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.AccountService.insertAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.LineItem.setUnitPrice(java.math.BigDecimal) : void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrder(): org.mybatis.jpetstore.domain.Order,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.searchProducts() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+java.util.Iterator.hasNext(): boolean,[],[],0
+org.mybatis.jpetstore.domain.Cart.getCartItems(): java.util.Iterator,[],[],0
+org.mybatis.jpetstore.domain.Account.setZip(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.mapper.OrderMapper.getOrder(int) : org.mybatis.jpetstore.domain.Order,['int'],[4],4
+org.mybatis.jpetstore.domain.Product.description,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillToFirstName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.CartActionBean(),[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.setOrder(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
+org.mybatis.jpetstore.domain.Order.setBillCity(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductList() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Order.courier,[],[],0
+org.mybatis.jpetstore.domain.Item.setSupplierId(int): void,['int'],[4],4
+org.mybatis.jpetstore.domain.Product.toString() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Account.setStatus(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.setItem(org.mybatis.jpetstore.domain.Item): void,['org.mybatis.jpetstore.domain.Item'],[64],64
+org.mybatis.jpetstore.domain.Item.setAttribute4(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Product.setProductId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Cart.getNumberOfItems(): int,[],[],0
+org.mybatis.jpetstore.mapper.ProductMapper.searchProductList(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.CONFIRM_ORDER,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.setOrderId(int): void,['int'],[4],4
+org.mybatis.jpetstore.domain.CartItem.getItem() : org.mybatis.jpetstore.domain.Item,[],[],0
+org.mybatis.jpetstore.domain.Item.getProduct(): org.mybatis.jpetstore.domain.Product,[],[],0
+org.mybatis.jpetstore.domain.Category.serialVersionUID,[],[],0
+java.util.Map.get(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.mapper.LineItemMapper.getLineItemsByOrderId(int) : java.util.List,['int'],[4],4
+org.mybatis.jpetstore.domain.Item.setItemId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Category.setCategoryId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setLastName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Category.getDescription(): java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.insertAccount(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Cart.containsItemId(java.lang.String) : boolean,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.VIEW_ITEM,[],[],0
+org.mybatis.jpetstore.domain.Account.getAddress2() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.CartItem.CartItem(),[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategory(org.mybatis.jpetstore.domain.Category) : void,['org.mybatis.jpetstore.domain.Category'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.CatalogActionBean(),[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.context,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewItem() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillState(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.getCategory(java.lang.String): org.mybatis.jpetstore.domain.Category,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setBannerOption(boolean) : void,['boolean'],[1],1
+org.mybatis.jpetstore.domain.Category.setCategoryId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setCourier(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.CartItem.setQuantity(int): void,['int'],[4],4
+org.mybatis.jpetstore.web.actions.CartActionBean.checkOut(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.domain.LineItem.orderId,[],[],0
+org.mybatis.jpetstore.domain.Sequence.getNextId(): int,[],[],0
+org.mybatis.jpetstore.domain.Product.getCategoryId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.setLocale(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setCardType(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setExpiryDate(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategoryId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipAddress1() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.clear(): void,[],[],0
+org.mybatis.jpetstore.domain.Order.getOrderDate(): java.util.Date,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.getCart(): org.mybatis.jpetstore.domain.Cart,[],[],0
+org.mybatis.jpetstore.domain.CartItem.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.Item.toString() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.CatalogService.itemMapper,[],[],0
+org.mybatis.jpetstore.domain.Account.setAddress1(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Sequence.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillToLastName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setPassword(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Product.setCategoryId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.getUnitCost(): java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.domain.Order.getTotalPrice(): java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.productList,[],[],0
+org.mybatis.jpetstore.domain.Order.getCardType() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipCity() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.LineItem.setUnitPrice(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Order.setTotalPrice(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.web.actions.OrderActionBean.isShippingAddressRequired(): boolean,[],[],0
+org.mybatis.jpetstore.domain.Cart.lambda$0(org.mybatis.jpetstore.domain.CartItem): java.math.BigDecimal,['org.mybatis.jpetstore.domain.CartItem'],[32],32
+org.mybatis.jpetstore.domain.Order.getShipCountry() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.locale,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemList(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.LineItem.setItem(org.mybatis.jpetstore.domain.Item) : void,['org.mybatis.jpetstore.domain.Item'],[64],64
+org.mybatis.jpetstore.domain.Order.creditCard,[],[],0
+org.mybatis.jpetstore.service.OrderService.orderMapper,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.SIGNON,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillCountry() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.setUsername(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setStatus(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.setMyList(java.util.List): void,['java.util.List'],[24],24
+org.mybatis.jpetstore.mapper.ProductMapper.getProduct(java.lang.String) : org.mybatis.jpetstore.domain.Product,['java.lang.String'],[24],24
+java.util.List.forEach(java.util.function.Consumer): void,['java.util.function.Consumer'],[16],16
+org.mybatis.jpetstore.mapper.AccountMapper.getAccountByUsername(java.lang.String) : org.mybatis.jpetstore.domain.Account,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.serialVersionUID,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.addItemToCart() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Product.setName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.productMapper,[],[],0
+org.mybatis.jpetstore.domain.Sequence.setNextId(int) : void,['int'],[4],4
+java.lang.String.equals(java.lang.Object): boolean,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.web.actions.OrderActionBean.CARD_TYPE_LIST,[],[],0
+org.mybatis.jpetstore.domain.Product.productId,[],[],0
+org.mybatis.jpetstore.domain.Account.country,[],[],0
+org.mybatis.jpetstore.domain.Account.getStatus() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.cardType,[],[],0
+org.mybatis.jpetstore.service.CatalogService.getItem(java.lang.String): org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.supplierId,[],[],0
+org.mybatis.jpetstore.domain.Account.address2,[],[],0
+org.mybatis.jpetstore.mapper.OrderMapper.insertOrder(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.service.CatalogService.searchProductList(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.getCategories() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Account.status,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.password,[],[],0
+org.mybatis.jpetstore.domain.Cart.itemList,[],[],0
+org.mybatis.jpetstore.domain.Account.isBannerOption(): boolean,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipToLastName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getUsername(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.getFavouriteCategoryId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Product.Product(),[],[],0
+java.lang.String.length(): int,[],[],0
+org.mybatis.jpetstore.domain.Account.setEmail(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.Account(),[],[],0
+org.mybatis.jpetstore.domain.Order.Order(),[],[],0
+org.mybatis.jpetstore.domain.Account.city,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillZip(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.getPassword(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm() : net.sourceforge.stripes.action.Resolution,[],[],0
+java.lang.Integer.parseInt(java.lang.String): int,['java.lang.String'],[24],24
+"org.mybatis.jpetstore.mapper.AccountMapper.getAccountByUsernameAndPassword(java.lang.String, java.lang.String) : org.mybatis.jpetstore.domain.Account","['java.lang.String', 'java.lang.String']","[24, 24]",48
+org.mybatis.jpetstore.domain.LineItem.setLineNumber(int): void,['int'],[4],4
+org.mybatis.jpetstore.domain.Cart.containsItemId(java.lang.String): boolean,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getShipZip(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.address1,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.LANGUAGE_LIST,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderId(): int,[],[],0
+"org.mybatis.jpetstore.domain.Cart.setQuantityByItemId(java.lang.String, int): void","['java.lang.String', 'int']","[24, 4]",28
+org.mybatis.jpetstore.domain.Order.getBillToLastName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Sequence.getNextId() : int,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getQuantity() : int,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.viewOrder() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Order.setUsername(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.searchProducts(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.web.actions.AbstractActionBean.ERROR,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setState(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setAttribute3(java.lang.String) : void,['java.lang.String'],[24],24
+java.util.List.iterator(): java.util.Iterator,[],[],0
+org.mybatis.jpetstore.domain.Account.setLanguagePreference(java.lang.String): void,['java.lang.String'],[24],24
+java.util.Collections.synchronizedMap(java.util.Map): java.util.Map,['java.util.Map'],[48],48
+org.mybatis.jpetstore.domain.CartItem.getTotal(): java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.VIEW_CART,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.mapper.AccountMapper.updateProfile(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+java.util.List.size(): int,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItem(org.mybatis.jpetstore.domain.Item) : void,['org.mybatis.jpetstore.domain.Item'],[64],64
+org.mybatis.jpetstore.domain.Category.Category(),[],[],0
+org.mybatis.jpetstore.domain.Order.getShipAddress2() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.EDIT_ACCOUNT,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipState(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getShipToFirstName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.serialVersionUID,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.editAccount() : net.sourceforge.stripes.action.Resolution,[],[],0
+java.util.Optional.ifPresent(java.util.function.Consumer): void,['java.util.function.Consumer'],[16],16
+org.mybatis.jpetstore.domain.Account.username,[],[],0
+org.mybatis.jpetstore.domain.Order.billCity,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory(): org.mybatis.jpetstore.domain.Category,[],[],0
+org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext(): net.sourceforge.stripes.action.ActionBeanContext,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.setMyList(java.util.List) : void,['java.util.List'],[24],24
+org.mybatis.jpetstore.domain.Order.getCreditCard(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.getItemId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.LineItem.itemId,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryList(java.util.List): void,['java.util.List'],[24],24
+java.util.Iterator.remove(): void,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setProduct(org.mybatis.jpetstore.domain.Product): void,['org.mybatis.jpetstore.domain.Product'],[32],32
+org.mybatis.jpetstore.domain.Cart.incrementQuantityByItemId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getShipToLastName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.setFavouriteCategoryId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.CartItem.setInStock(boolean) : void,['boolean'],[1],1
+org.mybatis.jpetstore.mapper.ProductMapper.getProduct(java.lang.String): org.mybatis.jpetstore.domain.Product,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.domain.Account.lastName,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated(): boolean,[],[],0
+org.mybatis.jpetstore.domain.Item.getAttribute1(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getUnitPrice() : java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.domain.Order.setOrderId(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.getStatus() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.shipToLastName,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword() : java.lang.String,[],[],0
+java.util.ArrayList.ArrayList(),[],[],0
+org.mybatis.jpetstore.domain.LineItem.getItem() : org.mybatis.jpetstore.domain.Item,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.signoff() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Account.setPhone(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setBillState(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setProductId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setShipAddress2(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryList(java.util.List) : void,['java.util.List'],[24],24
+org.mybatis.jpetstore.mapper.AccountMapper.updateAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.web.actions.OrderActionBean.isConfirmed(): boolean,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.clear(): void,[],[],0
+org.mybatis.jpetstore.service.CatalogService.getProductListByCategory(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.getCart() : org.mybatis.jpetstore.domain.Cart,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getLineNumber() : int,[],[],0
+org.mybatis.jpetstore.domain.Account.setEmail(java.lang.String) : void,['java.lang.String'],[24],24
+javax.servlet.http.HttpServletRequest.getSession(): javax.servlet.http.HttpSession,[],[],0
+org.mybatis.jpetstore.domain.Order.setBillAddress1(java.lang.String) : void,['java.lang.String'],[24],24
+java.util.Collections.unmodifiableList(java.util.List): java.util.List,['java.util.List'],[24],24
+org.mybatis.jpetstore.domain.Item.getAttribute4() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Sequence.setNextId(int): void,['int'],[4],4
+org.mybatis.jpetstore.service.OrderService.getOrder(int) : org.mybatis.jpetstore.domain.Order,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.setShipToLastName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AbstractActionBean.getContext() : net.sourceforge.stripes.action.ActionBeanContext,[],[],0
+org.mybatis.jpetstore.domain.Category.getName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.attribute5,[],[],0
+org.mybatis.jpetstore.domain.CartItem.setItem(org.mybatis.jpetstore.domain.Item): void,['org.mybatis.jpetstore.domain.Item'],[64],64
+org.mybatis.jpetstore.web.actions.OrderActionBean.context,[],[],0
+org.mybatis.jpetstore.domain.Order.shipCountry,[],[],0
+"javax.servlet.http.HttpSession.setAttribute(java.lang.String, java.lang.Object): void","['java.lang.String', 'java.lang.Object']","[24, 16]",40
+"net.sourceforge.stripes.action.SimpleMessage.SimpleMessage(java.lang.String, java.lang.Object[])","['java.lang.String', 'java.lang.Object[]']","[24, 24]",48
+org.mybatis.jpetstore.domain.Cart.getAllCartItems() : java.util.Iterator,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.signon() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Order.setOrderDate(java.util.Date) : void,['java.util.Date'],[24],24
+org.mybatis.jpetstore.domain.Order.billAddress2,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.SEARCH_PRODUCTS,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.setShippingAddressRequired(boolean): void,['boolean'],[1],1
+org.mybatis.jpetstore.web.actions.AbstractActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.billToFirstName,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.authenticated,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.addItemToCart(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Account.getState(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Cart.removeItemById(java.lang.String) : org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.getStatus() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AbstractActionBean.setContext(net.sourceforge.stripes.action.ActionBeanContext): void,['net.sourceforge.stripes.action.ActionBeanContext'],[32],32
+org.mybatis.jpetstore.domain.Account.bannerName,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.newOrderForm() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.service.CatalogService.isItemInStock(java.lang.String): boolean,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setBannerName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.CartItem.getTotal() : java.math.BigDecimal,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.SHIPPING,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipCity(java.lang.String) : void,['java.lang.String'],[24],24
+java.lang.RuntimeException.RuntimeException(java.lang.String),['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.searchProductList(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItemList(java.util.List) : void,['java.util.List'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.setCart(org.mybatis.jpetstore.domain.Cart) : void,['org.mybatis.jpetstore.domain.Cart'],[24],24
+org.mybatis.jpetstore.domain.Item.getAttribute3() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillCity() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.clear() : void,[],[],0
+org.mybatis.jpetstore.mapper.ItemMapper.getInventoryQuantity(java.lang.String): int,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setAddress2(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.unitPrice,[],[],0
+org.mybatis.jpetstore.domain.Cart.getNumberOfItems() : int,[],[],0
+java.util.Optional.ofNullable(java.lang.Object): java.util.Optional,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.domain.Account.zip,[],[],0
+org.mybatis.jpetstore.domain.Order.getShipAddress1(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getLocale(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Sequence.setName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.billAddress1,[],[],0
+org.mybatis.jpetstore.domain.Order.totalPrice,[],[],0
+org.mybatis.jpetstore.domain.Account.setCountry(java.lang.String) : void,['java.lang.String'],[24],24
+"org.mybatis.jpetstore.domain.Sequence.Sequence(java.lang.String, int)","['java.lang.String', 'int']","[24, 4]",28
+org.mybatis.jpetstore.service.CatalogService.getProductListByCategory(java.lang.String) : java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.setItemId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.context,[],[],0
+org.mybatis.jpetstore.domain.Account.setBannerOption(boolean): void,['boolean'],[1],1
+org.mybatis.jpetstore.domain.Account.getCity(): java.lang.String,[],[],0
+javax.servlet.http.HttpSession.invalidate(): void,[],[],0
+org.mybatis.jpetstore.mapper.LineItemMapper.insertLineItem(org.mybatis.jpetstore.domain.LineItem) : void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
+org.mybatis.jpetstore.web.actions.AccountActionBean.newAccountForm(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.mapper.OrderMapper.getOrder(int): org.mybatis.jpetstore.domain.Order,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.setStatus(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.setQuantity(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.getBillAddress1() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.updateCartQuantities() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Item.serialVersionUID,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.VIEW_CATEGORY,[],[],0
+org.mybatis.jpetstore.domain.Order.shipToFirstName,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.insertSignon(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Order.getExpiryDate() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipZip(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.total,[],[],0
+org.mybatis.jpetstore.domain.Account.getLastName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.product,[],[],0
+org.mybatis.jpetstore.domain.LineItem.setLineNumber(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.setOrderDate(java.util.Date): void,['java.util.Date'],[24],24
+org.mybatis.jpetstore.domain.Account.getBannerName(): java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.LineItemMapper.insertLineItem(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
+org.mybatis.jpetstore.web.actions.AccountActionBean.editAccount(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.LineItem.getUnitPrice(): java.math.BigDecimal,[],[],0
+java.lang.Integer.valueOf(int): java.lang.Integer,['int'],[4],4
+org.mybatis.jpetstore.domain.CartItem.setQuantity(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.LineItem.setOrderId(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.Order.orderId,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.isAuthenticated() : boolean,[],[],0
+org.mybatis.jpetstore.domain.Item.attribute2,[],[],0
 org.mybatis.jpetstore.web.actions.OrderActionBean.viewOrder(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipCountry(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.setShippingAddressRequired(boolean) : void,['boolean'],[1],1
+org.mybatis.jpetstore.service.AccountService.updateAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Category.categoryId,[],[],0
+org.mybatis.jpetstore.service.OrderService.getNextId(java.lang.String): int,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.updateCartQuantities(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.CartItem.isInStock() : boolean,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.removeItemFromCart(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Order.status,[],[],0
+org.mybatis.jpetstore.mapper.OrderMapper.insertOrderStatus(org.mybatis.jpetstore.domain.Order): void,['org.mybatis.jpetstore.domain.Order'],[120],120
+org.mybatis.jpetstore.web.actions.CatalogActionBean.productId,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getCategory() : org.mybatis.jpetstore.domain.Category,[],[],0
+org.mybatis.jpetstore.service.CatalogService.getCategoryList() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Cart.itemMap,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderList(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Account.setListOption(boolean): void,['boolean'],[1],1
+org.mybatis.jpetstore.web.actions.CatalogActionBean.product,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.getCreditCardTypes(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Order.setCreditCard(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Sequence.name,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setBillCountry(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setShipCity(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Item.getAttribute5() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Cart.getCartItemList(): java.util.List,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProductId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.clear(): void,[],[],0
+org.mybatis.jpetstore.domain.Product.getProductId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.CartItem.isInStock(): boolean,[],[],0
+net.sourceforge.stripes.action.ForwardResolution.ForwardResolution(java.lang.Class),['java.lang.Class'],[16],16
+org.mybatis.jpetstore.domain.LineItem.getItemId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.setWorkingItemId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setStatus(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setFirstName(java.lang.String) : void,['java.lang.String'],[24],24
+"org.mybatis.jpetstore.domain.Cart.addItem(org.mybatis.jpetstore.domain.Item, boolean): void","['org.mybatis.jpetstore.domain.Item', 'boolean']","[64, 1]",65
+org.mybatis.jpetstore.web.actions.CartActionBean.cart,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.getLanguages(): java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Item.getSupplierId() : int,[],[],0
+org.mybatis.jpetstore.domain.Item.itemId,[],[],0
+org.mybatis.jpetstore.mapper.SequenceMapper.getSequence(org.mybatis.jpetstore.domain.Sequence): org.mybatis.jpetstore.domain.Sequence,['org.mybatis.jpetstore.domain.Sequence'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.catalogService,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipAddress2(java.lang.String): void,['java.lang.String'],[24],24
+java.util.HashMap.HashMap(int),['int'],[4],4
+org.mybatis.jpetstore.domain.Order.addLineItem(org.mybatis.jpetstore.domain.CartItem): void,['org.mybatis.jpetstore.domain.CartItem'],[32],32
+org.mybatis.jpetstore.domain.Product.getProductId() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.AccountService.updateAccount(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Order.getExpiryDate(): java.lang.String,[],[],0
+java.math.BigDecimal.ZERO,[],[],0
+org.mybatis.jpetstore.domain.Order.getOrderId(): int,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.setConfirmed(boolean): void,['boolean'],[1],1
+org.mybatis.jpetstore.web.actions.CartActionBean.checkOut() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.mapper.ItemMapper.getItem(java.lang.String) : org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setAttribute1(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.mapper.OrderMapper.insertOrderStatus(org.mybatis.jpetstore.domain.Order) : void,['org.mybatis.jpetstore.domain.Order'],[120],120
+"org.mybatis.jpetstore.mapper.AccountMapper.getAccountByUsernameAndPassword(java.lang.String, java.lang.String): org.mybatis.jpetstore.domain.Account","['java.lang.String', 'java.lang.String']","[24, 24]",48
+org.mybatis.jpetstore.web.actions.AccountActionBean.setUsername(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Category.name,[],[],0
+org.mybatis.jpetstore.domain.Account.listOption,[],[],0
+org.mybatis.jpetstore.domain.Order.setExpiryDate(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.expiryDate,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.clear() : void,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getProduct(): org.mybatis.jpetstore.domain.Product,[],[],0
+org.mybatis.jpetstore.domain.Account.getPhone(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.signonForm() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setProduct(org.mybatis.jpetstore.domain.Product) : void,['org.mybatis.jpetstore.domain.Product'],[32],32
+org.mybatis.jpetstore.web.actions.OrderActionBean.setConfirmed(boolean) : void,['boolean'],[1],1
+org.mybatis.jpetstore.domain.Cart.getAllCartItems(): java.util.Iterator,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.setMessage(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.getBillAddress1(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillCountry(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Product.getCategoryId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem(): org.mybatis.jpetstore.domain.Item,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getKeyword(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.getAccount() : org.mybatis.jpetstore.domain.Account,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.removeItemFromCart() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.CartItem.item,[],[],0
+org.mybatis.jpetstore.domain.Order.addLineItem(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
+org.mybatis.jpetstore.domain.CartItem.inStock,[],[],0
+org.mybatis.jpetstore.domain.Item.setStatus(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.itemList,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.OrderActionBean(),[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItemId(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AbstractActionBean.context,[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.getOrderList() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Order.lineItems,[],[],0
+"org.mybatis.jpetstore.service.AccountService.lambda$1(org.mybatis.jpetstore.domain.Account, java.lang.String): void","['org.mybatis.jpetstore.domain.Account', 'java.lang.String']","[80, 24]",104
+org.mybatis.jpetstore.domain.Account.getState() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setTotalPrice(java.math.BigDecimal) : void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Item.setAttribute5(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewCategory(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.setCart(org.mybatis.jpetstore.domain.Cart): void,['org.mybatis.jpetstore.domain.Cart'],[24],24
+org.mybatis.jpetstore.domain.Account.setLastName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.account,[],[],0
+org.mybatis.jpetstore.domain.Order.setShipZip(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setBillAddress2(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.newOrderForm(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Cart.Cart(),[],[],0
+org.mybatis.jpetstore.domain.Order.getLineItems() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Category.setDescription(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.OrderService.lambda$2(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
+org.mybatis.jpetstore.domain.Order.setBillAddress1(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.getItem(java.lang.String) : org.mybatis.jpetstore.domain.Item,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.firstName,[],[],0
+org.mybatis.jpetstore.domain.Account.setAddress1(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.OrderActionBean.getCreditCardTypes() : java.util.List,[],[],0
+org.mybatis.jpetstore.domain.Account.getUsername() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.OrderService.itemMapper,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.AccountActionBean(),[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.editAccountForm() : net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.serialVersionUID,[],[],0
+org.mybatis.jpetstore.domain.CartItem.quantity,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.viewCart(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.domain.Product.name,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setCategoryId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.item,[],[],0
+org.mybatis.jpetstore.domain.Order.getOrderId() : int,[],[],0
+org.mybatis.jpetstore.service.OrderService.insertOrder(org.mybatis.jpetstore.domain.Order) : void,['org.mybatis.jpetstore.domain.Order'],[120],120
+org.mybatis.jpetstore.domain.Account.getLanguagePreference() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.LineItem.setQuantity(int): void,['int'],[4],4
+org.mybatis.jpetstore.web.actions.CatalogActionBean.categoryList,[],[],0
+org.mybatis.jpetstore.domain.Order.billState,[],[],0
+org.mybatis.jpetstore.domain.Item.Item(),[],[],0
+org.mybatis.jpetstore.web.actions.OrderActionBean.newOrder(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Item.unitCost,[],[],0
+org.mybatis.jpetstore.mapper.ItemMapper.updateInventoryQuantity(java.util.Map) : void,['java.util.Map'],[48],48
+org.mybatis.jpetstore.mapper.AccountMapper.updateSignon(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.mapper.ProductMapper.getProductListByCategory(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.setStatus(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.getAttribute3(): java.lang.String,[],[],0
+org.mybatis.jpetstore.service.AccountService.lambda$0(java.lang.String): boolean,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setShipToLastName(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Category.setName(java.lang.String): void,['java.lang.String'],[24],24
+javax.servlet.http.HttpServletRequest.getParameter(java.lang.String): java.lang.String,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.getLineNumber(): int,[],[],0
+org.mybatis.jpetstore.domain.Order.getCardType(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Category.setDescription(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.quantity,[],[],0
+org.mybatis.jpetstore.domain.LineItem.quantity,[],[],0
+org.mybatis.jpetstore.web.actions.CatalogActionBean.category,[],[],0
+org.mybatis.jpetstore.domain.Item.productId,[],[],0
+org.mybatis.jpetstore.domain.Account.setAddress2(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Account.getPassword() : java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.OrderMapper.insertOrder(org.mybatis.jpetstore.domain.Order) : void,['org.mybatis.jpetstore.domain.Order'],[120],120
+java.util.List.stream(): java.util.stream.Stream,[],[],0
+org.mybatis.jpetstore.domain.Account.getStatus(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Order.getLocale() : java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.ItemMapper.getInventoryQuantity(java.lang.String) : int,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.setBillAddress2(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CartActionBean.viewCart() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.domain.Item.setQuantity(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.Account.getAddress1() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.AccountService.getAccount(java.lang.String) : org.mybatis.jpetstore.domain.Account,['java.lang.String'],[24],24
+java.lang.String.split(java.lang.String): java.lang.String[],['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.LineItem.calculateTotal(): void,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.setPassword(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Item.setUnitCost(java.math.BigDecimal): void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Cart.getSubTotal() : java.math.BigDecimal,[],[],0
+java.util.List.remove(java.lang.Object): boolean,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.domain.Account.getPhone() : java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.getZip(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.CartItem.total,[],[],0
+java.util.Optional.map(java.util.function.Function): java.util.Optional,['java.util.function.Function'],[16],16
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewProduct(): net.sourceforge.stripes.action.ForwardResolution,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.setWorkingItemId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.CatalogService.categoryMapper,[],[],0
+org.mybatis.jpetstore.domain.Account.setListOption(boolean) : void,['boolean'],[1],1
+org.mybatis.jpetstore.web.actions.OrderActionBean.order,[],[],0
+org.mybatis.jpetstore.domain.Order.setUsername(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.setItem(org.mybatis.jpetstore.domain.Item): void,['org.mybatis.jpetstore.domain.Item'],[64],64
+org.mybatis.jpetstore.domain.LineItem.setItemId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.service.OrderService.lambda$0(org.mybatis.jpetstore.domain.LineItem): void,['org.mybatis.jpetstore.domain.LineItem'],[40],40
+org.mybatis.jpetstore.domain.Account.favouriteCategoryId,[],[],0
+org.mybatis.jpetstore.domain.Account.bannerOption,[],[],0
+org.mybatis.jpetstore.domain.Account.getAddress2(): java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.CartActionBean.clear(): void,[],[],0
+org.mybatis.jpetstore.domain.Order.getCourier(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Account.getCountry() : java.lang.String,[],[],0
+java.util.HashMap.HashMap(),[],[],0
+org.mybatis.jpetstore.domain.Account.getZip() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.clear() : void,[],[],0
+org.mybatis.jpetstore.domain.Item.status,[],[],0
+org.mybatis.jpetstore.domain.Account.languagePreference,[],[],0
+org.mybatis.jpetstore.domain.Item.attribute4,[],[],0
+org.mybatis.jpetstore.mapper.AccountMapper.insertAccount(org.mybatis.jpetstore.domain.Account): void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.service.OrderService.sequenceMapper,[],[],0
+org.mybatis.jpetstore.domain.Item.setUnitCost(java.math.BigDecimal) : void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.LineItem.LineItem(),[],[],0
+org.mybatis.jpetstore.domain.Order.setCardType(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.mapper.AccountMapper.updateSignon(org.mybatis.jpetstore.domain.Account) : void,['org.mybatis.jpetstore.domain.Account'],[80],80
+org.mybatis.jpetstore.domain.Item.setAttribute1(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.AccountActionBean.signoff(): net.sourceforge.stripes.action.Resolution,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.newAccount() : net.sourceforge.stripes.action.Resolution,[],[],0
+java.util.Optional.filter(java.util.function.Predicate): java.util.Optional,['java.util.function.Predicate'],[16],16
+org.mybatis.jpetstore.domain.CartItem.getItem(): org.mybatis.jpetstore.domain.Item,[],[],0
+org.mybatis.jpetstore.domain.CartItem.lambda$1(java.math.BigDecimal): java.math.BigDecimal,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.mapper.LineItemMapper.getLineItemsByOrderId(int): java.util.List,['int'],[4],4
+java.util.Map.remove(java.lang.Object): java.lang.Object,['java.lang.Object'],[16],16
+org.mybatis.jpetstore.web.actions.CatalogActionBean.getItem() : org.mybatis.jpetstore.domain.Item,[],[],0
+org.mybatis.jpetstore.domain.Item.getQuantity() : int,[],[],0
+org.mybatis.jpetstore.domain.Order.getBillZip() : java.lang.String,[],[],0
+org.mybatis.jpetstore.web.actions.AccountActionBean.getUsername() : java.lang.String,[],[],0
+org.mybatis.jpetstore.service.OrderService.getOrdersByUsername(java.lang.String): java.util.List,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Order.shipAddress1,[],[],0
+org.mybatis.jpetstore.domain.Category.setName(java.lang.String) : void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.web.actions.CatalogActionBean.viewMain() : net.sourceforge.stripes.action.ForwardResolution,[],[],0
+"org.mybatis.jpetstore.service.CatalogService.CatalogService(org.mybatis.jpetstore.mapper.CategoryMapper, org.mybatis.jpetstore.mapper.ItemMapper, org.mybatis.jpetstore.mapper.ProductMapper)","['org.mybatis.jpetstore.mapper.CategoryMapper', 'org.mybatis.jpetstore.mapper.ItemMapper', 'org.mybatis.jpetstore.mapper.ProductMapper']","[16, 16, 16]",48
+org.mybatis.jpetstore.domain.Order.getShipCountry(): java.lang.String,[],[],0
+org.mybatis.jpetstore.domain.Item.setSupplierId(int) : void,['int'],[4],4
+org.mybatis.jpetstore.domain.Item.setListPrice(java.math.BigDecimal) : void,['java.math.BigDecimal'],[16],16
+org.mybatis.jpetstore.domain.Item.setItemId(java.lang.String): void,['java.lang.String'],[24],24
+org.mybatis.jpetstore.domain.Product.getName() : java.lang.String,[],[],0
+org.mybatis.jpetstore.mapper.CategoryMapper.getCategory(java.lang.String) : org.mybatis.jpetstore.domain.Category,['java.lang.String'],[24],24
+java.util.stream.Stream.map(java.util.function.Function): java.util.stream.Stream,['java.util.function.Function'],[16],16
+org.mybatis.jpetstore.web.actions.AccountActionBean.accountService,[],[],0
+org.mybatis.jpetstore.domain.Item.getAttribute2() : java.lang.String,[],[],0

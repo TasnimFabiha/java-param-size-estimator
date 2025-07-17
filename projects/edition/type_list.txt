@@ -101,10 +101,12 @@ org.springframework.social.connect.ConnectionFactoryLocator
 org.springframework.social.connect.ConnectionKey
 org.springframework.social.connect.ConnectionRepository
 org.springframework.social.connect.ConnectionSignUp
+org.springframework.social.connect.UserProfile
 org.springframework.social.connect.UsersConnectionRepository
 org.springframework.social.connect.web.SignInAdapter
 org.springframework.ui.Model
 org.springframework.util.MultiValueMap
+org.springframework.validation.BindingResult
 org.springframework.validation.Errors
 org.springframework.web.bind.WebDataBinder
 org.springframework.web.context.request.NativeWebRequest
@@ -189,6 +191,10 @@ pt.ist.socialsoftware.edition.ldod.frontend.domain.UiComponent
 pt.ist.socialsoftware.edition.ldod.frontend.domain.UiComponent_Base
 pt.ist.socialsoftware.edition.ldod.frontend.filters.TransactionFilter
 pt.ist.socialsoftware.edition.ldod.frontend.text.FeTextRequiresInterface
+pt.ist.socialsoftware.edition.ldod.frontend.user.dto.LdoDUserViewDto
+pt.ist.socialsoftware.edition.ldod.frontend.user.forms.ChangePasswordForm
+pt.ist.socialsoftware.edition.ldod.frontend.user.forms.EditUserForm
+pt.ist.socialsoftware.edition.ldod.frontend.user.forms.SignupForm
 pt.ist.socialsoftware.edition.ldod.frontend.user.security.UserModuleAuthenticationSuccessHandler
 pt.ist.socialsoftware.edition.ldod.frontend.user.security.UserModuleConnectionRepository
 pt.ist.socialsoftware.edition.ldod.frontend.user.security.UserModuleUserDetails
