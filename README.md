@@ -105,4 +105,7 @@ The script will:
 - Unknown types are assigned a fallback size of -1 bytes.
 - Arrays are instantiated with length 1 during size estimation.
 - The method works statically — no application execution is required.
+- The rows of `method_parameters_sizeOf.csv` are written in sorted order of method signature, so every run gives the same file.[^1]
+
+[^1]: The committed `method_parameters_sizeOf.csv` files were generated when the rows were written in the iteration order of a Python `set` (`list(set(...))` in `estimate_param_sizes.py`). That order changes from run to run (string hash randomisation), so the row order of the CSV was different each time. The rows themselves (signatures and sizes) are the same, but the order matters for overloaded methods: [kiekerToMicroserviceLogParser](https://github.com/TasnimFabiha/kiekerToMicroserviceLogParser) looks up sizes by `Class.method` without parameter types (the Kieker graphs do not contain them), so when a method has several overloads, the size of the overload written last is used. With a different row order, an overloaded method can therefore get a slightly different size (e.g. 96 of the 4,861 `Class.method` keys of jforum on a regeneration). This is fixed by writing the rows with `sorted(set(...))`. The committed CSVs are the ones used for the log parser and toMicroservice results; regenerating them with the sorted order may change the sizes of some overloaded methods, so the log parser and toMicroservice should be rerun after regenerating them.
 

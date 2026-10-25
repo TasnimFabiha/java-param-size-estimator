@@ -165,7 +165,8 @@ def main():
     # methods = parse_methods_from_deps(DEPFINDER_INPUT_PATH)
     depfinder_methods = parse_methods_from_deps(DEPFINDER_INPUT_PATH)
     method_scanner_methods = parse_methods_from_txt(METHOD_SCANNER_INPUT_PATH)
-    all_methods = list(set(depfinder_methods + method_scanner_methods))
+    # sorted: the CSV rows are written in the same order on every run
+    all_methods = sorted(set(depfinder_methods + method_scanner_methods))
 
     # write the method signatures to a file
     # with open(PROJECT_DIR / "method_signatures.txt", "w") as f:
